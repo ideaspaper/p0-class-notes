@@ -1,5 +1,4 @@
 # Terminal, Git, and GitHub
-
 [Google Slides - Terminal, Git and GitHub](https://docs.google.com/presentation/d/1tmbfRBavbf8h6IaXc23RWPYCSAH2jbVdrAMwa4Js0uE/edit?usp=drivesdk)
 
 # Algorithm, Pseudocode and Conditional
@@ -475,5 +474,4 @@ console.log(objB);
 ```
 
 # Git Branch, Git Merge and GitHub Pull Request
-
 [Google Slides - Branch, Merge and Pull Request](https://docs.google.com/presentation/d/1-5iMezGG09yLE_tdXxhgzLolvSIR_o0wAWFcwjqs3gk/edit?usp=drivesdk)
