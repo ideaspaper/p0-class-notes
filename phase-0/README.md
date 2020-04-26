@@ -1,11 +1,82 @@
 # Terminal, Git, and GitHub
 [Google Slides - Terminal, Git and GitHub](https://docs.google.com/presentation/d/1tmbfRBavbf8h6IaXc23RWPYCSAH2jbVdrAMwa4Js0uE/edit?usp=drivesdk)
 
-# Algorithm, Pseudocode and Conditional
+# HTML
+```html
+```
+
+# CSS
+```css
+```
+
+# Algorithm and Pseudocode
+
+## Algoritma
+1. Algoritma tidak sama dengan logaritma.
+2. Algoritma merupakan langkah-langkah yang harus diikuti dalam menyelesaikan suatu permasalahan.
+3. Algoritma dapat berupa rangkaian kalimat dalam bahasa sehari-hari, ataupun berupa visual dalam bentuk flowchart.
+4. Algoritma digunakan agar penyelesaian suatu masalah dapat dilakukan secara sistematis.
+
+```bash
+Case: Membuat soda gembira (pada umumnya).
+
+Algoritma:
+  1. Siapkan gelas kosong.
+  2. Tuang air soda secukupnya ke dalam gelas.
+  3. Tuang susu kental manis secukupnya ke dalam gelas.
+  4. Tuang sirup secukupnya ke dalam gelas.
+  5. Aduk hingga merata.
+  6. Masukkan es batu.
+```
+
+```bash
+Case: Menyiapkan komputer untuk mulai belajar JavaScript (pada umumnya).
+
+Algoritma:
+  1. Siapkan komputer dengan OS Ubuntu atau macOS. (opsional)
+  2. Download dan install Node.js.
+  3. Download dan install Visual Studio Code.
+  4. Buat program 'Hello World' sederhana.
+  5. Jalankan program 'Hello World' tersebut.
+```
+
+## Pseudocode
+1. Dibuat menggunakan bahasa Inggris.
+2. Bahasa terstruktur yang digunakan untuk mendeskripsikan algoritma secara detil.
+3. Pseudocode digunakan agar kita lebih fokus kepada perancangan logic suatu program tanpa dipusingkan dengan syntax bahasa pemrograman yang akan digunakan nantinya.
+4. Pseudocode yang baik adalah pseudocode yang dapat dipahami dengan mudah.
+
+```bash
+Case: Menghitung luas segitiga.
+
+Pseudocode:
+  INIT alas AS NUMBER WITH ANY VALUE
+  INIT tinggi AS NUMBER WITH ANY VALUE
+  INIT luas AS NUMBER WITH 0
+  COMPUTE luas AS 0.5 * alas * tinggi
+  DISPLAY luas
+```
+
+```bash
+Case: Menghitung kecepatan
+
+Pseudocode:
+  INIT jarak AS NUMBER WITH ANY VALUE
+  INIT waktu AS NUMBER WITH ANY VALUE
+  INIT kecepatan AS NUMBER WITH 0
+  COMPUTE kecepatan AS jarak / waktu
+  DISPLAY kecepatan
+```
+
+# Conditional and Primitive Data Type
 ```JavaScript
 ```
 
-# String and Looping
+# Pseudocode and Looping
+```JavaScript
+```
+
+# Nested Conditional
 ```JavaScript
 ```
 
