@@ -68,7 +68,7 @@ Pseudocode:
   DISPLAY kecepatan
 ```
 
-# Conditional and Primitive Data Type
+# Conditional and Primitive Data Types
 ```JavaScript
 ```
 
