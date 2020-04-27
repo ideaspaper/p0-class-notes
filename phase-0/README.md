@@ -1,10 +1,3 @@
-# Table of Contents
-### [HTML](#html)
-### [CSS](#css)
-### [Algorithm and Pseudocode](#algorithm-and-pseudocode)
-### [Conditional and Primitive Data Types](#conditional-and-primitive-data-types)
-### [Multidimensional Array](#multidimensional-array)
-
 # Terminal, Git, and GitHub
 [Google Slides - Terminal, Git and GitHub](https://docs.google.com/presentation/d/1tmbfRBavbf8h6IaXc23RWPYCSAH2jbVdrAMwa4Js0uE/edit?usp=drivesdk)
 
