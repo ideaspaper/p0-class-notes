@@ -74,7 +74,7 @@ Pseudocode:
 ```javascript
 ```
 
-# Nested
+# Nested Conditional
 Selain `if-else` kita dapat menggunakan `switch-case` untuk keperluan conditional. Penggunaan `switch-case` membuat kode program relatif lebih mudah untuk dibaca, sedangkan penggunaan `if-else` memberikan opsi yang lebih fleksibel.
 
 ## `switch-case`
@@ -245,7 +245,7 @@ a > 5 ? console.log('lebih dari 5') : console.log('kurang dari 5');
 
 Penggunaan ternary operator dapat membuat kode program lebih mudah untuk di baca. Namun apabila di dalam ternary operator terdapat ternary operator lain (nested), maka pembacaan kode program akan menjadi lebih susah.
 
-## Nested Conditionals
+## Nested `if-else`
 Sebuah conditional dapat memiliki conditional lain di dalamnya. Hal ini disebut juga sebagai nested conditionals. Di bawah merupakan contoh permasalahan yang dapat diselesaikan dengan nested conditionals.
 
 ```javascript
