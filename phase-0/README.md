@@ -133,7 +133,7 @@ for (; loop > 0;) {
   loop--;
 }
 
-// 2. for ([initial expression 1], [initial expression 2]; [condition 1]; [increment expression 1], [increment expression 2]),
+// 2. for ([initial expression 1], [initial expression 2]; [condition]; [increment expression 1], [increment expression 2]),
 //    for dapat memiliki lebih dari satu initial expression, lebih dari satu condition, lebih dari satu increment expression
 //    Code here
 for (let i = 0, j = 9; i < 10; i++, j--) {
