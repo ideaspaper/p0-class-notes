@@ -335,6 +335,109 @@ for (let i = 10; i > 0; i++) {
 }
 ```
 
+# Nested Iteration
+```javascript
+/**
+ * REVIEW: ITERATION AND CONDITIONAL
+ * 
+ * Diberikan sebuah input kalimat dengan tipe string.
+ * Buat sebuah program untuk mengubah kalimat tersebut ke dalam bentuk title case.
+ * Contoh:
+ *   Input: this is javascript
+ *   Output: This Is Javascript
+ */
+
+let input = 'this is javascript';
+let titleCase = input[0].toUpperCase();
+
+for (let i = 1; i < input.length; i++) {
+  if (input[i - 1] === ' ') {
+    titleCase += input[i].toUpperCase();
+  } else {
+    titleCase += input[i];
+  }
+}
+
+console.log(titleCase);
+
+/**
+ * Tampilkan angka 0 sampai 9 ke samping, sebanyak 5 kali.
+ * Contoh:
+ *   0123456789
+ *   0123456789
+ *   0123456789
+ *   0123456789
+ *   0123456789
+ */
+
+for (let i = 0; i < 5; i++) {
+  let output = '';
+  for (let j = 0; j < 10; j++) {
+    output += j;
+  }
+  console.log(output);
+}
+
+/**
+ * Diberikan sebuah input kata dengan tipe string.
+ * Urutkan huruf yang ada dalam kata tersebut, sesuai dengan urutan alphabet.
+ * Sebagai contoh:
+ *   - Input  : jihgfedcba
+ *     Output : abcdefghij
+ *   - Input  : javascript
+ *     Output : aacijprstv
+ */
+
+input = 'javascript';
+let kamus = 'abcdefghijklmnopqrstuvwxyz';
+let sorted = '';
+
+for (let i = 0; i < kamus.length; i++) {
+  for (let j = 0; j < input.length; j++) {
+    if (kamus[i] === input[j]) {
+      sorted += input[j];
+    }
+  }
+}
+
+console.log(sorted);
+
+/**
+ * Membuat built-in function indexOf() sederhana.
+ * Apabila diberikan input kalimat dengan tipe string, buatlah sebuah program untuk mencari pada string tersebut terdapat sebuah penggalan kata.
+ * Sebagai contoh:
+ *   1. Input 1 : 'I love JavaScript'
+ *      Input 2 : 'love'
+ *      Output  : 2
+ *   2. Input 1 : "This is programmer's live"
+ *      Input 2 : 'hello'
+ *      Output  : -1
+ */
+
+let input1 = 'I love JavaScript';
+let input2 = 'love';
+let count = 0;
+
+for (let i = 0; i < input1.length; i++) {
+  for (let j = 0; j < input2.length; j++) {
+    if (input1[i + j] === input2[j]) {
+      count++;
+    } else {
+      count = 0;
+      break;
+    }
+  }
+  if (count === input2.length) {
+    console.log(i)
+    break;
+  }
+}
+
+if (count !== input2.length) {
+  console.log(-1);
+}
+```
+
 # Function
 ```javascript
 ```
