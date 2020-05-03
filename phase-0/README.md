@@ -75,7 +75,248 @@ Pseudocode:
 ```
 
 # Nested Conditional
+Selain `if-else` kita dapat menggunakan `switch-case` untuk keperluan conditional. Penggunaan `switch-case` membuat kode program relatif lebih mudah untuk dibaca, sedangkan penggunaan `if-else` memberikan opsi yang lebih fleksibel.
+
+## `switch-case`
 ```javascript
+switch (variable) {
+  case nilai1:
+    // Statement yang akan dieksekusi
+    break;
+  case nilai2:
+    // Statement yang akan dieksekusi
+    break;
+  default:
+    // Statement yang akan dieksekusi
+}
+```
+
+Nilai `variable` yang terdapat pada `switch` akan diperiksa. Apabila nilai tersebut `=== nilai1` maka statement di dalam `case nilai1:` akan dieksekusi. Apabila nilai tersebut `=== nilai2` maka statement di dalam `case nilai2:` akan dieksekusi. Apabila nilai tersebut `!== nilai1` dan `!== nilai2` maka statement di dalam `default:` akan dieksekusi.
+
+## Penggunaan `switch-case`
+```javascript
+/**
+ * Ubah angka 0 - 10 ke dalam bahasa Indonesia.
+ * Gunakan Switch-Case untuk menyelesaikan permasalahan ini.
+ */
+
+/**
+ * INIT angka AS NUMBER WITH ANY VALUE
+ * 
+ * SWITCH angka
+ *   CASE 0:
+ *     DISPLAY 'Nol'
+ *     BREAK
+ *   CASE 1:
+ *     DISPLAY 'Satu'
+ *     BREAK
+ *   CASE 2:
+ *     DISPLAY 'Dua'
+ *     BREAK
+ *   CASE 3:
+ *     DISPLAY 'Tiga'
+ *     BREAK
+ *   CASE 4:
+ *     DISPLAY 'Empat'
+ *     BREAK
+ *   CASE 5:
+ *     DISPLAY 'Lima'
+ *     BREAK
+ *   CASE 6:
+ *     DISPLAY 'Enam'
+ *     BREAK
+ *   CASE 7:
+ *     DISPLAY 'Tujuh'
+ *     BREAK
+ *   CASE 8:
+ *     DISPLAY 'Delapan'
+ *     BREAK
+ *   CASE 9:
+ *     DISPLAY 'Sembilan'
+ *     BREAK
+ *   CASE 10:
+ *     DISPLAY 'Sepuluh'
+ *     BREAK
+ *   DEFAULT:
+ *     DISPLAY 'Angka belum di-support'
+ * END SWITCH
+ */
+
+let angka = 9;
+
+switch (angka) {
+  case 0:
+    console.log('Nol');
+    break;
+  case 1:
+    console.log('Satu');
+    break;
+  case 2:
+    console.log('Dua');
+    break;
+  case 3:
+    console.log('Tiga');
+    break;
+  case 4:
+    console.log('Empat');
+    break;
+  case 5:
+    console.log('Lima');
+    break;
+  case 6:
+    console.log('Enam');
+    break;
+  case 7:
+    console.log('Tujuh');
+    break;
+  case 8:
+    console.log('Delapan');
+    break;
+  case 9:
+    console.log('Sembilan');
+    break;
+  case 10:
+    console.log('Sepuluh');
+    break;
+  default:
+    console.log('Angka belum di-support');
+}
+```
+
+Untuk memahami penggunaan statement `break`, coba jalankan contoh kode program di bawah.
+
+```javascript
+/**
+ * Ubah nilai variable angka menjadi 0, 1, 2, kemudian 3.
+ * Amati output program.
+ */
+
+let angka = 1;
+
+switch (angka) {
+  case 0:
+    console.log('Nol');
+  case 1:
+    console.log('Satu');
+  case 2:
+    console.log('Dua');
+  case 3:
+    console.log('Tiga');
+    break;
+  case 4:
+    console.log('Empat');
+    break;
+  case 5:
+    console.log('Lima');
+    break;
+  case 6:
+    console.log('Enam');
+    break;
+  case 7:
+    console.log('Tujuh');
+    break;
+  case 8:
+    console.log('Delapan');
+    break;
+  case 9:
+    console.log('Sembilan');
+    break;
+  case 10:
+    console.log('Sepuluh');
+    break;
+  default:
+    console.log('Angka belum di-support');
+}
+```
+
+## Ternary Operator
+
+Selain `if-else` dan `switch-case`, terdapat pula ternary operator `(?:)`.
+
+```javascript
+let a = 10;
+
+a > 5 ? console.log('lebih dari 5') : console.log('kurang dari 5');
+```
+
+- `a > 5` merupakan bagian conditional.
+- Setelah `?`, yaitu `console.log('lebih dari 5')`, merupakan bagian yang akan dieksekusi apabila hasil evaluasi bagian conditional bernilai `true`.
+- Setelah `:`, yaitu `console.log('kurang dari 5')`, merupakan bagian yang akan dieksekusi apabila hasil evaluasi bagian conditional bernilai `false`.
+
+Penggunaan ternary operator dapat membuat kode program lebih mudah untuk di baca. Namun apabila di dalam ternary operator terdapat ternary operator lain (nested), maka pembacaan kode program akan menjadi lebih susah.
+
+## Nested Conditionals
+Sebuah conditional dapat memiliki conditional lain di dalamnya. Hal ini disebut juga sebagai nested conditionals. Di bawah merupakan contoh permasalahan yang dapat diselesaikan dengan nested conditionals.
+
+```javascript
+/**
+ * Sebuah wahana membutuhkan 3 buah kriteria untuk penumpang yaitu
+ *   - Umur di dalam range 15 tahun hingga 60 tahun
+ *   - Tinggi badan setidaknya 150 cm
+ *   - Tidak memiliki penyakit jantung
+ * 
+ * Buatlah pseudocode dan kode program untuk mensimulasikan kriteria wahana tersebut.
+ */
+
+/**
+ * INIT umur AS NUMBER WITH ANY VALUE
+ * INIT tinggi AS NUMBER WITH ANY VALUE
+ * INIT penyakitJantung AS BOOLEAN WITH ANY VALUE
+ * 
+ * IF umur MORE THAN EQUAL 15 AND umur LESS THAN EQUAL 60
+ *   IF tinggi MORE THAN EQUAL 150
+ *     IF penyakitJantung EQUAL FALSE
+ *       DISPLAY 'Boleh naik wahana'
+ *     ELSE
+ *       DISPLAY 'Tidak boleh naik wahana karena alasan jantung'
+ *     END IF
+ *   ELSE
+ *     DISPLAY 'Tidak boleh naik wahana karena alasan tinggi badan'
+ *   END IF
+ * ELSE
+ *   DISPLAY 'Tidak boleh naik wahana karena alasan umur'
+ * ENDIF
+ */
+
+let umur = 13;
+let tinggi = 140
+let penyakitJantung = true;
+
+if (umur >= 15 && umur <= 60) {
+  if (tinggi >= 150) {
+    if (penyakitJantung === false) {
+      console.log('Boleh naik wahana');
+    } else {
+      console.log('Tidak boleh naik wahana karena alasan jantung');
+    }
+  } else {
+    console.log('Tidak boleh naik wahana karena alasan tinggi badan');
+  }
+} else {
+  console.log('Tidak boleh naik wahana karena alasan umur');
+}
+```
+
+## `if-if` vs `if-else`
+Hal lain yang perlu diperhatikan adalah penggunaan `if-if` dan `if-else`. Keduanya memiliki alur eksekusi yang berbeda. Pada conditional `if-else`, apabila kondisi pada `if` bernilai `true`, maka kondisi pada `else-if` tidak akan diperiksa, serta statement di dalam `else` tidak akan dieksekusi.
+
+Pada `if-if`, apabila kondisi pada `if` pertama bernilai `true`, kondisi pada `if` kedua tetap akan diperiksa. Lebih jelasnya, jalankan contoh kode program di bawah.
+
+```javascript
+let myVar = 7;
+
+if (myVar > 6) {
+  console.log('nilai myVar lebih dari 6');
+} else if (myVar > 5) {
+  console.log('nilai myVar lebih dari 5');
+}
+
+if (myVar > 6) {
+  console.log('nilai myVar lebih dari 6');
+}
+if (myVar > 5) {
+  console.log('nilai myVar lebih dari 5');
+}
 ```
 
 # Iteration in Pseudocode and JavaScript
