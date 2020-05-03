@@ -74,6 +74,10 @@ Pseudocode:
 ```javascript
 ```
 
+# Nested Conditional
+```javascript
+```
+
 # Iteration in Pseudocode and JavaScript
 [Google Slides - Iteration in Pseudocode and JavaScript](https://docs.google.com/presentation/d/1ImOcY0pNTRCKFbpa0LFOTC2zMueOFasFv2XhejahI6c/edit?usp=sharing)
 
@@ -329,10 +333,6 @@ for (let i = 0; i < 10; i++) {
 for (let i = 10; i > 0; i++) {
   console.log(i);
 }
-```
-
-# Nested Conditional
-```javascript
 ```
 
 # Function
