@@ -40,6 +40,8 @@ Algoritma:
   5. Jalankan program 'Hello World' tersebut.
 ```
 
+Contoh algoritma: [How to Walk Gracefully](https://www.wikihow.com/Walk-Gracefully)
+
 ## Pseudocode
 1. Dibuat menggunakan bahasa Inggris.
 2. Bahasa terstruktur yang digunakan untuk mendeskripsikan algoritma secara detil.
@@ -69,23 +71,276 @@ Pseudocode:
 ```
 
 # Conditional and Primitive Data Types
-```JavaScript
+```javascript
 ```
 
-# Pseudocode and Looping
-```JavaScript
+# Iteration in Pseudocode and JavaScript
+[Google Slides - Iteration in Pseudocode and JavaScript](https://docs.google.com/presentation/d/1ImOcY0pNTRCKFbpa0LFOTC2zMueOFasFv2XhejahI6c/edit?usp=sharing)
+
+
+## `for`
+```javascript
+/**
+ * 1. PENGGUNAAN FOR
+ * 
+ * INIT times AS NUMBER WITH VALUE OF 5
+ * FOR loop FROM 0 TO times
+ *   DISPLAY 'meow'
+ * END FOR
+ */
+
+// Code here
+let times = 5;
+for (let loop = 0; loop <= times; loop++) {
+  console.log('meow');
+}
+
+
+/**
+ * 2. PENGGUNAAN CONDITIONAL DI DALAM FOR
+ * 
+ * INIT times AS NUMBER WITH VALUE OF 10
+ * FOR loop FROM 1 TO times
+ *   IF loop MORE THAN EQUAL 5
+ *     DISPLAY loop
+ *   END IF
+ * END FOR
+ */
+
+// Code here
+times = 10;
+for (let loop = 1; loop <= times; loop++) {
+  if (loop >= 5) {
+    console.log(loop);
+  }
+}
+
+
+/**
+ * 3. BENTUK LAIN DARI FOR
+ * 
+ *   1. for (; [condition];)
+ *   2. for ([initial expression 1], [initial expression 2]; [condition 1]; [increment expression 1], [increment expression 2])
+ *   3. for (; ;)
+ */
+
+// 1. for (; [condition];),
+//    sama dengan while (i > 0)
+//    Code here
+loop = 5;
+for (; loop > 0;) {
+  console.log(loop);
+  loop--;
+}
+
+// 2. for ([initial expression 1], [initial expression 2]; [condition 1]; [increment expression 1], [increment expression 2]),
+//    for dapat memiliki lebih dari satu initial expression, lebih dari satu condition, lebih dari satu increment expression
+//    Code here
+for (let i = 0, j = 9; i < 10; i++, j--) {
+  console.log(i, j);
+}
+
+// 3. Sama dengan while (true)
+//    Code here
+for (; ;) {
+  console.log('meow');
+}
+```
+
+## `while`
+```javascript
+/**
+ * 1. PENGGUNAAN WHILE
+ * 
+ * INIT times AS NUMBER WITH VALUE OF 5
+ * WHILE times MORE THAN EQUAL 0
+ *   DISPLAY 'meow'
+ *   DECREMENT times
+ * END WHILE
+ */
+
+// Code here
+let times = 5;
+while (times >= 0) {
+  console.log('meow');
+  times--;
+}
+
+/**
+ * 2. PENGGUNAAN CONDITIONAL DI DALAM WHILE
+ * 
+ * INIT a AS NUMBER WITH ANY VALUE
+ * WHILE TRUE
+ *   IF a MODULUS 100 EQUAL TO 0
+ *     DISPLAY a
+ *     BREAK
+ *   ELSE
+ *     INCREMENT a
+ *   END IF
+ * END WHILE
+ */
+
+// Code here
+let a = 75;
+while (true) {
+  if (a % 100 === 0) {
+    console.log(a);
+    break;
+  } else {
+    a++;
+  }
+}
+
+/**
+ * 3. HASIL WHILE BERIKUT SAMA DENGAN IMPLEMENTASI POIN 2
+ * 
+ * INIT a AS NUMBER WITH ANY VALUE
+ * WHILE TRUE
+ *   IF a MODULUS 100 EQUAL TO 0
+ *     DISPLAY a
+ *     BREAK
+ *   END IF
+ *   INCREMENT a
+ * END WHILE
+ */
+
+// Code here
+a = 75;
+while (true) {
+  if (a % 100 === 0) {
+    console.log(a);
+    break;
+  }
+  a++;
+}
+```
+
+## `do-while`
+```javascript
+/**
+ * 1. PENGGUNAAN DO-WHILE
+ * 
+ * INIT times AS NUMBER WITH VALUE OF 5
+ * DO
+ *   DISPLAY 'meow'
+ *   DECREMENT times
+ * WHILE times MORE THAN EQUAL 0
+ */
+
+// Code here
+let times = 5;
+do {
+  console.log('meow');
+  times--;
+} while (times >= 0);
+
+/**
+ * 2. HASIL WHILE BERIKUT SAMA DENGAN IMPLEMENTASI POIN 1
+ * 
+ * INIT times AS NUMBER WITH VALUE OF 5
+ * WHILE times MORE THAN EQUAL 0
+ *   DISPLAY 'meow'
+ *   DECREMENT times
+ * END WHILE
+ */
+
+// Code here
+times = 5;
+while (times >= 0) {
+  console.log('meow');
+  times--;
+}
+
+/**
+ * 3. PENGECEKAN KONDISI DO-WHILE DILAKUKAN DI AKHIR
+ * 
+ * INIT times AS NUMBER WITH VALUE OF -1
+ * DO
+ *   DISPLAY 'meow'
+ *   DECREMENT times
+ * WHILE times MORE THAN EQUAL 0
+ */
+
+// Code here
+times = -1;
+do {
+  console.log('meow');
+  times--;
+} while (times >= 0);
+
+/**
+ * 4. PENGECEKAN KONDISI WHILE DILAKUKAN DI AWAL
+ * 
+ * INIT times AS NUMBER WITH VALUE OF -1
+ * WHILE times MORE THAN EQUAL 0
+ *   DISPLAY 'meow'
+ *   DECREMENT times
+ * END WHILE
+ */
+
+// Code here
+times = -1;
+while (times >= 0) {
+  console.log('meow');
+  times--;
+}
+```
+
+## Increment and Decrement
+```javascript
+// ++ merupakan operator increment
+// Post increment, ++ akan dieksekusi setelah statement dieksekusi
+let temp = 10;
+console.log(temp++, temp);
+// Pre increment, ++ akan dieksekusi sebelum statement dieksekusi
+temp = 10;
+console.log(++temp, temp);
+
+// += merupakan compound assignment operator
+// temp += 1 memiliki arti temp = a + 1, sama dengan ++temp
+temp = 10;
+console.log(temp += 1, temp);
+temp = 10;
+console.log(temp += 5, temp);
+
+// Increment expression pada for dapat menggunakan post increment, pre increment, ataupun compound assignment operator
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+for (let i = 0; i < 5; ++i) {
+  console.log(i);
+}
+
+for (let i = 0; i < 10; i += 2) {
+  console.log(i);
+}
+```
+
+## Common Error
+```javascript
+// Kesalahan penentuan variable yang di-increment
+let j = 0;
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+// Kesalahan menentukan operasi decrement atau increment
+for (let i = 10; i > 0; i++) {
+  console.log(i);
+}
 ```
 
 # Nested Conditional
-```JavaScript
+```javascript
 ```
 
 # Function
-```JavaScript
+```javascript
 ```
 
 # Array
-```JavaScript
+```javascript
 /**
  * Membuat array
  */
@@ -139,7 +394,7 @@ console.log(furnitures);
 console.log(animals);
 ```
 
-```JavaScript
+```javascript
 /**
  * Cari element terbesar dari sebuah array of numbers
  */
@@ -171,7 +426,7 @@ for (var i = 1; i < numbers.length; i++) {
 console.log(smallest)
 ```
 
-```JavaScript
+```javascript
 /**
  * Balik urutan array of numbers
  */
@@ -184,7 +439,7 @@ for (var i = numbers.length - 1; i > 0; i--) {
 console.log(flippedNums);
 ```
 
-```JavaScript
+```javascript
 /**
  * Bubble sort
  */
@@ -227,7 +482,7 @@ for (var i = 0; i < numbers.length; i++) {
 console.log(numbers);
 ```
 
-```JavaScript
+```javascript
 /**
  * String v. Array
  * Unmutable v. Mutable
@@ -245,12 +500,12 @@ console.log(`string: ${string}`, `array: ${array}`);
 ```
 
 # Multidimensional Array
-```JavaScript
+```javascript
 ```
     
 
 # Array of Object
-```JavaScript
+```javascript
 // Review Object
 
 /**
@@ -301,7 +556,7 @@ for (var key in karyawan1) { // Untuk semua key yang terdapat pada objeckaryawan
 console.log('--------------------------------------------');
 ```
 
-```JavaScript
+```javascript
 /**
  * Ubah multidimensional array di bawah ke dalam bentuk array of object.
  * Array elemen ke [x][0] akan ditampung ke dalam key 'nama'.
@@ -326,7 +581,7 @@ for (var i = 0; i < arr.length; i++) {
 console.log(retVal);
 ```
 
-```JavaScript
+```javascript
 /**
  * Buatlah sebuah fungsi yang akan memberikan sebuah array of object yang berisi
  * produk obat apa saja yang bisa dibeli dengan jumlah uang yang diberikan.
@@ -382,7 +637,7 @@ console.log(buyableGoods(database, 10000));
 // ]
 ```
 
-```JavaScript
+```javascript
 /**
  * Seorang pedagang susu keliling hendak menjual barang dagangannya.
  * Penjualan akan diprioritaskan untuk susu yang akan kadaluarsa terlebih dahulu.
@@ -436,7 +691,7 @@ console.log(firstToSell(database));
 // }
 ```
 
-```JavaScript
+```javascript
 /**
  * Untuk mensimulasikan database obat, kita akan menggunakan array yang berisi object obat.
  * Sebuah object obat memiliki contoh susunan sebagai berikut:
@@ -520,7 +775,7 @@ console.log(getSuitableMedicine(database, 'Nyeri pinggang'));
 // ]
 ```
 
-```JavaScript
+```javascript
 /**
  * Contoh pass by reference
  */
@@ -541,7 +796,7 @@ console.log(objB);
 ```
 
 # Modular Function
-```JavaScript
+```javascript
 ```
 
 # Git Branch, Git Merge and GitHub Pull Request
