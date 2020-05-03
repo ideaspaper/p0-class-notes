@@ -74,7 +74,7 @@ Pseudocode:
 ```javascript
 ```
 
-# Nested Conditional
+# Nested
 Selain `if-else` kita dapat menggunakan `switch-case` untuk keperluan conditional. Penggunaan `switch-case` membuat kode program relatif lebih mudah untuk dibaca, sedangkan penggunaan `if-else` memberikan opsi yang lebih fleksibel.
 
 ## `switch-case`
