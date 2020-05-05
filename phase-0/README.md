@@ -633,11 +633,20 @@ input = 'javascript';
 let kamus = 'abcdefghijklmnopqrstuvwxyz';
 let sorted = '';
 
+// Implementasi pertama
 for (let i = 0; i < kamus.length; i++) {
   for (let j = 0; j < input.length; j++) {
     if (kamus[i] === input[j]) {
       sorted += input[j];
-      break;
+    }
+  }
+}
+
+// Implementasi kedua
+for (let i = 0; i < kamus.length && sorted.length < input.length; i++) {
+  for (let j = 0; j < input.length; j++) {
+    if (kamus[i] === input[j]) {
+      sorted += input[j];
     }
   }
 }
