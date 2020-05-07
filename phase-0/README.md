@@ -1,5 +1,5 @@
 # Table of Contents
-- [Terminal, Git and GitHub](#terminal,-git-and-github)
+- [Terminal, Git and GitHub](#terminal-git-and-github)
 - [HTML](#html)
 - [CSS](#css)
 - [Algorithm and Pseudocode](#algorithm-and-pseudocode)
@@ -12,7 +12,7 @@
 - [Multidimensional Array](#multidimensional-array)
 - [Array of Object](#array-of-object)
 - [Modular function](#modular-function)
-- [Git Branch, Git Merge and GitHub Pull Request](#git-branch,-git-merge-and-github-pull-request)
+- [Git Branch, Git Merge and GitHub Pull Request](#git-branch-git-merge-and-github-pull-request)
 
 # Terminal, Git and GitHub
 [Terminal, Git and GitHub](./assets/terminal-git-and-github.pdf)
