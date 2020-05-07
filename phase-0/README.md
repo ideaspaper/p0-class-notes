@@ -1,4 +1,20 @@
-# Terminal, Git, and GitHub
+# Table of Contents
+- [Terminal, Git and GitHub](#terminal,-git-and-github)
+- [HTML](#html)
+- [CSS](#css)
+- [Algorithm and Pseudocode](#algorithm-and-pseudocode)
+- [Conditional and Primitive Data Types](#conditional-and-primitive-data-types)
+- [Nested Conditional](#nested-conditional)
+- [Iteration in Pseudocode and JavaScript](#iteration-in-pseudocode-and-javascript)
+- [Nested Iteration](#nested-iteration)
+- [Function](#function)
+- [Array](#array)
+- [Multidimensional Array](#multidimensional-array)
+- [Array of Object](#array-of-object)
+- [Modular function](#modular-function)
+- [Git Branch, Git Merge and GitHub Pull Request](#git-branch,-git-merge-and-github-pull-request)
+
+# Terminal, Git and GitHub
 [Terminal, Git and GitHub](./assets/terminal-git-and-github.pdf)
 
 # HTML
