@@ -1,5 +1,5 @@
 # Terminal, Git, and GitHub
-[Google Slides - Terminal, Git and GitHub](https://docs.google.com/presentation/d/1tmbfRBavbf8h6IaXc23RWPYCSAH2jbVdrAMwa4Js0uE/edit?usp=drivesdk)
+[Terminal, Git and GitHub](./assets/terminal-git-and-github.pdf)
 
 # HTML
 ```html
@@ -320,7 +320,7 @@ if (myVar > 5) {
 ```
 
 # Iteration in Pseudocode and JavaScript
-[Google Slides - Iteration in Pseudocode and JavaScript](https://docs.google.com/presentation/d/1ImOcY0pNTRCKFbpa0LFOTC2zMueOFasFv2XhejahI6c/edit?usp=sharing)
+[Iteration in Pseudocode and JavaScript](./assets/pseudocode-and-iteration.pdf)
 
 
 ## `for`
@@ -1154,4 +1154,4 @@ console.log(objB);
 ```
 
 # Git Branch, Git Merge and GitHub Pull Request
-[Google Slides - Branch, Merge and Pull Request](https://docs.google.com/presentation/d/1-5iMezGG09yLE_tdXxhgzLolvSIR_o0wAWFcwjqs3gk/edit?usp=drivesdk)
+[Branch, Merge and Pull Request](./assets/branch-merge-pull-request.pdf)
