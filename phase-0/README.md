@@ -1,21 +1,28 @@
 # Table of Contents
-- [Terminal, Git and GitHub](#terminal-git-and-github)
 - [HTML](#html)
 - [CSS](#css)
+- [Terminal](#terminal)
+- [Review: HTML and CSS](#review-html-and-css)
 - [Algorithm and Pseudocode](#algorithm-and-pseudocode)
 - [Conditional and Primitive Data Types](#conditional-and-primitive-data-types)
 - [Nested Conditional](#nested-conditional)
 - [Iteration in Pseudocode and JavaScript](#iteration-in-pseudocode-and-javascript)
 - [Nested Iteration](#nested-iteration)
+- [Review: Conditional and Iteration](#review-conditional-and-iteration)
 - [Function](#function)
 - [Array](#array)
+- [Review: Array](#review-array)
 - [Multidimensional Array](#multidimensional-array)
+- [Review: Function, Array and Multidimensional Array](#review-function-array-and-multidimensional-array)
+- [Modular Functions](#modular-functions)
+- [Review: Up to Modular Functions](#review-up-to-modular-functions)
+- [Object Literal](#object-literal)
 - [Array of Object](#array-of-object)
-- [Modular function](#modular-function)
-- [Git Branch, Git Merge and GitHub Pull Request](#git-branch-git-merge-and-github-pull-request)
+- [Tracing and Debug](#tracing-and-debug)
+- [Review: All](#review-all)
+- [Local Git](#local-git)
+- [Git Branch, Git Merge, GitHub Pull Request and GitHub.io](#git-branch-git-merge-github-pull-request-and-github.io)
 
-# Terminal, Git and GitHub
-[Terminal, Git and GitHub](./assets/terminal-git-and-github.pdf)
 
 # HTML
 ```html
@@ -23,6 +30,13 @@
 
 # CSS
 ```css
+```
+
+# Terminal
+[Terminal](./assets/terminal-git-and-github.pdf)
+
+# Review: HTML and CSS
+```html
 ```
 
 # Algorithm and Pseudocode
@@ -705,6 +719,10 @@ if (count !== input2.length) {
 }
 ```
 
+# Review: Conditional and Iteration
+```javascript
+```
+
 # Function
 ```javascript
 ```
@@ -869,10 +887,182 @@ array[0] = 'A';
 console.log(`string: ${string}`, `array: ${array}`);
 ```
 
+# Review: Array
+```javascript
+```
+
 # Multidimensional Array
 ```javascript
 ```
-    
+
+# Review: Function, Array and Multidimensional Array
+```javascript
+/**
+ * Review Function
+ *   1. DRY and Reusability.
+ *   2. Maintainability and Testing.
+ *   3. Personal Safety.
+ */
+
+
+/** 1. DRY and Reusability **/
+
+//// Not using function
+let input = 'Hello   my     name      is       Acong';
+let output = '';
+for (let i = 0; i < input.length; i++) {
+  output += input[i];
+  while (input[i] === ' ' && input[i + 1] === ' ') {
+    i++;
+  }
+}
+console.log(output);
+
+input = 'Nice   to meet   you,     my Name    is Sitorus';
+output = '';
+for (let i = 0; i < input.length; i++) {
+  output += input[i];
+  while (input[i] === ' ' && input[i + 1] === ' ') {
+    i++;
+  }
+}
+console.log(output);
+
+//// Using function
+function removeDupesSpace(sInput) {
+  sOutput = '';
+  for (let i = 0; i < sInput.length; i++) {
+    sOutput += sInput[i];
+    while (sInput[i] === ' ' && sInput[i + 1] === ' ') {
+      i++;
+    }
+  }
+  return sOutput;
+}
+
+console.log(removeDupesSpace('Hello   my     name      is       Acong'));
+console.log(removeDupesSpace('Nice   to meet   you,     my Name    is Sitorus'));
+
+
+/** 2. Maintainability and Testing **/
+
+//// Not using function
+input = 'Hello   my     name      is       Acong';
+output = '';
+for (let i = 0; i < input.length; i++) {
+  output += input[i];
+  while (input[i] === ' ' && input[i + 1] === ' ') {
+    i++;
+  }
+}
+console.log(output);
+
+input = 'Nice   to meet   you,     my Name    is Sitorus';
+output = '';
+for (let i = 0; i < input.length; i++) {
+  output += input[i];
+  while (input[i] === ' ') { // Error in copy-pasting
+    i++;
+  }
+}
+console.log(output);
+
+
+/** 3. Personal Safety **/
+/**
+ * If you're not using functions, you will incur the wrath of the person who will maintain your code later.
+ * This will results in flaming, mocking, rarely even vandalism.
+ */
+```
+
+```javascript
+/**
+ * Review Array
+ *   1. Indexing.
+ *   2. Mutability: Array vs String.
+ *   3. length property.
+ *   4. Mostly used to group same meaning variables together.
+ */
+
+
+/** Indexing **/
+let arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+console.log(arr[0]); // a
+console.log(arr[1]); // b
+console.log(arr[2]); // c
+
+
+/** Mutability: Array vs String. **/
+
+let str = 'abcdefghij';
+arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+
+str[0] = 'z';
+arr[0] = 'z';
+
+console.log(str, arr)
+
+
+/** length property **/
+
+arr = ['Acong', 'Djoko', 'Sitorus', 'Budi', 'Didi Kempot']
+console.log(arr.length); // 5
+console.log(arr[arr.length]); // undefined, because indexing starts from 0
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+
+/** Mostly used to group same meaning variables together **/
+
+let names = ['Acong', 'Djoko', 'Sitorus', 'Budi'];
+let classes = ['X', 'XII', 'XII', 'XI'];
+let hobbies = ['Sleep', 'Eat', 'Reading', 'Coding'];
+```
+
+```javascript
+/**
+ * Review Multidimensional Array
+ *   1. Indexing.
+ */
+
+
+/** Indexing **/
+
+// Multidimensional array is array which elements are array
+let arr = [
+  ['a', 'b', 'c'],
+  ['d', 'e', 'f'],
+  ['g', 'h', 'i']
+];
+console.log(arr[0][0]); // a
+console.log(arr[1][0]); // d
+console.log(arr[2][0]); // g
+
+arr = [
+  [['a', 'b'], 'c'],
+  [['d', 'e'], 'f'],
+  [['g', 'h'], 'i']
+];
+console.log(arr[0][0]);    // [ 'a', 'b' ]
+console.log(arr[0][0][0]); // a
+console.log(arr[1][0]);    // [ 'd', 'e' ]
+console.log(arr[1][0][0]); // d
+console.log(arr[2][2]);    // undefined
+```
+
+# Modular Functions
+```javascript
+```
+
+# Review: Up to Modular Functions
+```javascript
+```
+
+# Object Literal
+```javascript
+```
 
 # Array of Object
 ```javascript
@@ -1165,9 +1355,16 @@ objA.nilai = 9;
 console.log(objB);
 ```
 
-# Modular Function
+# Tracing and Debug
 ```javascript
 ```
 
-# Git Branch, Git Merge and GitHub Pull Request
+# Review: All
+```javascript
+```
+
+# Local Git
+[Local Git]([Terminal](./assets/terminal-git-and-github.pdf))
+
+# Git Branch, Git Merge, GitHub Pull Request and GitHub.io
 [Branch, Merge and Pull Request](./assets/branch-merge-pull-request.pdf)
