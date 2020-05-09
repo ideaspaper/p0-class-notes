@@ -1052,6 +1052,206 @@ console.log(arr[1][0][0]); // d
 console.log(arr[2][2]);    // undefined
 ```
 
+```javascript
+/**
+ * Soal Latihan Review: Function, Array and Multidimensional Array
+ * 
+ * Diberikan sebuah playlist dalam bentuk multidimensional array.
+ * Sebuah lagu di dalam playlist memiliki format sebagai berikut ['Penyanyi', 'Judul Lagu', 'Durasi (menit)'].
+ * 
+ * Contoh dari playlist tersebut adalah seperti di bawah ini:
+ * let playlist = [
+ *   ['Didi Kempot', 'Banyu Langit', 4],
+ *   ['Nike Ardilla', 'Sandiwara Cinta', 4],
+ *   ['Hetty Koes Endang', 'Cinta Putih', 3],
+ *   ['Titiek Puspa', 'Kupu-Kupu Malam', 3],
+ *   ['Ahmad Albar', 'Don\'t Spoil My Day', 5],
+ *   ['Doel Sumbang', 'Awewe Sapi Daging', 2],
+ *   ['Ebiet G. Ade', 'Berita Kepada Kawan', 6]
+ * ];
+ * 
+ * Berdasarkan playlist tersebut, buatlah 5 buah function berikut:
+ *   1. sortBySinger(input, ascending)
+ *      Function ini akan melakukan sorting playlist berdasarkan 'Penyanyi'. Function ini akan menerima 2 parameter yaitu:
+ *        - input: playlist dalam format seperti pada contoh di atas.
+ *        - ascending: flag sorting dengan tipe boolean.
+ *   2. sortByTitle(input, ascending)
+ *      Function ini akan melakukan sorting playlist berdasarkan 'Judul Lagu'. Function ini akan menerima 2 parameter yaitu:
+ *        - input: playlist dalam format seperti pada contoh di atas.
+ *        - ascending: flag sorting dengan tipe boolean.
+ *   3. sortByDuration(input, ascending)
+ *      Function ini akan melakukan sorting playlist berdasarkan 'Durasi (menit)'. Function ini akan menerima 2 parameter yaitu:
+ *        - input: playlist dalam format seperti pada contoh di atas.
+ *        - ascending: flag sorting dengan tipe boolean.
+ *   4. sortPlaylist(input, by, ascending)
+ *      Function ini akan melakukan sorting playlist berdasarkan parameter by. Function ini akan menerima 3 parameter yaitu:
+ *        - input: playlist dalam format seperti pada contoh di atas.
+ *        - by: sebuah string yang hanya dapat diisi dengan 'singer', 'title', atau 'duration'.
+ *        - ascending: flag sorting dengan tipe boolean.
+ *   5. play(input, time)
+ *      Function ini akan memberikan return value berupa multidimensional array, yang berisi lagu-lagu yang dapat dimainkan berdasarkan
+ *      time yang dialokasikan. Lagu-lagu yang ada dalam playlist akan dimainkan dengan urutan dari atas ke bawah
+ *      Apabila time tidak cukup untuk memainkan 1 lagu full, maka lagu tersebut akan batal dimainkan.
+ *      Apabila sampai akhir playlist masih ada sisa time, maka lagu akan dimainkan dari atas kembali.
+ *      Function ini akan menerima 2 parameter yaitu:
+ *        - input: playlist dalam format seperti pada contoh di atas.
+ *        - time: waktu (menit) dengan tipe number.
+ */
+
+let playlist = [
+  ['Didi Kempot', 'Banyu Langit', 4],
+  ['Nike Ardilla', 'Sandiwara Cinta', 4],
+  ['Hetty Koes Endang', 'Cinta Putih', 3],
+  ['Titiek Puspa', 'Kupu-Kupu Malam', 3],
+  ['Ahmad Albar', 'Don\'t Spoil My Day', 5],
+  ['Doel Sumbang', 'Awewe Sapi Daging', 2],
+  ['Ebiet G. Ade', 'Berita Kepada Kawan', 6]
+];
+
+function sortBySinger(input, ascending) {
+  let a = 1, b = 0;
+  if (ascending === true) {
+    a = 0, b = 1;
+  }
+
+  for (let i = 0; i < input.length; i++) {
+    let swapped = false;
+    for (let j = 0; j < input.length - 1; j++) {
+      if (input[j + a][0] > input[j + b][0]) {
+        [input[j], input[j + 1]] = [input[j + 1], input[j]];
+        swapped = true;
+      }
+    }
+    if (swapped === false) {
+      break;
+    }
+  }
+}
+
+function sortByTitle(input, ascending) {
+  let a = 1, b = 0;
+  if (ascending === true) {
+    a = 0, b = 1;
+  }
+
+  for (let i = 0; i < input.length; i++) {
+    let swapped = false;
+    for (let j = 0; j < input.length - 1; j++) {
+      if (input[j + a][1] > input[j + b][1]) {
+        [input[j], input[j + 1]] = [input[j + 1], input[j]];
+        swapped = true;
+      }
+    }
+    if (swapped === false) {
+      break;
+    }
+  }
+}
+
+function sortByDuration(input, ascending) {
+  let a = 1, b = 0;
+  if (ascending === true) {
+    a = 0, b = 1;
+  }
+
+  for (let i = 0; i < input.length; i++) {
+    let swapped = false;
+    for (let j = 0; j < input.length - 1; j++) {
+      if (input[j + a][2] > input[j + b][2]) {
+        [input[j], input[j + 1]] = [input[j + 1], input[j]];
+        swapped = true;
+      }
+    }
+    if (swapped === false) {
+      break;
+    }
+  }
+}
+
+function sortPlaylist(input, by, ascending) {
+  let bySort = 0;
+  switch (by) {
+    case 'singer':
+      bySort = 0;
+      break;
+    case 'title':
+      bySort = 1;
+      break;
+    case 'duration':
+      bySort = 2;
+      break;
+  }
+
+  let a = 1, b = 0;
+  if (ascending === true) {
+    a = 0, b = 1;
+  }
+
+  for (let i = 0; i < input.length; i++) {
+    let swapped = false;
+    for (let j = 0; j < input.length - 1; j++) {
+      if (input[j + a][bySort] > input[j + b][bySort]) {
+        [input[j], input[j + 1]] = [input[j + 1], input[j]];
+        swapped = true;
+      }
+    }
+    if (swapped === false) {
+      break;
+    }
+  }
+}
+
+function play(input, time) {
+  let retVal = [];
+  let index = 0;
+
+  while (time >= input[index][2]) {
+    retVal.push(input[index]);
+    time -= input[index][2];
+    index++;
+    if (index === input.length) {
+      index = 0;
+    }
+  }
+
+  return retVal;
+}
+
+// Test case 1
+console.log(play(playlist, 35))
+/**
+ * [
+ *   [ 'Didi Kempot', 'Banyu Langit', 4 ],
+ *   [ 'Nike Ardilla', 'Sandiwara Cinta', 4 ],
+ *   [ 'Hetty Koes Endang', 'Cinta Putih', 3 ],
+ *   [ 'Titiek Puspa', 'Kupu-Kupu Malam', 3 ],
+ *   [ 'Ahmad Albar', "Don't Spoil My Day", 5 ],
+ *   [ 'Doel Sumbang', 'Awewe Sapi Daging', 2 ],
+ *   [ 'Ebiet G. Ade', 'Berita Kepada Kawan', 6 ],
+ *   [ 'Didi Kempot', 'Banyu Langit', 4 ],
+ *   [ 'Nike Ardilla', 'Sandiwara Cinta', 4 ]
+ * ]
+ */
+
+// Test case 2
+sortPlaylist(playlist, 'duration', true);
+console.log(play(playlist, 35));
+/**
+ * [
+ *   [ 'Doel Sumbang', 'Awewe Sapi Daging', 2 ],
+ *   [ 'Hetty Koes Endang', 'Cinta Putih', 3 ],
+ *   [ 'Titiek Puspa', 'Kupu-Kupu Malam', 3 ],
+ *   [ 'Didi Kempot', 'Banyu Langit', 4 ],
+ *   [ 'Nike Ardilla', 'Sandiwara Cinta', 4 ],
+ *   [ 'Ahmad Albar', "Don't Spoil My Day", 5 ],
+ *   [ 'Ebiet G. Ade', 'Berita Kepada Kawan', 6 ],
+ *   [ 'Doel Sumbang', 'Awewe Sapi Daging', 2 ],
+ *   [ 'Hetty Koes Endang', 'Cinta Putih', 3 ],
+ *   [ 'Titiek Puspa', 'Kupu-Kupu Malam', 3 ]
+ * ]
+ */
+```
+
 # Modular Functions
 ```javascript
 ```
