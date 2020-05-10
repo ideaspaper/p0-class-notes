@@ -100,6 +100,8 @@ Pseudocode:
   DISPLAY kecepatan
 ```
 
+[Pseudocode Standard - Dr. John Dalbey](./assets/john-dalbey-pseudocode.pdf)
+
 # Conditional and Primitive Data Types
 ```javascript
 ```
