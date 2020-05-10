@@ -598,7 +598,7 @@ for (let i = 0; i < 10; i += 2) {
 ```javascript
 // Kesalahan penentuan variable yang di-increment
 let j = 0;
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; j++) {
   console.log(i);
 }
 
