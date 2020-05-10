@@ -1091,7 +1091,7 @@ console.log(arr[2][2]);    // undefined
  *   5. play(input, time)
  *      Function ini akan memberikan return value berupa multidimensional array, yang berisi lagu-lagu yang dapat dimainkan berdasarkan
  *      time yang dialokasikan. Lagu-lagu yang ada dalam playlist akan dimainkan dengan urutan dari atas ke bawah
- *      Apabila time tidak cukup untuk memainkan 1 lagu full, maka lagu tersebut akan batal dimainkan.
+ *      Apabila time tidak cukup untuk memainkan 1 lagu full, maka lagu tersebut akan batal dimainkan dan proses play akan berhenti.
  *      Apabila sampai akhir playlist masih ada sisa time, maka lagu akan dimainkan dari atas kembali.
  *      Function ini akan menerima 2 parameter yaitu:
  *        - input: playlist dalam format seperti pada contoh di atas.
