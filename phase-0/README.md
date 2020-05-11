@@ -1260,6 +1260,155 @@ console.log(play(playlist, 35));
 
 # Review: Up to Modular Functions
 ```javascript
+/**
+ * Intensive Care Unit Scoring
+ *
+ * Soal ini meminta kita untuk membuat sebuah program untuk mensimulasikan scoring ICU pada sebuah rumah sakit.
+ * Pasien akan ditampung ke dalam sebuah array dengan format ['Nama Pasien', 'Symptoms', 'Umur', 'Tingkat Bahaya'].
+ * Pasien-pasien tersebut akan ditampung ke dalam sebuah multidimensional array seperti di bawah:
+ *
+ * let patients = [
+ *   ['Acong', 'Sesak nafas', 39, 'Critical'],
+ *   ['Djoko', 'Encok', 60, 'Severe'],
+ *   ['Sitorus', 'Patah tulang', 11, 'Bearable'],
+ *   ['Ajeng', 'Kena pisau waktu memasak', 43, 'Minor'],
+ *   ['Dhani', 'Diare', 28, 'Bearable'],
+ *   ['Abdhul', 'Perut mual', 18, 'Severe'],
+ *   ['Conor McGregor', 'Bengkak di leher', 31, 'Severe'],
+ *   ['Christiano Ronaldo', 'Bengkak di kaki', 35, 'Bearable'],
+ *   ['Rama', 'Hati', 21, 'Critical'],
+ *   ['Shinta', 'Hati', 21, 'Minor'],
+ *   ['Bahamut', 'Sariawan', 90, 'Minor'],
+ *   ['Tiamat', 'Pandangan kabur', 80, 'Critical'],
+ *   ['Cthulu', 'Kepala benjol', 26, 'Minor'],
+ *   ['Han Solo', 'Luka tembak', 38, 'Critical']
+ * ]
+ *
+ * Masing-masing 'Tingkat Bahaya' memiliki bobot sebagai berikut:
+ *   - 'Critical' : 4
+ *   - 'Severe'   : 3
+ *   - 'Bearable' : 2
+ *   - 'Minor'    : 1
+ *
+ * Scoring akan dilakukan berdasarkan 'Umur' dan 'Tingkat Bahaya' dengan perhitungan sebagai berikut:
+ *   'Score' = 'Umur' / 100  + 'Tingkat Bahaya'
+ *
+ * Buatlah program yang akan memberikan return value berupa multidimensional array yang berisi urutan-urutan pasien yang akan ditangani, berdasarkan 'Score' tertinggi ke 'Score' terendah.
+ * Selesaikan permasalahan ini dengan modular functions
+ */
+
+/**
+ * Function ini akan melakukan konversi dari string 'Tingkat Bahaya' ke nilai angka padanannya.
+ * Return value dari function ini adalah representasi angka dari 'Tingkat Bahaya'.
+ */
+function dangerScale(input) {
+  switch (input) {
+    case 'Critical':
+      return 4;
+    case 'Severe':
+      return 3;
+    case 'Bearable':
+      return 2;
+    case 'Minor':
+      return 1;
+  }
+}
+
+// console.log(dangerScale('Critical'));  // 4
+// console.log(dangerScale('Severe'));    // 3
+// console.log(dangerScale('Bearable'));  // 2
+// console.log(dangerScale('Minor'));     // 1
+
+/**
+ * Function ini akan menerima array patient yang akan dihitung 'Score'-nya.
+ * Return value dari function ini adalah score yang telah dihitung berdasarkan:
+ *   - Representasi angka dari 'Tingkat Bahaya'
+ *   - Umur
+ * 
+ * Formula perhitungan yang digunakan adalah:
+ *   'Score' = 'Umur' / 100  + 'Tingkat Bahaya'
+ */
+function calculateScore(input) {
+  return input[2] / 100 + dangerScale(input[3]);
+}
+
+// console.log(calculateScore(['Acong', 'Sesak nafas', 39, 'Critical']));     // 4.39
+// console.log(calculateScore(['Djoko', 'Encok', 60, 'Severe']));             // 3.6
+// console.log(calculateScore(['Sitorus', 'Patah tulang', 11, 'Bearable']));  // 2.11
+// console.log(calculateScore(['Han Solo', 'Luka tembak', 38, 'Critical']));  // 4.38
+
+/**
+ * Function ini akan menerima array patient.
+ * Return value dari function ini adalah array patient yang sudah ditambahi dengan 'Score'.
+ */
+function appendScore(input) {
+  input.push(calculateScore(input));
+  return input;
+}
+
+// console.log(appendScore(['Acong', 'Sesak nafas', 39, 'Critical']));     // [ 'Acong', 'Sesak nafas', 39, 'Critical', 4.39 ]
+// console.log(appendScore(['Djoko', 'Encok', 60, 'Severe']));             // [ 'Djoko', 'Encok', 60, 'Severe', 3.6 ]
+// console.log(appendScore(['Sitorus', 'Patah tulang', 11, 'Bearable']));  // [ 'Sitorus', 'Patah tulang', 11, 'Bearable', 2.11 ]
+// console.log(appendScore(['Han Solo', 'Luka tembak', 38, 'Critical']));  // [ 'Han Solo', 'Luka tembak', 38, 'Critical', 4.38 ]
+
+/**
+ * Function ini akan menerima multidimensional array, yaitu list para pasien.
+ * Return value dari function ini adalah list para pasien yang telah diurutkan berdasarkan 'Score' (descending).
+ */
+function icuPatientPriority(input) {
+  for (let i = 0; i < input.length; i++) {
+    input[i] = appendScore(input[i]);
+  }
+
+  for (let i = 0; i < input.length; i++) {
+    let swapped = false;
+    for (let j = 0; j < input.length - 1; j++) {
+      if (input[j][4] < input[j + 1][4]) {
+        [input[j], input[j + 1]] = [input[j + 1], input[j]];
+        swapped = true;
+      }
+    }
+    if (swapped === false) {
+      break;
+    }
+  }
+}
+
+let patients = [
+  ['Acong', 'Sesak nafas', 39, 'Critical'],
+  ['Djoko', 'Encok', 60, 'Severe'],
+  ['Sitorus', 'Patah tulang', 11, 'Bearable'],
+  ['Ajeng', 'Kena pisau waktu memasak', 43, 'Minor'],
+  ['Dhani', 'Diare', 28, 'Bearable'],
+  ['Abdhul', 'Perut mual', 18, 'Severe'],
+  ['Conor McGregor', 'Bengkak di leher', 31, 'Severe'],
+  ['Christiano Ronaldo', 'Bengkak di kaki', 35, 'Bearable'],
+  ['Rama', 'Hati', 21, 'Critical'],
+  ['Shinta', 'Hati', 21, 'Minor'],
+  ['Bahamut', 'Sariawan', 90, 'Minor'],
+  ['Tiamat', 'Pandangan kabur', 80, 'Critical'],
+  ['Cthulu', 'Kepala benjol', 26, 'Minor'],
+  ['Han Solo', 'Luka tembak', 38, 'Critical']
+];
+
+icuPatientPriority(patients)
+console.log(patients);
+// [
+//   [ 'Tiamat', 'Pandangan kabur', 80, 'Critical', 4.8 ],
+//   [ 'Acong', 'Sesak nafas', 39, 'Critical', 4.39 ],
+//   [ 'Han Solo', 'Luka tembak', 38, 'Critical', 4.38 ],
+//   [ 'Rama', 'Hati', 21, 'Critical', 4.21 ],
+//   [ 'Djoko', 'Encok', 60, 'Severe', 3.6 ],
+//   [ 'Conor McGregor', 'Bengkak di leher', 31, 'Severe', 3.31 ],
+//   [ 'Abdhul', 'Perut mual', 18, 'Severe', 3.18 ],
+//   [ 'Christiano Ronaldo', 'Bengkak di kaki', 35, 'Bearable', 2.35 ],
+//   [ 'Dhani', 'Diare', 28, 'Bearable', 2.2800000000000002 ],
+//   [ 'Sitorus', 'Patah tulang', 11, 'Bearable', 2.11 ],
+//   [ 'Bahamut', 'Sariawan', 90, 'Minor', 1.9 ],
+//   [ 'Ajeng', 'Kena pisau waktu memasak', 43, 'Minor', 1.43 ],
+//   [ 'Cthulu', 'Kepala benjol', 26, 'Minor', 1.26 ],
+//   [ 'Shinta', 'Hati', 21, 'Minor', 1.21 ]
+// ]
 ```
 
 # Object Literal
