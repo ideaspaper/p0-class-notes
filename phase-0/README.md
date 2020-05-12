@@ -1499,7 +1499,7 @@ let b = { key1: 'A', key2: 10, key3: true };
 let c = { key1: 11, key2: 'B', key3: true };
 
 function isObjLiteralEqual(inObj1, inObj2) {
-
+  // Do something here
 }
 
 console.log(isObjLiteralEqual(a, b)); // true
