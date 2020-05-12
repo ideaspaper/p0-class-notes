@@ -849,7 +849,7 @@ for (var i = 0; i < numbers.length; i++) {
 console.log(numbers);
 
 /**
- * Optimizing bubble sort with flag
+ * Optimasi bubble sort dengan flag
  */
 
 var numbers = [51, 4, 78, 22, 83, 100, 52];
@@ -874,8 +874,8 @@ console.log(numbers);
 
 ```javascript
 /**
- * String v. Array
- * Unmutable v. Mutable
+ * String vs. Array
+ * Unmutable vs. Mutable
  */
 
 var string = '0123456789';
@@ -887,6 +887,18 @@ string[0] = 'A';
 array[0] = 'A';
 
 console.log(`string: ${string}`, `array: ${array}`);
+```
+
+```javascript
+/**
+ * Sifat pass by reference para array
+ */
+
+let a = [1, 2, 3];
+let b = a;
+
+a[0] = 10;
+console.log(a, b);
 ```
 
 # Review: Array
@@ -1412,7 +1424,113 @@ console.log(patients);
 ```
 
 # Object Literal
+[Object Literal](./assets/object-literal.pdf)
+
 ```javascript
+/**
+ * Buat key baru yaitu sellPrice pada product, dengan value:
+ *   sellPrice = (price + (price * profit / 100))
+ */
+
+let profit = 10;
+
+let product = {
+  name: 'Baygon',
+  form: 'Aerosol',
+  bugType: 'Roaces',
+  price: 15000
+};
+
+// Do something here
+
+console.log(product);
+// {
+//   name: 'Baygon',
+//   form: 'Aerosol',
+//   bugType: 'Roaces',
+//   price: 15000,
+//   sellPrice: 16500
+// }
+```
+
+```javascript
+/**
+ * Tampilkan semua value yang terdapat pada object sensebounce ke bawah,
+ * termasuk isi key colors dan key warehouseStock.
+ */
+
+let sensebounce = {
+  name: 'Sensebounce+ SUMMER.RDY Shoes',
+  manufacturer: 'Adidas',
+  gender: 'Men',
+  sport: 'Running',
+  weightGram: 366,
+  colors: ['Black', 'White'],
+  warehouseStock: {
+    warehouse1: 0,
+    warehouse2: 10,
+    warehouse3: 2
+  }
+};
+
+// Do something here
+
+// Sensebounce+ SUMMER.RDY Shoes
+// Adidas
+// Men
+// Running
+// 366
+// Black
+// White
+// 0
+// 10
+// 2
+```
+
+```javascript
+/**
+ * Buat sebuah function untuk memeriksa apakah dua buah object literal sama atau tidak.
+ * Function tersebut akan memberikan return value true jika sama,
+ * dan return value false jika tidak sama.
+ */
+
+let a = { key1: 'A', key2: 10, key3: true };
+let b = { key1: 'A', key2: 10, key3: true };
+let c = { key1: 11, key2: 'B', key3: true };
+
+function isObjLiteralEqual(inObj1, inObj2) {
+
+}
+
+console.log(isObjLiteralEqual(a, b)); // true
+console.log(isObjLiteralEqual(a, c)); // false
+```
+
+```javascript
+/**
+ * Terdapat sebuah list pasien yang berisi nama serta gejala yang dialami.
+ * Buatlah sebuah fungsi untuk mengelompokkan pasien-pasien berdasarkan gejalanya.
+ * Hasil yang diharapkan dari pengelompokan tersebut adalah sebuah object.
+ * Perhatikan test case yang diberikan.
+ */
+
+let patients = [
+  ['Acong', 'Mual'],
+  ['Djoko', 'Pusing'],
+  ['Sitorus', 'Batuk'],
+  ['Rama', 'Pusing'],
+  ['Shinta', 'Batuk'],
+  ['Cthulu', 'Mual'],
+  ['Nyarlothep', 'Mual'],
+];
+
+// Do something here
+
+// {
+//   Mual: [ 'Acong', 'Cthulu', 'Nyarlothep' ],
+//   Pusing: [ 'Djoko', 'Rama' ],
+//   Batuk: [ 'Sitorus', 'Shinta' ]
+// }
 ```
 
 # Array of Object
