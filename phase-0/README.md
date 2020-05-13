@@ -1825,8 +1825,198 @@ console.log(objB);
 ```
 
 # Tracing and Debug
+Debugging adalah proses untuk menemukan bagian code mana yang error lalu diperbaiki. Debugging sederhana dilakukan dengan memperhatikan syntax, proses, variable serta perubahan nilai secara perlahan lahan
+
+Umumnya terdapat tiga bentuk error: 
+- Syntax error: program tidak dapat dieksekusi.
+- Runtime error: error yang terjadi ketika program dieksekusi. Umumnya output yang diberikan tidak sesuai, atau crash.
+- Logic error:  program memberikan output yang tidak diharapkan.
+
+## Syntax Error
+Syntax error dapat dideteksi oleh code editor (misal: VSCode). Biasanya error ini akan memberikan tanda garis zig-zag merah di teks. Beberapa contoh sumber syntax error:
+- Penulisan nama variabel yang salah seperti:
+  ```javascript
+  let 3orangSaja = ['Acong', 'Djoko', 'Sitorus'];
+  ```
+  ```javascript
+  let #HelloWorld = '#HelloWorld';
+  ```
+- Kurang pembuka atau penutup parenthesis:
+  ```javascript
+  for (let i = 0; i < 5; i++
+  ```
+- Lupa menggunakan koma para array atau object seperti:
+  ```javascript
+  let angkaKu = [1, 2 3];
+  ```
+  ```javascript
+  let objectKu = {key1: 'Hello' key2: 'World'};
+  ```
+- Copy-paste memberikan format yang berbeda, misal dari slack ke VSCode.
+- Lupa melakukan comment / penutup comment
+  ```javascript
+  let string = 'Hacktiv8 - Amsterdam Fox'
+
+  function reverseString(str) {
+    let ret = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+      ret += str[i];
+    }
+    return ret;
+  }
+  console.log(reverseString);
+      
+  /** Fungsi ini digunakan untuk membalik string
+  ```
+### How to Avoid Syntax Error:
+- Periksa apakah terdapat garis zig-zag merah di code editor.
+- Sebelum pindah ke baris berikutnya, periksa apakah syntax pada baris itu sudah sesuai.
+- Selalu hati-hati dengan proses copy-paste code, karena bisa saja format yang dihasilkan tidak sama.
+- Perbaiki indentasi agar scope kode program terlihat dengan jelas.
+- Sebelum dianggap selesai, coba cek dari baris pertama sampai terakhir file.
+- Gunakan `"use strict"` (menggunakan DOUBLE QUOTES). [Referensi](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode).
+
+
+## Runtime Error
+Runtime error tidak terdeteksi di code editor, namun terdeteksi ketika program dieksekusi. Saat proses eksekusi, biasanya akan diinformasikan jenis error-nya dan lokasi baris dimana error terjadi. Beberapa contoh sumber runtime error:
+- Deklarasi ulang variable.
+  ```javascript
+  let variableku = 10;
+  let variableku = 20;
+  ```
+- Variabel belum dideklarasikan atau salah menulis pengejaan variabel.
+  ```javascript
+  let uvuvwevwe = 10;
+  console.log(uvuvwewve);
+  ```
+- Memanggil variabel pada scope yang salah.
+  ```javascript
+  let variable1 = 5;
+
+  for (let i = 0; i < 10; i++) {
+    console.log('alert');
+    if (i > variable1) {
+      break;
+    }
+  }
+  
+  console.log(`Berhenti pada waktu nilai i = ${i}`);
+  ```
+- Memanggil built-in function yang tidak ada di JavaScript.
+  ```javascript
+  let array = [5, 3, 2, 7, 1];
+  console.log(array.Sort());
+  ```
+  ```javascript
+  console.log(isNan(15));
+  ```
+- Infinite Loop.
+  ```javascript
+  let string = 'Hacktiv8 - Amsterdam Fox'
+
+  function reverseString(str) {
+    let ret = '';
+    for (let i = str.length - 1; i >= 0; i++) {
+      ret += str[i];
+    }
+    return ret;
+  }
+
+  console.log(reverseString(string));
+  ```
+- Menggunakan properti atau built-in function yang tidak sesuai untuk tipe data tertentu.
+  ```javascript
+  let array = [1, 2, 3, 4, 5];
+
+  for (let i = array.length; i > 0; i--) {
+    console.log(array[i].toString());
+  }
+  ```
+
+### How to Avoid Runtime Error
+- Baca dan mengerti error yang ditampilkan, biasanya yang paling relevan terdapat pada baris atas. Apabila tidak mengerti apa yang dimaksudkan, lakukan searching pada Google dengan cara copy-paste informasi paling general dari pesan error.
+- Ketika tidak terdapat tampilan pada terminal, atau terminal seolah berhenti pada suatu proses, maka kemungkinan besar terjadi infinite loop. Periksa penulisan loop, jika perlu gunakan `console.log()` untuk menampilkan variable looping.
+- Tracing Kode kalian apalagi saat berhubungan dengan loop dan array untuk setiap variabel yang berpotensi berubah value-nya.
+- Gunakan `typeof` karena kemungkinan test-case menggunakan tipe data yang berbeda.
+
+## Semantic Error
+Semantic error tidak terdeteksi oleh code editor dan terminal. Error ini menyebabkan program memberikan hasil output yang tidak kita harapkan. Semantic error terjadi jika terdapat kesalahan alur logic pada kode program. Contoh semantic error:
 ```javascript
+let kapasitas = 5;
+let sisa = 4.5
+
+let persentase = sisa / kapasitas;
+console.log(`Sisa bensin: ${persentase} persen`);
 ```
+
+### How to Avoid Semantic Error
+- Buat algoritma sebelum membuat kode program.
+- Gunakan `console.log()` untuk proses debug.
+- Perbanyak latihan.
+- Lakukan penamaan variabel sesuai dengan fungsi atau proses yang diwakili. Jangan melakukan hal berikut:
+  ```javascript
+  for (let terserahDeh = 0; terserahDeh < 10; terserahDeh++) {
+    console.log(terserahDeh);
+  }
+  ```
+
+## Misc. Notes
+- Inisialisasi variabel di dalam looping maka akan inisialisasi ulang setiap loop dan mereset nilainya dan dianggap variabel baru. Ini hanya berguna untuk temp dalam 1 loop misalnya ditampung oleh variabel lain. (Bisa menyebabkan infinite loop).
+- Maka harus dipikirkan apakah variabel harus di inisialisasi ulang ditaruh di dalam loop atau diluar.
+- Indentasi kurang rapi, menyulitkan untuk membaca koding itu lagi dan menyulitkan jika ada syntax yang salah.
+- Baca penggunaan built-in function sebelum diterapkan ke soal, kadang menggunakan asumsi ternyata penggunaan built-in yang kita pakai salah (Contoh: Math.random() , perbedaan splice dan slice).
+- Jangan gunakan kode yang di soal tersebut tidak jadi digunakan/tidak perlu.
+- Pahami maksud soal terlebih dahulu, hindari langsung kerjakan.
+- Tidak membaca rules / restriction pada soal dan perhatikan apakah soal harus membutuhkan Pseudocode.
+- Gambarkan secara visual atau pakai analogi di kertas saat mengerjakan soal yang sulit di pahami.
+- Jangan jadi requirement-boy, ketika sudah sesuai testcase dan masih ada waktu langsung puas. Modif testcase sampai program menjadi general.
+- Cek di dalam IF apakah itu operator comparison atau assignment (== atau =). Seharusnya comparison.
+- Jika membutuhkan sesuatu yang tidak dipengaruhi loop (index i atau j, dsb..), maka buatlah counter tambahan diluar loop.
+- Modulus bukan berarti pembagian, tapi pengurangan dengan operand terus menerus. Jika tidak bisa lagi dikurangi dengan operand, maka itulah nilai modulus.
+- Modulus jika angka yang dimodulus lebih kecil dari operand, maka nilai modulus adalah angka yg dimodulus tersebut.
+- Else digunakan untuk menangkap kondisi kondisi yang terlewat dari prediksi kita, Kadang kita juga tidak perlu menggunakan dalam kasus kasus tertentu. Misal toggling ketika operasi memang harus berjalan atau tidak ketika tidak valid.
+- Jika ingin menuliskan algoritma gunakan bahasa yang deskriptif seperti kita menjelaskan sebuah cara penyelesaian ke orang umum/teman.
+- Jika ingin menuliskan pseudocode gunakan bahasa yang mewakili proses penyelesaian dan deskriptif tapi pendekatannya lebih ke coding tapi general bisa diterapkan ke semua bahasa pemrograman. Indentasi di pseudocode menunjukkan blok kode. Mengacu ke materi hacktiv8 dan link pseudocode standart.
+- Ketika mengumpulkan tugas, tidak perlu menampilkan output proses yang tidak perlu (contoh console.log nilai semetara didalam looping, karena yang dibutuhkan hanya hasil akhir).
+- Jika ingin challenge tambahan, coba ubah-ubah soal challenge misal dari salah satu argument berupa 1 string menjadi array berisi banyak string.
+- Hindari penggunakan built-in function untuk kasus yang sederhana. Jika perlu buatlah 2 jawaban yang pakai built-in dan yang tidak pakai built-in.
+- Jika sudah selesai mengerjakan tugas, hapus variabel-variabel yang tidak terpakai dan output yang tidak digunaan.
+- Perhatikan setiap testcase apakah ada validasi jika tidak ada argument, nilai string kosong, array kosong. Umumnya validasi bisa dikerjakan di awal di taruh dalam kondisi dan langsung diberikan return agar tidak mengerjakan baris program dari nilai argumen yang lolos validasi.
+- Refactor ulang kode jika perlu, untuk menyederhanakan proses.
+- Hindari hardcode agar kode bisa general menerima semua bentuk input. Umumnya hardcode terjadi ketika bingung limit/end dari loop.
+- Selalu gunakan deklarasi jangan hanya nama variabel dan langsung tentukan tipedata dengan mengisi nilai default-nya untuk menghindari hasil proses yang undefined.
+- Jangan lupa jika yang ingin di iterasi adalah array, selalu gunakan length.
+- Penempatan return diluar function tidak mempunyai meaning/tidak berguna. Return hanya berkerja di dalam function.
+- Penempatan return di dalam loop akan menghentikan proses yang ada di loop, jadi berhati hati. Bisa digunakan untuk pengganti break saat di dalam kondisi.
+- Perhatikan length dari array jika dia length nya genap atau ganjil. Jika ganjil length-nya dibagi 2 maka akan ada angka desimal. Jika mengakses item dengan index desimal (misal arr[2.5]) maka akan undefined.
+- Explore tentang teknik flagging menggunakan variabel yang di set true/false ketika masuk kondisi tertentu.
+- Jangan copy-paste kode dari internet jika tidak tahu maksud kode tersebut.
+- Biasakan penamaan variabel menggunakan bahasa inggris (era global, agar mudah dipahami dan bisa dibaca semua orang tanpa batasan bahasa).
+- Biasakan penamaan variabel dengan camelCase dan jika seperti array itu plural (jamak) agar menunjukkan kalau dia bisa berisi lebih dari 1 nilai / list. Misal: listNumbers, numbers, animals, arrAnimals, dsb.
+
+## References
+
+### Stack Trace => Native Error Types:
+- http://www.ecma-international.org/ecma-262/6.0/#sec-native-error-types-used-in-this-standard
+- https://harrymoreno.com/2017/02/25/how-to-read-a-javascript-stack-trace.html
+- http://www.ecma-international.org/ecma-262/6.0/#sec-undefined-value
+
+### Tracing Practice (Array and Loop):
+- https://www.101computing.net/using-trace-tables/
+
+### Coding Style:
+- https://javascript.info/coding-style
+- https://github.com/airbnb/javascript
+
+ ### Algorithm Patterns:
+- https://medium.com/future-vision/problem-solving-patterns-programming-eebdb8eb24e0
+- https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
+- https://smootok.com/problem-solving-pattern-in-programming/
+
+### Problem Solving Steps:
+- https://codeburst.io/10-steps-to-solving-a-programming-problem-8a32d1e96d74
+- https://smootok.com/problem-solving-approach-in-programming/
+- https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/
 
 # Review: All
 ```javascript
