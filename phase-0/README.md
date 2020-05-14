@@ -1824,7 +1824,7 @@ objA.nilai = 9;
 console.log(objB);
 ```
 
-# Tracing and Debugging 🔎️🐞️🔨️
+# Tracing and Debugging
 Tracing and Debugging adalah proses untuk menemukan bagian code mana yang error untuk kemudian diperbaiki. Secara sederhana, proses ini dilakukan dengan memperhatikan syntax, proses, variable serta perubahan nilai secara perlahan lahan
 
 Umumnya terdapat tiga bentuk error: 
@@ -1868,7 +1868,7 @@ Syntax error dapat dideteksi oleh code editor (misal: VSCode). Biasanya error in
       
   /** Fungsi ini digunakan untuk membalik string
   ```
-### How to Avoid Syntax Error:
+### 🔎️🐞️🔨️ How to Avoid Syntax Error:
 - Periksa apakah terdapat garis zig-zag merah di code editor.
 - Sebelum pindah ke baris berikutnya, periksa apakah syntax pada baris itu sudah sesuai.
 - Selalu hati-hati dengan proses copy-paste kode program, karena bisa saja format yang dihasilkan tidak sama.
@@ -1933,7 +1933,7 @@ Runtime error tidak terdeteksi di code editor, namun terdeteksi ketika program d
   }
   ```
 
-### How to Avoid Runtime Error
+### 🔎️🐞️🔨️ How to Avoid Runtime Error
 - Baca dan mengerti error yang ditampilkan, biasanya yang paling relevan terdapat pada baris atas. Apabila tidak mengerti apa yang dimaksudkan, lakukan searching pada Google dengan cara copy-paste informasi paling general dari pesan error.
 - Ketika tidak terdapat tampilan pada terminal, atau terminal seolah berhenti pada suatu proses, maka kemungkinan besar terjadi infinite loop. Periksa penulisan loop, jika perlu gunakan `console.log()` untuk menampilkan variable looping.
 - Tracing Kode kalian apalagi saat berhubungan dengan loop dan array untuk setiap variabel yang berpotensi berubah value-nya.
@@ -1949,8 +1949,8 @@ let persentase = sisa / kapasitas;
 console.log(`Sisa bensin: ${persentase} persen`);
 ```
 
-### How to Avoid Semantic Error
-- Buat algoritma sebelum membuat kode program.
+### 🔎️🐞️🔨️ How to Avoid Semantic Error
+- Buat algoritma sebelum membuat kode program. Algoritma ditujukan untuk membuat kerangka kerja program. Hal tersebut akan membantu kita dalam membuat kode program yang sudah jelas akan melakukan apa pada setiap step-nya.
 - Gunakan `console.log()` untuk proses debug.
 - Perbanyak latihan.
 - Lakukan penamaan variabel sesuai dengan fungsi atau proses yang diwakili. Jangan melakukan hal berikut:
