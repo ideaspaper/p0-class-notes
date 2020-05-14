@@ -1824,13 +1824,13 @@ objA.nilai = 9;
 console.log(objB);
 ```
 
-# Tracing and Debugging
+# Tracing and Debugging 🔎️🐞️🔨️
 Tracing and Debugging adalah proses untuk menemukan bagian code mana yang error untuk kemudian diperbaiki. Secara sederhana, proses ini dilakukan dengan memperhatikan syntax, proses, variable serta perubahan nilai secara perlahan lahan
 
 Umumnya terdapat tiga bentuk error: 
-- Syntax error: program tidak dapat dieksekusi.
-- Runtime error: error yang terjadi ketika program dieksekusi. Umumnya output yang diberikan tidak sesuai, atau crash.
-- Logic error:  program memberikan output yang tidak diharapkan.
+- 🐞️ Syntax error: program tidak dapat dieksekusi.
+- 🐞️ Runtime error: error yang terjadi ketika program dieksekusi. Umumnya output yang diberikan tidak sesuai, atau crash.
+- 🐞️ Logic error:  program memberikan output yang tidak diharapkan.
 
 ## Syntax Error
 Syntax error dapat dideteksi oleh code editor (misal: VSCode). Biasanya error ini akan memberikan tanda garis zig-zag merah di teks. Beberapa contoh sumber syntax error:
@@ -1871,7 +1871,7 @@ Syntax error dapat dideteksi oleh code editor (misal: VSCode). Biasanya error in
 ### How to Avoid Syntax Error:
 - Periksa apakah terdapat garis zig-zag merah di code editor.
 - Sebelum pindah ke baris berikutnya, periksa apakah syntax pada baris itu sudah sesuai.
-- Selalu hati-hati dengan proses copy-paste code, karena bisa saja format yang dihasilkan tidak sama.
+- Selalu hati-hati dengan proses copy-paste kode program, karena bisa saja format yang dihasilkan tidak sama.
 - Perbaiki indentasi agar scope kode program terlihat dengan jelas.
 - Sebelum dianggap selesai, coba cek dari baris pertama sampai terakhir file.
 - Gunakan `"use strict"` (menggunakan DOUBLE QUOTES). [Referensi](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode).
