@@ -1845,7 +1845,7 @@ Syntax error dapat dideteksi oleh code editor (misal: VSCode). Biasanya error in
   ```javascript
   for (let i = 0; i < 5; i++
   ```
-- Lupa menggunakan koma para array atau object seperti:
+- Lupa menggunakan koma para array atau object literal seperti:
   ```javascript
   let angkaKu = [1, 2 3];
   ```
