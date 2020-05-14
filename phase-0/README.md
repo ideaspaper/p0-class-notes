@@ -1850,7 +1850,7 @@ Syntax error dapat dideteksi oleh code editor (misal: VSCode). Biasanya error in
   let angkaKu = [1, 2 3];
   ```
   ```javascript
-  let objectKu = {key1: 'Hello' key2: 'World'};
+  let objectKu = { key1: 'Hello' key2: 'World' };
   ```
 - Copy-paste memberikan format yang berbeda, misal dari slack ke VSCode.
 - Lupa melakukan comment / penutup comment
@@ -1943,7 +1943,7 @@ Runtime error tidak terdeteksi di code editor, namun terdeteksi ketika program d
 Semantic error tidak terdeteksi oleh code editor dan terminal. Error ini menyebabkan program memberikan hasil output yang tidak kita harapkan. Semantic error terjadi jika terdapat kesalahan alur logic pada kode program. Contoh semantic error:
 ```javascript
 let kapasitas = 5;
-let sisa = 4.5
+let sisa = 4.5;
 
 let persentase = sisa / kapasitas;
 console.log(`Sisa bensin: ${persentase} persen`);
