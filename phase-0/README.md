@@ -1824,8 +1824,8 @@ objA.nilai = 9;
 console.log(objB);
 ```
 
-# Tracing and Debug
-Debugging adalah proses untuk menemukan bagian code mana yang error lalu diperbaiki. Debugging sederhana dilakukan dengan memperhatikan syntax, proses, variable serta perubahan nilai secara perlahan lahan
+# Tracing and Debugging
+Tracing and Debugging adalah proses untuk menemukan bagian code mana yang error untuk kemudian diperbaiki. Secara sederhana, proses ini dilakukan dengan memperhatikan syntax, proses, variable serta perubahan nilai secara perlahan lahan
 
 Umumnya terdapat tiga bentuk error: 
 - Syntax error: program tidak dapat dieksekusi.
