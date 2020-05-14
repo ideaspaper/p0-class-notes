@@ -2018,6 +2018,75 @@ console.log(`Sisa bensin: ${persentase} persen`);
 - https://smootok.com/problem-solving-approach-in-programming/
 - https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/
 
+## Exercises
+```javascript
+var arr = [
+  ['Acong', 'Main Bola'],
+  ['Djoko', 'Belajar'],
+  ['Sitorus', 'Makan']
+];
+
+var retVal = [];
+
+for (let i = 0; i < arr.length; i--) {
+  var temp = {};
+  temp.nama = arr[i][0];
+  temp.hobi = arr[i][1];
+  retVal.push(temp);
+}
+
+// Test case
+console.log(retVal);
+// [
+//   {nama: 'Acong', hobi: 'Main Bola'},
+//   {nama: 'Djoko', hobi: 'Belajar'},
+//   {nama: 'Sitorus', hobi: 'Makan'},
+// ]
+```
+
+```javascript
+function maxMin(arrIn) {
+  // Do something here
+
+  let ret = [];
+  ret.push(arrIn[0], arrIn[0]);
+
+  for (let i = 1; i <= arrIn.length; i++) {
+    if (ret[0] < arrIn[1]) {
+      ret[0] = arrIn[1];
+    }
+    if (ret[1] > arrIn[1]) {
+      ret[1] = arrIn[1];
+    }
+  }
+
+  return ret;
+}
+
+// Test cases
+console.log(maxMin([5, 1, 7, 12, 2, 8, 5, 6, 1, 12])); // [12, 1]
+console.log(maxMin([13])); // [13, 13]
+console.log(maxMin([])); // []
+console.log(maxMin()); // []
+```
+
+```javascript
+function splitString(str) {
+  // Do something here
+  let ret = [];
+
+  let index = 0;
+  while (index < str.length) {
+    ret.push[str[index]];
+  }
+
+  return ret;
+}
+
+// Test case
+console.log(splitString('Hello')); // ['H', 'e', 'l', 'l', 'o']
+```
+
 # Review: All
 ```javascript
 ```
