@@ -18,7 +18,7 @@
 - [Review: Up to Modular Functions](#review-up-to-modular-functions)
 - [Object Literal](#object-literal)
 - [Array of Object](#array-of-object)
-- [Tracing and Debug](#tracing-and-debug)
+- [Tracing and Debugging](#tracing-and-debugging)
 - [Review: All](#review-all)
 - [Local Git](#local-git)
 - [Git Branch, Git Merge, GitHub Pull Request and GitHub.io](#git-branch-git-merge-github-pull-request-and-github.io)
