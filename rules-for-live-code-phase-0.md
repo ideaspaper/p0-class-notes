@@ -1,5 +1,5 @@
 # LIVE CODE RULES
-1. **CHEATING = EXPELLED**.
+1. **CHEATING === EXPELLED**.
 2. Slack hanya digunakan untuk mengunduh file Live Code (dalam format **zip**).
 3. Hasil pengerjaan Live Code diunggah ke Air Table **menggunakan link yang akan diumumkan di Slack**.
 4. **NO** communication apps (Slack, WhatsApp, etc) tidak diperbolehkan selama Live Code. Slack digunakan di awal, untuk unduh soal Live Code.
