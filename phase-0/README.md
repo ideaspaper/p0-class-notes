@@ -1,4 +1,5 @@
 # Table of Contents
+
 - [HTML](#html)
 - [CSS](#css)
 - [Terminal](#terminal)
@@ -24,25 +25,31 @@
 - [Git Branch, Git Merge, GitHub Pull Request and GitHub.io](#git-branch-git-merge-github-pull-request-and-github.io)
 - [Live Code Rules](#live-code-rules)
 
-
 # HTML
+
 ```html
+
 ```
 
 # CSS
+
 ```css
 ```
 
 # Terminal
+
 [Terminal](./assets/terminal-git-and-github.pdf)
 
 # Review: HTML and CSS
+
 ```html
+
 ```
 
 # Algorithm and Pseudocode
 
 ## Algoritma
+
 1. Algoritma tidak sama dengan logaritma.
 2. Algoritma merupakan langkah-langkah yang harus diikuti dalam menyelesaikan suatu permasalahan.
 3. Algoritma dapat berupa rangkaian kalimat dalam bahasa sehari-hari, ataupun berupa visual dalam bentuk flowchart.
@@ -74,6 +81,7 @@ Algoritma:
 Contoh algoritma: [How to Walk Gracefully](https://www.wikihow.com/Walk-Gracefully)
 
 ## Pseudocode
+
 1. Dibuat menggunakan bahasa Inggris.
 2. Bahasa terstruktur yang digunakan untuk mendeskripsikan algoritma secara detil.
 3. Pseudocode digunakan agar kita lebih fokus kepada perancangan logic suatu program tanpa dipusingkan dengan syntax bahasa pemrograman yang akan digunakan nantinya.
@@ -104,13 +112,16 @@ Pseudocode:
 [Pseudocode Standard - Dr. John Dalbey](./assets/john-dalbey-pseudocode.pdf)
 
 # Conditional and Primitive Data Types
+
 ```javascript
 ```
 
 # Nested Conditional
+
 Selain `if-else` kita dapat menggunakan `switch-case` untuk keperluan conditional. Penggunaan `switch-case` membuat kode program relatif lebih mudah untuk dibaca, sedangkan penggunaan `if-else` memberikan opsi yang lebih fleksibel.
 
 ## `switch-case`
+
 ```javascript
 switch (variable) {
   case nilai1:
@@ -120,13 +131,14 @@ switch (variable) {
     // Statement yang akan dieksekusi
     break;
   default:
-    // Statement yang akan dieksekusi
+  // Statement yang akan dieksekusi
 }
 ```
 
 Nilai `variable` yang terdapat pada `switch` akan diperiksa. Apabila nilai tersebut `=== nilai1` maka statement di dalam `case nilai1:` akan dieksekusi. Apabila nilai tersebut `=== nilai2` maka statement di dalam `case nilai2:` akan dieksekusi. Apabila nilai tersebut `!== nilai1` dan `!== nilai2` maka statement di dalam `default:` akan dieksekusi.
 
 ## Penggunaan `switch-case`
+
 ```javascript
 /**
  * Ubah angka 0 - 10 ke dalam bahasa Indonesia.
@@ -135,7 +147,7 @@ Nilai `variable` yang terdapat pada `switch` akan diperiksa. Apabila nilai terse
 
 /**
  * INIT angka AS NUMBER WITH ANY VALUE
- * 
+ *
  * SWITCH angka
  *   CASE 0:
  *     DISPLAY 'Nol'
@@ -179,40 +191,40 @@ let angka = 9;
 
 switch (angka) {
   case 0:
-    console.log('Nol');
+    console.log("Nol");
     break;
   case 1:
-    console.log('Satu');
+    console.log("Satu");
     break;
   case 2:
-    console.log('Dua');
+    console.log("Dua");
     break;
   case 3:
-    console.log('Tiga');
+    console.log("Tiga");
     break;
   case 4:
-    console.log('Empat');
+    console.log("Empat");
     break;
   case 5:
-    console.log('Lima');
+    console.log("Lima");
     break;
   case 6:
-    console.log('Enam');
+    console.log("Enam");
     break;
   case 7:
-    console.log('Tujuh');
+    console.log("Tujuh");
     break;
   case 8:
-    console.log('Delapan');
+    console.log("Delapan");
     break;
   case 9:
-    console.log('Sembilan');
+    console.log("Sembilan");
     break;
   case 10:
-    console.log('Sepuluh');
+    console.log("Sepuluh");
     break;
   default:
-    console.log('Angka belum di-support');
+    console.log("Angka belum di-support");
 }
 ```
 
@@ -228,37 +240,37 @@ let angka = 1;
 
 switch (angka) {
   case 0:
-    console.log('Nol');
+    console.log("Nol");
   case 1:
-    console.log('Satu');
+    console.log("Satu");
   case 2:
-    console.log('Dua');
+    console.log("Dua");
   case 3:
-    console.log('Tiga');
+    console.log("Tiga");
     break;
   case 4:
-    console.log('Empat');
+    console.log("Empat");
     break;
   case 5:
-    console.log('Lima');
+    console.log("Lima");
     break;
   case 6:
-    console.log('Enam');
+    console.log("Enam");
     break;
   case 7:
-    console.log('Tujuh');
+    console.log("Tujuh");
     break;
   case 8:
-    console.log('Delapan');
+    console.log("Delapan");
     break;
   case 9:
-    console.log('Sembilan');
+    console.log("Sembilan");
     break;
   case 10:
-    console.log('Sepuluh');
+    console.log("Sepuluh");
     break;
   default:
-    console.log('Angka belum di-support');
+    console.log("Angka belum di-support");
 }
 ```
 
@@ -269,7 +281,7 @@ Selain `if-else` dan `switch-case`, terdapat pula ternary operator `(?:)`.
 ```javascript
 let a = 10;
 
-a > 5 ? console.log('lebih dari 5') : console.log('kurang dari 5');
+a > 5 ? console.log("lebih dari 5") : console.log("kurang dari 5");
 ```
 
 - `a > 5` merupakan bagian conditional.
@@ -279,6 +291,7 @@ a > 5 ? console.log('lebih dari 5') : console.log('kurang dari 5');
 Penggunaan ternary operator dapat membuat kode program lebih mudah untuk di baca. Namun apabila di dalam ternary operator terdapat ternary operator lain (nested), maka pembacaan kode program akan menjadi lebih susah.
 
 ## Nested `if-else`
+
 Sebuah conditional dapat memiliki conditional lain di dalamnya. Hal ini disebut juga sebagai nested conditionals. Di bawah merupakan contoh permasalahan yang dapat diselesaikan dengan nested conditionals.
 
 ```javascript
@@ -287,7 +300,7 @@ Sebuah conditional dapat memiliki conditional lain di dalamnya. Hal ini disebut 
  *   - Umur di dalam range 15 tahun hingga 60 tahun
  *   - Tinggi badan setidaknya 150 cm
  *   - Tidak memiliki penyakit jantung
- * 
+ *
  * Buatlah pseudocode dan kode program untuk mensimulasikan kriteria wahana tersebut.
  */
 
@@ -295,7 +308,7 @@ Sebuah conditional dapat memiliki conditional lain di dalamnya. Hal ini disebut 
  * INIT umur AS NUMBER WITH ANY VALUE
  * INIT tinggi AS NUMBER WITH ANY VALUE
  * INIT penyakitJantung AS BOOLEAN WITH ANY VALUE
- * 
+ *
  * IF umur MORE THAN EQUAL 15 AND umur LESS THAN EQUAL 60
  *   IF tinggi MORE THAN EQUAL 150
  *     IF penyakitJantung EQUAL FALSE
@@ -312,25 +325,26 @@ Sebuah conditional dapat memiliki conditional lain di dalamnya. Hal ini disebut 
  */
 
 let umur = 13;
-let tinggi = 140
+let tinggi = 140;
 let penyakitJantung = true;
 
 if (umur >= 15 && umur <= 60) {
   if (tinggi >= 150) {
     if (penyakitJantung === false) {
-      console.log('Boleh naik wahana');
+      console.log("Boleh naik wahana");
     } else {
-      console.log('Tidak boleh naik wahana karena alasan jantung');
+      console.log("Tidak boleh naik wahana karena alasan jantung");
     }
   } else {
-    console.log('Tidak boleh naik wahana karena alasan tinggi badan');
+    console.log("Tidak boleh naik wahana karena alasan tinggi badan");
   }
 } else {
-  console.log('Tidak boleh naik wahana karena alasan umur');
+  console.log("Tidak boleh naik wahana karena alasan umur");
 }
 ```
 
 ## `if-if` vs `if-else`
+
 Hal lain yang perlu diperhatikan adalah penggunaan `if-if` dan `if-else`. Keduanya memiliki alur eksekusi yang berbeda. Pada conditional `if-else`, apabila kondisi pada `if` bernilai `true`, maka kondisi pada `else-if` tidak akan diperiksa, serta statement di dalam `else` tidak akan dieksekusi.
 
 Pada `if-if`, apabila kondisi pada `if` pertama bernilai `true`, kondisi pada `if` kedua tetap akan diperiksa. Lebih jelasnya, jalankan contoh kode program di bawah.
@@ -339,28 +353,29 @@ Pada `if-if`, apabila kondisi pada `if` pertama bernilai `true`, kondisi pada `i
 let myVar = 7;
 
 if (myVar > 6) {
-  console.log('nilai myVar lebih dari 6');
+  console.log("nilai myVar lebih dari 6");
 } else if (myVar > 5) {
-  console.log('nilai myVar lebih dari 5');
+  console.log("nilai myVar lebih dari 5");
 }
 
 if (myVar > 6) {
-  console.log('nilai myVar lebih dari 6');
+  console.log("nilai myVar lebih dari 6");
 }
 if (myVar > 5) {
-  console.log('nilai myVar lebih dari 5');
+  console.log("nilai myVar lebih dari 5");
 }
 ```
 
 # Iteration in Pseudocode and JavaScript
+
 [Iteration in Pseudocode and JavaScript](./assets/pseudocode-and-iteration.pdf)
 
-
 ## `for`
+
 ```javascript
 /**
  * 1. PENGGUNAAN FOR
- * 
+ *
  * INIT times AS NUMBER WITH VALUE OF 5
  * FOR loop FROM 0 TO times
  *   DISPLAY 'meow'
@@ -370,13 +385,12 @@ if (myVar > 5) {
 // Code here
 let times = 5;
 for (let loop = 0; loop <= times; loop++) {
-  console.log('meow');
+  console.log("meow");
 }
-
 
 /**
  * 2. PENGGUNAAN CONDITIONAL DI DALAM FOR
- * 
+ *
  * INIT times AS NUMBER WITH VALUE OF 10
  * FOR loop FROM 1 TO times
  *   IF loop MORE THAN EQUAL 5
@@ -393,10 +407,9 @@ for (let loop = 1; loop <= times; loop++) {
   }
 }
 
-
 /**
  * 3. BENTUK LAIN DARI FOR
- * 
+ *
  *   1. for (; [condition];)
  *   2. for ([initial expression 1], [initial expression 2]; [condition 1]; [increment expression 1], [increment expression 2])
  *   3. for (; ;)
@@ -406,7 +419,7 @@ for (let loop = 1; loop <= times; loop++) {
 //    sama dengan while (i > 0)
 //    Code here
 loop = 5;
-for (; loop > 0;) {
+for (; loop > 0; ) {
   console.log(loop);
   loop--;
 }
@@ -420,16 +433,17 @@ for (let i = 0, j = 9; i < 10; i++, j--) {
 
 // 3. Sama dengan while (true)
 //    Code here
-for (; ;) {
-  console.log('meow');
+for (;;) {
+  console.log("meow");
 }
 ```
 
 ## `while`
+
 ```javascript
 /**
  * 1. PENGGUNAAN WHILE
- * 
+ *
  * INIT times AS NUMBER WITH VALUE OF 5
  * WHILE times MORE THAN EQUAL 0
  *   DISPLAY 'meow'
@@ -440,13 +454,13 @@ for (; ;) {
 // Code here
 let times = 5;
 while (times >= 0) {
-  console.log('meow');
+  console.log("meow");
   times--;
 }
 
 /**
  * 2. PENGGUNAAN CONDITIONAL DI DALAM WHILE
- * 
+ *
  * INIT a AS NUMBER WITH ANY VALUE
  * WHILE TRUE
  *   IF a MODULUS 100 EQUAL TO 0
@@ -471,7 +485,7 @@ while (true) {
 
 /**
  * 3. HASIL WHILE BERIKUT SAMA DENGAN IMPLEMENTASI POIN 2
- * 
+ *
  * INIT a AS NUMBER WITH ANY VALUE
  * WHILE TRUE
  *   IF a MODULUS 100 EQUAL TO 0
@@ -494,10 +508,11 @@ while (true) {
 ```
 
 ## `do-while`
+
 ```javascript
 /**
  * 1. PENGGUNAAN DO-WHILE
- * 
+ *
  * INIT times AS NUMBER WITH VALUE OF 5
  * DO
  *   DISPLAY 'meow'
@@ -508,13 +523,13 @@ while (true) {
 // Code here
 let times = 5;
 do {
-  console.log('meow');
+  console.log("meow");
   times--;
 } while (times >= 0);
 
 /**
  * 2. HASIL WHILE BERIKUT SAMA DENGAN IMPLEMENTASI POIN 1
- * 
+ *
  * INIT times AS NUMBER WITH VALUE OF 5
  * WHILE times MORE THAN EQUAL 0
  *   DISPLAY 'meow'
@@ -525,13 +540,13 @@ do {
 // Code here
 times = 5;
 while (times >= 0) {
-  console.log('meow');
+  console.log("meow");
   times--;
 }
 
 /**
  * 3. PENGECEKAN KONDISI DO-WHILE DILAKUKAN DI AKHIR
- * 
+ *
  * INIT times AS NUMBER WITH VALUE OF -1
  * DO
  *   DISPLAY 'meow'
@@ -542,13 +557,13 @@ while (times >= 0) {
 // Code here
 times = -1;
 do {
-  console.log('meow');
+  console.log("meow");
   times--;
 } while (times >= 0);
 
 /**
  * 4. PENGECEKAN KONDISI WHILE DILAKUKAN DI AWAL
- * 
+ *
  * INIT times AS NUMBER WITH VALUE OF -1
  * WHILE times MORE THAN EQUAL 0
  *   DISPLAY 'meow'
@@ -559,12 +574,13 @@ do {
 // Code here
 times = -1;
 while (times >= 0) {
-  console.log('meow');
+  console.log("meow");
   times--;
 }
 ```
 
 ## Increment and Decrement
+
 ```javascript
 // ++ merupakan operator increment
 // Post increment, ++ akan dieksekusi setelah statement dieksekusi
@@ -577,9 +593,9 @@ console.log(++temp, temp);
 // += merupakan compound assignment operator
 // temp += 1 memiliki arti temp = a + 1, sama dengan ++temp
 temp = 10;
-console.log(temp += 1, temp);
+console.log((temp += 1), temp);
 temp = 10;
-console.log(temp += 5, temp);
+console.log((temp += 5), temp);
 
 // Increment expression pada for dapat menggunakan post increment, pre increment, ataupun compound assignment operator
 for (let i = 0; i < 5; i++) {
@@ -596,6 +612,7 @@ for (let i = 0; i < 10; i += 2) {
 ```
 
 ## Common Error
+
 ```javascript
 // Kesalahan penentuan variable yang di-increment
 let j = 0;
@@ -610,10 +627,11 @@ for (let i = 10; i > 0; i++) {
 ```
 
 # Nested Iteration
+
 ```javascript
 /**
  * REVIEW: ITERATION AND CONDITIONAL
- * 
+ *
  * Diberikan sebuah input kalimat dengan tipe string.
  * Buat sebuah program untuk mengubah kalimat tersebut ke dalam bentuk title case.
  * Contoh:
@@ -621,11 +639,11 @@ for (let i = 10; i > 0; i++) {
  *   Output: This Is Javascript
  */
 
-let input = 'this is javascript';
+let input = "this is javascript";
 let titleCase = input[0].toUpperCase();
 
 for (let i = 1; i < input.length; i++) {
-  if (input[i - 1] === ' ') {
+  if (input[i - 1] === " ") {
     titleCase += input[i].toUpperCase();
   } else {
     titleCase += input[i];
@@ -645,7 +663,7 @@ console.log(titleCase);
  */
 
 for (let i = 0; i < 5; i++) {
-  let output = '';
+  let output = "";
   for (let j = 0; j < 10; j++) {
     output += j;
   }
@@ -662,9 +680,9 @@ for (let i = 0; i < 5; i++) {
  *     Output : aacijprstv
  */
 
-input = 'javascript';
-let kamus = 'abcdefghijklmnopqrstuvwxyz';
-let sorted = '';
+input = "javascript";
+let kamus = "abcdefghijklmnopqrstuvwxyz";
+let sorted = "";
 
 // Implementasi pertama
 for (let i = 0; i < kamus.length; i++) {
@@ -698,8 +716,8 @@ console.log(sorted);
  *      Output  : -1
  */
 
-let input1 = 'I love JavaScript';
-let input2 = 'love';
+let input1 = "I love JavaScript";
+let input2 = "love";
 let count = 0;
 
 for (let i = 0; i < input1.length; i++) {
@@ -712,7 +730,7 @@ for (let i = 0; i < input1.length; i++) {
     }
   }
   if (count === input2.length) {
-    console.log(i)
+    console.log(i);
     break;
   }
 }
@@ -723,22 +741,25 @@ if (count !== input2.length) {
 ```
 
 # Review: Conditional and Iteration
+
 ```javascript
 ```
 
 # Function
+
 ```javascript
 ```
 
 # Array
+
 ```javascript
 /**
  * Membuat array
  */
 
 var numbers = [0, 1, 2, 3, 4];
-var furnitures = ['Table', 'Chair', 'Cupboard', 'Couch'];
-var animals = ['Tiger', 'Elephant', 'Rhinoceros', 'Girafe'];
+var furnitures = ["Table", "Chair", "Cupboard", "Couch"];
+var animals = ["Tiger", "Elephant", "Rhinoceros", "Girafe"];
 
 /**
  * Properti length
@@ -777,8 +798,8 @@ for (var i = 0; i < animals.length; i++) {
  */
 
 numbers.push(5);
-furnitures.push('Television');
-animals.push('Lion');
+furnitures.push("Television");
+animals.push("Lion");
 
 console.log(numbers);
 console.log(furnitures);
@@ -799,7 +820,7 @@ for (var i = 0; i < numbers.length; i++) {
   }
 }
 
-console.log(largest)
+console.log(largest);
 
 /**
  * Cari element terkecil dari sebuah array of numbers
@@ -814,7 +835,7 @@ for (var i = 1; i < numbers.length; i++) {
   }
 }
 
-console.log(smallest)
+console.log(smallest);
 ```
 
 ```javascript
@@ -823,7 +844,7 @@ console.log(smallest)
  */
 
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var flippedNums = []
+var flippedNums = [];
 for (var i = numbers.length - 1; i > 0; i--) {
   flippedNums.push(numbers[i]);
 }
@@ -879,13 +900,13 @@ console.log(numbers);
  * Unmutable vs. Mutable
  */
 
-var string = '0123456789';
-var array = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var string = "0123456789";
+var array = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 console.log(`string: ${string}`, `array: ${array}`);
 
-string[0] = 'A';
-array[0] = 'A';
+string[0] = "A";
+array[0] = "A";
 
 console.log(`string: ${string}`, `array: ${array}`);
 ```
@@ -903,14 +924,17 @@ console.log(a, b);
 ```
 
 # Review: Array
+
 ```javascript
 ```
 
 # Multidimensional Array
+
 ```javascript
 ```
 
 # Review: Function, Array and Multidimensional Array
+
 ```javascript
 /**
  * Review Function
@@ -919,25 +943,24 @@ console.log(a, b);
  *   3. Personal Safety.
  */
 
-
 /** 1. DRY and Reusability **/
 
 //// Not using function
-let input = 'Hello   my     name      is       Acong';
-let output = '';
+let input = "Hello   my     name      is       Acong";
+let output = "";
 for (let i = 0; i < input.length; i++) {
   output += input[i];
-  while (input[i] === ' ' && input[i + 1] === ' ') {
+  while (input[i] === " " && input[i + 1] === " ") {
     i++;
   }
 }
 console.log(output);
 
-input = 'Nice   to meet   you,     my Name    is Sitorus';
-output = '';
+input = "Nice   to meet   you,     my Name    is Sitorus";
+output = "";
 for (let i = 0; i < input.length; i++) {
   output += input[i];
-  while (input[i] === ' ' && input[i + 1] === ' ') {
+  while (input[i] === " " && input[i + 1] === " ") {
     i++;
   }
 }
@@ -945,43 +968,44 @@ console.log(output);
 
 //// Using function
 function removeDupesSpace(sInput) {
-  sOutput = '';
+  sOutput = "";
   for (let i = 0; i < sInput.length; i++) {
     sOutput += sInput[i];
-    while (sInput[i] === ' ' && sInput[i + 1] === ' ') {
+    while (sInput[i] === " " && sInput[i + 1] === " ") {
       i++;
     }
   }
   return sOutput;
 }
 
-console.log(removeDupesSpace('Hello   my     name      is       Acong'));
-console.log(removeDupesSpace('Nice   to meet   you,     my Name    is Sitorus'));
-
+console.log(removeDupesSpace("Hello   my     name      is       Acong"));
+console.log(
+  removeDupesSpace("Nice   to meet   you,     my Name    is Sitorus")
+);
 
 /** 2. Maintainability and Testing **/
 
 //// Not using function
-input = 'Hello   my     name      is       Acong';
-output = '';
+input = "Hello   my     name      is       Acong";
+output = "";
 for (let i = 0; i < input.length; i++) {
   output += input[i];
-  while (input[i] === ' ' && input[i + 1] === ' ') {
+  while (input[i] === " " && input[i + 1] === " ") {
     i++;
   }
 }
 console.log(output);
 
-input = 'Nice   to meet   you,     my Name    is Sitorus';
-output = '';
+input = "Nice   to meet   you,     my Name    is Sitorus";
+output = "";
 for (let i = 0; i < input.length; i++) {
   output += input[i];
-  while (input[i] === ' ') { // Error in copy-pasting
+  while (input[i] === " ") {
+    // Error in copy-pasting
     i++;
   }
 }
 console.log(output);
-
 
 /** 3. Personal Safety **/
 /**
@@ -999,28 +1023,25 @@ console.log(output);
  *   4. Mostly used to group same meaning variables together.
  */
 
-
 /** Indexing **/
-let arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+let arr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
 console.log(arr[0]); // a
 console.log(arr[1]); // b
 console.log(arr[2]); // c
 
-
 /** Mutability: Array vs String. **/
 
-let str = 'abcdefghij';
-arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+let str = "abcdefghij";
+arr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
 
-str[0] = 'z';
-arr[0] = 'z';
+str[0] = "z";
+arr[0] = "z";
 
-console.log(str, arr)
-
+console.log(str, arr);
 
 /** length property **/
 
-arr = ['Acong', 'Djoko', 'Sitorus', 'Budi', 'Didi Kempot']
+arr = ["Acong", "Djoko", "Sitorus", "Budi", "Didi Kempot"];
 console.log(arr.length); // 5
 console.log(arr[arr.length]); // undefined, because indexing starts from 0
 
@@ -1028,12 +1049,11 @@ for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
 }
 
-
 /** Mostly used to group same meaning variables together **/
 
-let names = ['Acong', 'Djoko', 'Sitorus', 'Budi'];
-let classes = ['X', 'XII', 'XII', 'XI'];
-let hobbies = ['Sleep', 'Eat', 'Reading', 'Coding'];
+let names = ["Acong", "Djoko", "Sitorus", "Budi"];
+let classes = ["X", "XII", "XII", "XI"];
+let hobbies = ["Sleep", "Eat", "Reading", "Coding"];
 ```
 
 ```javascript
@@ -1042,38 +1062,37 @@ let hobbies = ['Sleep', 'Eat', 'Reading', 'Coding'];
  *   1. Indexing.
  */
 
-
 /** Indexing **/
 
 // Multidimensional array is array which elements are array
 let arr = [
-  ['a', 'b', 'c'],
-  ['d', 'e', 'f'],
-  ['g', 'h', 'i']
+  ["a", "b", "c"],
+  ["d", "e", "f"],
+  ["g", "h", "i"],
 ];
 console.log(arr[0][0]); // a
 console.log(arr[1][0]); // d
 console.log(arr[2][0]); // g
 
 arr = [
-  [['a', 'b'], 'c'],
-  [['d', 'e'], 'f'],
-  [['g', 'h'], 'i']
+  [["a", "b"], "c"],
+  [["d", "e"], "f"],
+  [["g", "h"], "i"],
 ];
-console.log(arr[0][0]);    // [ 'a', 'b' ]
+console.log(arr[0][0]); // [ 'a', 'b' ]
 console.log(arr[0][0][0]); // a
-console.log(arr[1][0]);    // [ 'd', 'e' ]
+console.log(arr[1][0]); // [ 'd', 'e' ]
 console.log(arr[1][0][0]); // d
-console.log(arr[2][2]);    // undefined
+console.log(arr[2][2]); // undefined
 ```
 
 ```javascript
 /**
  * Soal Latihan Review: Function, Array and Multidimensional Array
- * 
+ *
  * Diberikan sebuah playlist dalam bentuk multidimensional array.
  * Sebuah lagu di dalam playlist memiliki format sebagai berikut ['Penyanyi', 'Judul Lagu', 'Durasi (menit)'].
- * 
+ *
  * Contoh dari playlist tersebut adalah seperti di bawah ini:
  * let playlist = [
  *   ['Didi Kempot', 'Banyu Langit', 4],
@@ -1084,7 +1103,7 @@ console.log(arr[2][2]);    // undefined
  *   ['Doel Sumbang', 'Awewe Sapi Daging', 2],
  *   ['Ebiet G. Ade', 'Berita Kepada Kawan', 6]
  * ];
- * 
+ *
  * Berdasarkan playlist tersebut, buatlah 5 buah function berikut:
  *   1. sortBySinger(input, ascending)
  *      Function ini akan melakukan sorting playlist berdasarkan 'Penyanyi'. Function ini akan menerima 2 parameter yaitu:
@@ -1114,19 +1133,20 @@ console.log(arr[2][2]);    // undefined
  */
 
 let playlist = [
-  ['Didi Kempot', 'Banyu Langit', 4],
-  ['Nike Ardilla', 'Sandiwara Cinta', 4],
-  ['Hetty Koes Endang', 'Cinta Putih', 3],
-  ['Titiek Puspa', 'Kupu-Kupu Malam', 3],
-  ['Ahmad Albar', 'Don\'t Spoil My Day', 5],
-  ['Doel Sumbang', 'Awewe Sapi Daging', 2],
-  ['Ebiet G. Ade', 'Berita Kepada Kawan', 6]
+  ["Didi Kempot", "Banyu Langit", 4],
+  ["Nike Ardilla", "Sandiwara Cinta", 4],
+  ["Hetty Koes Endang", "Cinta Putih", 3],
+  ["Titiek Puspa", "Kupu-Kupu Malam", 3],
+  ["Ahmad Albar", "Don't Spoil My Day", 5],
+  ["Doel Sumbang", "Awewe Sapi Daging", 2],
+  ["Ebiet G. Ade", "Berita Kepada Kawan", 6],
 ];
 
 function sortBySinger(input, ascending) {
-  let a = 1, b = 0;
+  let a = 1,
+    b = 0;
   if (ascending === true) {
-    a = 0, b = 1;
+    (a = 0), (b = 1);
   }
 
   for (let i = 0; i < input.length; i++) {
@@ -1144,9 +1164,10 @@ function sortBySinger(input, ascending) {
 }
 
 function sortByTitle(input, ascending) {
-  let a = 1, b = 0;
+  let a = 1,
+    b = 0;
   if (ascending === true) {
-    a = 0, b = 1;
+    (a = 0), (b = 1);
   }
 
   for (let i = 0; i < input.length; i++) {
@@ -1164,9 +1185,10 @@ function sortByTitle(input, ascending) {
 }
 
 function sortByDuration(input, ascending) {
-  let a = 1, b = 0;
+  let a = 1,
+    b = 0;
   if (ascending === true) {
-    a = 0, b = 1;
+    (a = 0), (b = 1);
   }
 
   for (let i = 0; i < input.length; i++) {
@@ -1186,20 +1208,21 @@ function sortByDuration(input, ascending) {
 function sortPlaylist(input, by, ascending) {
   let bySort = 0;
   switch (by) {
-    case 'singer':
+    case "singer":
       bySort = 0;
       break;
-    case 'title':
+    case "title":
       bySort = 1;
       break;
-    case 'duration':
+    case "duration":
       bySort = 2;
       break;
   }
 
-  let a = 1, b = 0;
+  let a = 1,
+    b = 0;
   if (ascending === true) {
-    a = 0, b = 1;
+    (a = 0), (b = 1);
   }
 
   for (let i = 0; i < input.length; i++) {
@@ -1233,7 +1256,7 @@ function play(input, time) {
 }
 
 // Test case 1
-console.log(play(playlist, 35))
+console.log(play(playlist, 35));
 /**
  * [
  *   [ 'Didi Kempot', 'Banyu Langit', 4 ],
@@ -1249,7 +1272,7 @@ console.log(play(playlist, 35))
  */
 
 // Test case 2
-sortPlaylist(playlist, 'duration', true);
+sortPlaylist(playlist, "duration", true);
 console.log(play(playlist, 35));
 /**
  * [
@@ -1268,10 +1291,12 @@ console.log(play(playlist, 35));
 ```
 
 # Modular Functions
+
 ```javascript
 ```
 
 # Review: Up to Modular Functions
+
 ```javascript
 /**
  * Intensive Care Unit Scoring
@@ -1316,13 +1341,13 @@ console.log(play(playlist, 35));
  */
 function dangerScale(input) {
   switch (input) {
-    case 'Critical':
+    case "Critical":
       return 4;
-    case 'Severe':
+    case "Severe":
       return 3;
-    case 'Bearable':
+    case "Bearable":
       return 2;
-    case 'Minor':
+    case "Minor":
       return 1;
   }
 }
@@ -1337,7 +1362,7 @@ function dangerScale(input) {
  * Return value dari function ini adalah score yang telah dihitung berdasarkan:
  *   - Representasi angka dari 'Tingkat Bahaya'
  *   - Umur
- * 
+ *
  * Formula perhitungan yang digunakan adalah:
  *   'Score' = 'Umur' / 100  + 'Tingkat Bahaya'
  */
@@ -1388,23 +1413,23 @@ function icuPatientPriority(input) {
 }
 
 let patients = [
-  ['Acong', 'Sesak nafas', 39, 'Critical'],
-  ['Djoko', 'Encok', 60, 'Severe'],
-  ['Sitorus', 'Patah tulang', 11, 'Bearable'],
-  ['Ajeng', 'Kena pisau waktu memasak', 43, 'Minor'],
-  ['Dhani', 'Diare', 28, 'Bearable'],
-  ['Abdhul', 'Perut mual', 18, 'Severe'],
-  ['Conor McGregor', 'Bengkak di leher', 31, 'Severe'],
-  ['Cristiano Ronaldo', 'Bengkak di kaki', 35, 'Bearable'],
-  ['Rama', 'Hati', 21, 'Critical'],
-  ['Shinta', 'Hati', 21, 'Minor'],
-  ['Bahamut', 'Sariawan', 90, 'Minor'],
-  ['Tiamat', 'Pandangan kabur', 80, 'Critical'],
-  ['Cthulu', 'Kepala benjol', 26, 'Minor'],
-  ['Han Solo', 'Luka tembak', 38, 'Critical']
+  ["Acong", "Sesak nafas", 39, "Critical"],
+  ["Djoko", "Encok", 60, "Severe"],
+  ["Sitorus", "Patah tulang", 11, "Bearable"],
+  ["Ajeng", "Kena pisau waktu memasak", 43, "Minor"],
+  ["Dhani", "Diare", 28, "Bearable"],
+  ["Abdhul", "Perut mual", 18, "Severe"],
+  ["Conor McGregor", "Bengkak di leher", 31, "Severe"],
+  ["Cristiano Ronaldo", "Bengkak di kaki", 35, "Bearable"],
+  ["Rama", "Hati", 21, "Critical"],
+  ["Shinta", "Hati", 21, "Minor"],
+  ["Bahamut", "Sariawan", 90, "Minor"],
+  ["Tiamat", "Pandangan kabur", 80, "Critical"],
+  ["Cthulu", "Kepala benjol", 26, "Minor"],
+  ["Han Solo", "Luka tembak", 38, "Critical"],
 ];
 
-icuPatientPriority(patients)
+icuPatientPriority(patients);
 console.log(patients);
 // [
 //   [ 'Tiamat', 'Pandangan kabur', 80, 'Critical', 4.8 ],
@@ -1425,6 +1450,7 @@ console.log(patients);
 ```
 
 # Object Literal
+
 [Object Literal](./assets/object-literal.pdf)
 
 ```javascript
@@ -1436,10 +1462,10 @@ console.log(patients);
 let profit = 10;
 
 let product = {
-  name: 'Baygon',
-  form: 'Aerosol',
-  bugType: 'Roaces',
-  price: 15000
+  name: "Baygon",
+  form: "Aerosol",
+  bugType: "Roaces",
+  price: 15000,
 };
 
 // Do something here
@@ -1461,17 +1487,17 @@ console.log(product);
  */
 
 let sensebounce = {
-  name: 'Sensebounce+ SUMMER.RDY Shoes',
-  manufacturer: 'Adidas',
-  gender: 'Men',
-  sport: 'Running',
+  name: "Sensebounce+ SUMMER.RDY Shoes",
+  manufacturer: "Adidas",
+  gender: "Men",
+  sport: "Running",
   weightGram: 366,
-  colors: ['Black', 'White'],
+  colors: ["Black", "White"],
   warehouseStock: {
     warehouse1: 0,
     warehouse2: 10,
-    warehouse3: 2
-  }
+    warehouse3: 2,
+  },
 };
 
 // Do something here
@@ -1495,9 +1521,9 @@ let sensebounce = {
  * dan return value false jika tidak sama.
  */
 
-let a = { key1: 'A', key2: 10, key3: true };
-let b = { key1: 'A', key2: 10, key3: true };
-let c = { key1: 11, key2: 'B', key3: true };
+let a = { key1: "A", key2: 10, key3: true };
+let b = { key1: "A", key2: 10, key3: true };
+let c = { key1: 11, key2: "B", key3: true };
 
 function isObjLiteralEqual(inObj1, inObj2) {
   // Do something here
@@ -1516,13 +1542,13 @@ console.log(isObjLiteralEqual(a, c)); // false
  */
 
 let patients = [
-  ['Acong', 'Mual'],
-  ['Djoko', 'Pusing'],
-  ['Sitorus', 'Batuk'],
-  ['Rama', 'Pusing'],
-  ['Shinta', 'Batuk'],
-  ['Cthulu', 'Mual'],
-  ['Nyarlothep', 'Mual'],
+  ["Acong", "Mual"],
+  ["Djoko", "Pusing"],
+  ["Sitorus", "Batuk"],
+  ["Rama", "Pusing"],
+  ["Shinta", "Batuk"],
+  ["Cthulu", "Mual"],
+  ["Nyarlothep", "Mual"],
 ];
 
 // Do something here
@@ -1535,6 +1561,7 @@ let patients = [
 ```
 
 # Array of Object
+
 ```javascript
 // Review Object
 
@@ -1543,47 +1570,47 @@ let patients = [
  */
 
 var karyawan1 = {
-  nama: 'Budi',
-  profesi: 'Pilot',
-  asal: 'Pekanbaru',
+  nama: "Budi",
+  profesi: "Pilot",
+  asal: "Pekanbaru",
   umur: 8,
-  bukuFav: ['How to Fly Airplane for Dummies', 'Basic of Aerodymics'],
+  bukuFav: ["How to Fly Airplane for Dummies", "Basic of Aerodymics"],
   adik: {
-    nama: 'Acong',
-    profesi: 'Pelajar'
-  }
+    nama: "Acong",
+    profesi: "Pelajar",
+  },
 };
-console.log('karyawan1:', karyawan1);
-console.log('--------------------------------------------');
+console.log("karyawan1:", karyawan1);
+console.log("--------------------------------------------");
 
 /**
  * Membuat object literal cara 2
  */
 
 var karyawan2 = {};
-karyawan2.nama = 'Budi';
-karyawan2.profesi = 'Pilot';
-var temp = 'asal';
-karyawan2[temp] = 'Pekanbaru';
-console.log('karyawan2:', karyawan2);
-console.log('--------------------------------------------');
-
+karyawan2.nama = "Budi";
+karyawan2.profesi = "Pilot";
+var temp = "asal";
+karyawan2[temp] = "Pekanbaru";
+console.log("karyawan2:", karyawan2);
+console.log("--------------------------------------------");
 
 /**
  * Mengakses value dari object
  */
 
-console.log('Pengaksesan value dari object:');
-for (var key in karyawan1) { // Untuk semua key yang terdapat pada objeckaryawan1, lakukan statement yang ada di dalam for
-  if (key === 'bukuFav') {
+console.log("Pengaksesan value dari object:");
+for (var key in karyawan1) {
+  // Untuk semua key yang terdapat pada objeckaryawan1, lakukan statement yang ada di dalam for
+  if (key === "bukuFav") {
     for (var i = 0; i < karyawan1[key].length; i++) {
-      console.log(karyawan1[key][i])
+      console.log(karyawan1[key][i]);
     }
   } else {
     console.log(karyawan1[key]);
   }
 }
-console.log('--------------------------------------------');
+console.log("--------------------------------------------");
 ```
 
 ```javascript
@@ -1594,9 +1621,9 @@ console.log('--------------------------------------------');
  */
 
 var arr = [
-  ['Acong', 'Main Bola'],
-  ['Djoko', 'Belajar'],
-  ['Sitorus', 'Makan']
+  ["Acong", "Main Bola"],
+  ["Djoko", "Belajar"],
+  ["Sitorus", "Makan"],
 ];
 
 var retVal = [];
@@ -1619,25 +1646,25 @@ console.log(retVal);
 
 var database = [
   {
-    nama: 'Oskadon',
-    harga: 5000
+    nama: "Oskadon",
+    harga: 5000,
   },
   {
-    nama: 'Komix',
-    harga: 3500
+    nama: "Komix",
+    harga: 3500,
   },
   {
-    nama: 'OBH Combi Plus',
-    harga: 25000
+    nama: "OBH Combi Plus",
+    harga: 25000,
   },
   {
-    nama: 'Koyo Cabe',
-    harga: 15000
+    nama: "Koyo Cabe",
+    harga: 15000,
   },
   {
-    nama: 'Panadol',
-    harga: 17000
-  }
+    nama: "Panadol",
+    harga: 17000,
+  },
 ];
 
 function buyableGoods(db, money) {
@@ -1676,13 +1703,13 @@ console.log(buyableGoods(database, 10000));
  */
 
 var database = [
-  { name: 'Indomilk', id: 'IDM-001', daysBeforeExp: 10 },
-  { name: 'Ultramilk', id: 'UTM-001', daysBeforeExp: 3 },
-  { name: 'Indomilk', id: 'IDM-002', daysBeforeExp: 15 },
-  { name: 'Ultramilk', id: 'UTM-002', daysBeforeExp: 1 },
-  { name: 'Indomilk', id: 'IDM-003', daysBeforeExp: 5 },
-  { name: 'Ultramilk', id: 'UTM-003', daysBeforeExp: 8 },
-  { name: 'Bendera', id: 'BDR-001', daysBeforeExp: 5 }
+  { name: "Indomilk", id: "IDM-001", daysBeforeExp: 10 },
+  { name: "Ultramilk", id: "UTM-001", daysBeforeExp: 3 },
+  { name: "Indomilk", id: "IDM-002", daysBeforeExp: 15 },
+  { name: "Ultramilk", id: "UTM-002", daysBeforeExp: 1 },
+  { name: "Indomilk", id: "IDM-003", daysBeforeExp: 5 },
+  { name: "Ultramilk", id: "UTM-003", daysBeforeExp: 8 },
+  { name: "Bendera", id: "BDR-001", daysBeforeExp: 5 },
 ];
 
 function firstToSell(db) {
@@ -1697,7 +1724,8 @@ function firstToSell(db) {
     }
   }
   for (var i = 0; i < db.length; i++) {
-    if (!(db[i].name in retVal)) { // Jika db[i].name itu tidak terdapat di dalam object retVal sebagai key, lakukan yang ada di dalam if
+    if (!(db[i].name in retVal)) {
+      // Jika db[i].name itu tidak terdapat di dalam object retVal sebagai key, lakukan yang ada di dalam if
       retVal[db[i].name] = [];
     }
     retVal[db[i].name].push(db[i]);
@@ -1730,29 +1758,32 @@ console.log(firstToSell(database));
  *   untuk: ['Sakit kepala', 'Hidung tersumbat', 'Pegal-pegal'],
  *   harga: 5000
  * }
- * 
+ *
  * Berdasarkan database obat yang ada, buatlah sebuah fungsi yang akan
  * memberikan saran obat apa saja yang cocok untuk penyakit dari konsumen.
  */
 
 var database = [
   {
-    nama: 'Oskadon',
-    untuk: ['Sakit kepala', 'Hidung tersumbat', 'Pegal-pegal'],
-    harga: 5000
-  }, {
-    nama: 'Komix',
-    untuk: ['Sakit tenggorokan', 'Batuk berdahak', 'Batuk tidak berdahak'],
-    harga: 3500
-  }, {
-    nama: 'OBH Combi Plus',
-    untuk: ['Batuk berdahak', 'Batuk tidak berdahak'],
-    harga: 25000
-  }, {
-    nama: 'Koyo Cabe',
-    untuk: ['Nyeri pinggang', 'Pegal-pegal'],
-    harga: 15000
-  }
+    nama: "Oskadon",
+    untuk: ["Sakit kepala", "Hidung tersumbat", "Pegal-pegal"],
+    harga: 5000,
+  },
+  {
+    nama: "Komix",
+    untuk: ["Sakit tenggorokan", "Batuk berdahak", "Batuk tidak berdahak"],
+    harga: 3500,
+  },
+  {
+    nama: "OBH Combi Plus",
+    untuk: ["Batuk berdahak", "Batuk tidak berdahak"],
+    harga: 25000,
+  },
+  {
+    nama: "Koyo Cabe",
+    untuk: ["Nyeri pinggang", "Pegal-pegal"],
+    harga: 15000,
+  },
 ];
 
 function getSuitableMedicine(db, symptom) {
@@ -1767,7 +1798,7 @@ function getSuitableMedicine(db, symptom) {
   return retVal;
 }
 
-console.log(getSuitableMedicine(database, 'Pegal-pegal'));
+console.log(getSuitableMedicine(database, "Pegal-pegal"));
 // [
 //   {
 //     nama: 'Oskadon',
@@ -1781,7 +1812,7 @@ console.log(getSuitableMedicine(database, 'Pegal-pegal'));
 //   }
 // ]
 
-console.log(getSuitableMedicine(database, 'Batuk berdahak'));
+console.log(getSuitableMedicine(database, "Batuk berdahak"));
 // [
 //   {
 //     nama: 'Komix',
@@ -1795,7 +1826,7 @@ console.log(getSuitableMedicine(database, 'Batuk berdahak'));
 //   }
 // ]
 
-console.log(getSuitableMedicine(database, 'Nyeri pinggang'));
+console.log(getSuitableMedicine(database, "Nyeri pinggang"));
 // [
 //   {
 //     nama: 'Koyo Cabe',
@@ -1817,24 +1848,28 @@ a[0] = 5;
 console.log(b);
 
 var objA = {
-  nilai: 10
-}
-var objB = objA;  // Kita menyamakan alamat dari b dengan a
+  nilai: 10,
+};
+var objB = objA; // Kita menyamakan alamat dari b dengan a
 console.log(objB);
 objA.nilai = 9;
 console.log(objB);
 ```
 
 # Tracing and Debugging
+
 Tracing and Debugging adalah proses untuk menemukan bagian code mana yang error untuk kemudian diperbaiki. Secara sederhana, proses ini dilakukan dengan memperhatikan syntax, proses, variable serta perubahan nilai secara perlahan lahan
 
-Umumnya terdapat tiga bentuk error: 
+Umumnya terdapat tiga bentuk error:
+
 - 🐞️ Syntax error: program tidak dapat dieksekusi.
 - 🐞️ Runtime error: error yang terjadi ketika program dieksekusi. Umumnya output yang diberikan tidak sesuai, atau crash.
-- 🐞️ Logic error:  program memberikan output yang tidak diharapkan.
+- 🐞️ Logic error: program memberikan output yang tidak diharapkan.
 
 ## Syntax Error
+
 Syntax error dapat dideteksi oleh code editor (misal: VSCode). Biasanya error ini akan memberikan tanda garis zig-zag merah di teks. Beberapa contoh sumber syntax error:
+
 - Penulisan nama variabel yang salah seperti:
   ```javascript
   let 3orangSaja = ['Acong', 'Djoko', 'Sitorus'];
@@ -1855,6 +1890,7 @@ Syntax error dapat dideteksi oleh code editor (misal: VSCode). Biasanya error in
   ```
 - Copy-paste memberikan format yang berbeda, misal dari slack ke VSCode.
 - Lupa melakukan comment / penutup comment
+
   ```javascript
   let string = 'Hacktiv8 - Amsterdam Fox'
 
@@ -1866,10 +1902,12 @@ Syntax error dapat dideteksi oleh code editor (misal: VSCode). Biasanya error in
     return ret;
   }
   console.log(reverseString);
-      
+
   /** Fungsi ini digunakan untuk membalik string
   ```
+
 ### 🔎️🐞️🔨️ How to Avoid Syntax Error:
+
 - Periksa apakah terdapat garis zig-zag merah di code editor.
 - Sebelum pindah ke baris berikutnya, periksa apakah syntax pada baris itu sudah sesuai.
 - Selalu hati-hati dengan proses copy-paste kode program, karena bisa saja format yang dihasilkan tidak sama.
@@ -1877,9 +1915,10 @@ Syntax error dapat dideteksi oleh code editor (misal: VSCode). Biasanya error in
 - Sebelum dianggap selesai, coba cek dari baris pertama sampai terakhir file.
 - Gunakan `"use strict"` (menggunakan DOUBLE QUOTES). [Referensi](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode).
 
-
 ## Runtime Error
+
 Runtime error tidak terdeteksi di code editor, namun terdeteksi ketika program dieksekusi. Saat proses eksekusi, biasanya akan diinformasikan jenis error-nya dan lokasi baris dimana error terjadi. Beberapa contoh sumber runtime error:
+
 - Deklarasi ulang variable.
   ```javascript
   let variableku = 10;
@@ -1891,18 +1930,20 @@ Runtime error tidak terdeteksi di code editor, namun terdeteksi ketika program d
   console.log(uvuvwewve);
   ```
 - Memanggil variabel pada scope yang salah.
+
   ```javascript
   let variable1 = 5;
 
   for (let i = 0; i < 10; i++) {
-    console.log('alert');
+    console.log("alert");
     if (i > variable1) {
       break;
     }
   }
-  
+
   console.log(`Berhenti pada waktu nilai i = ${i}`);
   ```
+
 - Memanggil built-in function yang tidak ada di JavaScript.
   ```javascript
   let array = [5, 3, 2, 7, 1];
@@ -1912,11 +1953,12 @@ Runtime error tidak terdeteksi di code editor, namun terdeteksi ketika program d
   console.log(isNan(15));
   ```
 - Infinite Loop.
+
   ```javascript
-  let string = 'Hacktiv8 - Amsterdam Fox'
+  let string = "Hacktiv8 - Amsterdam Fox";
 
   function reverseString(str) {
-    let ret = '';
+    let ret = "";
     for (let i = str.length - 1; i >= 0; i++) {
       ret += str[i];
     }
@@ -1925,7 +1967,9 @@ Runtime error tidak terdeteksi di code editor, namun terdeteksi ketika program d
 
   console.log(reverseString(string));
   ```
+
 - Menggunakan properti atau built-in function yang tidak sesuai untuk tipe data tertentu.
+
   ```javascript
   let array = [1, 2, 3, 4, 5];
 
@@ -1935,13 +1979,16 @@ Runtime error tidak terdeteksi di code editor, namun terdeteksi ketika program d
   ```
 
 ### 🔎️🐞️🔨️ How to Avoid Runtime Error
+
 - Baca dan mengerti error yang ditampilkan, biasanya yang paling relevan terdapat pada baris atas. Apabila tidak mengerti apa yang dimaksudkan, lakukan searching pada Google dengan cara copy-paste informasi paling general dari pesan error.
 - Ketika tidak terdapat tampilan pada terminal, atau terminal seolah berhenti pada suatu proses, maka kemungkinan besar terjadi infinite loop. Periksa penulisan loop, jika perlu gunakan `console.log()` untuk menampilkan variable looping.
 - Tracing Kode kalian apalagi saat berhubungan dengan loop dan array untuk setiap variabel yang berpotensi berubah value-nya.
 - Gunakan `typeof` karena kemungkinan test-case menggunakan tipe data yang berbeda.
 
 ## Semantic Error
+
 Semantic error tidak terdeteksi oleh code editor dan terminal. Error ini menyebabkan program memberikan hasil output yang tidak kita harapkan. Semantic error terjadi jika terdapat kesalahan alur logic pada kode program. Contoh semantic error:
+
 ```javascript
 let kapasitas = 5;
 let sisa = 4.5;
@@ -1951,6 +1998,7 @@ console.log(`Sisa bensin: ${persentase} persen`);
 ```
 
 ### 🔎️🐞️🔨️ How to Avoid Semantic Error
+
 - Buat algoritma sebelum membuat kode program. Algoritma ditujukan untuk membuat kerangka kerja program. Hal tersebut akan membantu kita dalam membuat kode program yang sudah jelas akan melakukan apa pada setiap step-nya.
 - Gunakan `console.log()` untuk proses debug.
 - Perbanyak latihan.
@@ -1962,6 +2010,7 @@ console.log(`Sisa bensin: ${persentase} persen`);
   ```
 
 ## Misc. Notes
+
 - Inisialisasi variabel di dalam looping maka akan inisialisasi ulang setiap loop dan mereset nilainya dan dianggap variabel baru. Ini hanya berguna untuk temp dalam 1 loop misalnya ditampung oleh variabel lain. (Bisa menyebabkan infinite loop).
 - Maka harus dipikirkan apakah variabel harus di inisialisasi ulang ditaruh di dalam loop atau diluar.
 - Indentasi kurang rapi, menyulitkan untuk membaca koding itu lagi dan menyulitkan jika ada syntax yang salah.
@@ -1998,33 +2047,39 @@ console.log(`Sisa bensin: ${persentase} persen`);
 ## References
 
 ### Stack Trace => Native Error Types:
+
 - http://www.ecma-international.org/ecma-262/6.0/#sec-native-error-types-used-in-this-standard
 - https://harrymoreno.com/2017/02/25/how-to-read-a-javascript-stack-trace.html
 - http://www.ecma-international.org/ecma-262/6.0/#sec-undefined-value
 
 ### Tracing Practice (Array and Loop):
+
 - https://www.101computing.net/using-trace-tables/
 
 ### Coding Style:
+
 - https://javascript.info/coding-style
 - https://github.com/airbnb/javascript
 
- ### Algorithm Patterns:
+### Algorithm Patterns:
+
 - https://medium.com/future-vision/problem-solving-patterns-programming-eebdb8eb24e0
 - https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 - https://smootok.com/problem-solving-pattern-in-programming/
 
 ### Problem Solving Steps:
+
 - https://codeburst.io/10-steps-to-solving-a-programming-problem-8a32d1e96d74
 - https://smootok.com/problem-solving-approach-in-programming/
 - https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/
 
 ## Exercises
+
 ```javascript
 var arr = [
-  ['Acong', 'Main Bola'],
-  ['Djoko', 'Belajar'],
-  ['Sitorus', 'Makan']
+  ["Acong", "Main Bola"],
+  ["Djoko", "Belajar"],
+  ["Sitorus", "Makan"],
 ];
 
 var retVal = [];
@@ -2085,20 +2140,24 @@ function splitString(str) {
 }
 
 // Test case
-console.log(splitString('Hello')); // ['H', 'e', 'l', 'l', 'o']
+console.log(splitString("Hello")); // ['H', 'e', 'l', 'l', 'o']
 ```
 
 # Review: All
+
 ```javascript
 ```
 
 # Local Git
-[Local Git]([Terminal](./assets/terminal-git-and-github.pdf))
+
+[Local Git](<[Terminal](./assets/terminal-git-and-github.pdf)>)
 
 # Git Branch, Git Merge, GitHub Pull Request and GitHub.io
+
 [Branch, Merge and Pull Request](./assets/branch-merge-pull-request.pdf)
 
 # Live Code Rules
+
 1. **CHEATING === EXPELLED**.
 2. Slack hanya digunakan untuk mengunduh file Live Code (dalam format **zip**).
 3. Hasil pengerjaan Live Code diunggah ke Air Table **menggunakan link yang akan diumumkan di Slack**.
