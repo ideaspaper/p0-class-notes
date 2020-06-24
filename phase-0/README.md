@@ -1455,6 +1455,29 @@ console.log(patients);
 
 ```javascript
 /**
+ * Object literal behaviour when inserting number and string as key
+ */
+
+let a = {};
+a[1] = 'this is 1';
+a[0] = 'this is 0';
+console.log(a);
+
+let b = {};
+b['c'] = 'this is c';
+b['a'] = 'this is a';
+console.log(b);
+
+let c = {};
+c[20] = 'this is 20';
+c[10020] = 'this is 10020';
+c['c'] = 'this is c';
+c['a'] = 'this is a';
+console.log(c);
+```
+
+```javascript
+/**
  * Buat key baru yaitu sellPrice pada product, dengan value:
  *   sellPrice = (price + (price * profit / 100))
  */
@@ -1547,14 +1570,14 @@ let patients = [
   ["Sitorus", "Batuk"],
   ["Rama", "Pusing"],
   ["Shinta", "Batuk"],
-  ["Cthulu", "Mual"],
+  ["Cthulhu", "Mual"],
   ["Nyarlothep", "Mual"],
 ];
 
 // Do something here
 
 // {
-//   Mual: [ 'Acong', 'Cthulu', 'Nyarlothep' ],
+//   Mual: [ 'Acong', 'Cthulhu', 'Nyarlothep' ],
 //   Pusing: [ 'Djoko', 'Rama' ],
 //   Batuk: [ 'Sitorus', 'Shinta' ]
 // }
