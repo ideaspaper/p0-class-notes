@@ -1,3 +1,5 @@
+[**Back to Home**](./../README.md)
+
 # Live Code Rules
 
 1. **CHEATING === EXPELLED**.
@@ -23,4 +25,4 @@
 16. **Passing score phase-0 = 65%**.
 17. Setelah briefing berakhir, bergabunglah dengan room video call instruktur buddy masing-masing.
 
-[Back to Home](./../README.md)
+[**Back to Home**](./../README.md)
