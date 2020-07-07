@@ -9,7 +9,7 @@
 5.  `npm install` untuk menginstall file-file yang diperlukan untuk testing.
 5.  Kerjakan tugasnya. Jangan mengubah file-file lain di luar file tugas yang telah ditentukan.
 6.  `node <nama_file>` untuk mengeksekusi kode program yang kalian buat.
-7.  `npm test` untuk menjalankan testing. Target kalian adalah dapat melewati semua test case dengan baik (100%).
+7.  `npm test` untuk menjalankan testing. Target kalian adalah dapat melewati semua test cases dengan baik (100%).
 8.  `git add .`
 9.  `git commit -m "<pesan_commit>"`
 10. `git push origin <nama_branch>`
