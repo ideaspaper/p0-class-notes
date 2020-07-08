@@ -132,7 +132,7 @@ switch (expression) {
  *   5: ★★★★★
  *
  * Apabila angka tersebut di luar range 1 hingga 5, tampilkan 'Invalid'.
- * Kerjakan dengan statement switch-case tanpa menggunakan statement break.
+ * Kerjakan dengan statement switch-case.
  */
 
 var input3 = 3;
@@ -149,6 +149,7 @@ switch (input2) {
     output = output + "★";
   case 1:
     output = output + "★";
+    break;
   default:
     output = "Invalid";
 }
@@ -346,6 +347,7 @@ console.log(hasilRandom1);
 
 var hasilRandom2 = Math.random() * 10;
 hasilRandom2 = Math.floor(hasilRandom2) + 1;
+// hasilRandom2 = Math.ceil(hasilRandom2) // Atau bisa menggunakan ini
 console.log(hasilRandom2);
 ```
 
@@ -362,7 +364,6 @@ var string = "0123456789";
 console.log(string.substring(4, 7));
 // Tampilkan 789
 console.log(string.substring(7));
-console.log(string.substring(7, string.length));
 ```
 
 [**Back to Home**](./../README.md)
