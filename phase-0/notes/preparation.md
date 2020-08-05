@@ -22,6 +22,6 @@ Git merupakan salah satu tool powerful yang dimiliki oleh seorang programmer. Se
 
 ## Text Editor
 
-Kita tahu bahwa kalian sudah sangat familiar dengan Notepad, namun kita tidak akan menggunakan program tersebut untuk mengetik kode program. Kalian bisa menggunakan text editor lain yang memang ditujukan untuk pemrograman seperti Visual Studio Code, Atom, Vim, dll. Namun yang palin sering instruktur gunakan adalah Visual Studio Code, sehingga kita rekomendasikan untuk menggunakannya juga. Instruksi instalasi Visual Studio Code dapat ditemukan di [link ini](https://code.visualstudio.com/download).
+Kita tahu bahwa kalian sudah sangat familiar dengan Notepad, namun kita tidak akan menggunakan program tersebut untuk mengetik kode program. Kalian bisa menggunakan text editor lain yang memang ditujukan untuk pemrograman seperti Visual Studio Code, Atom, Vim, dll. Namun yang paling sering instruktur gunakan adalah Visual Studio Code, sehingga kita rekomendasikan untuk menggunakannya juga. Instruksi instalasi Visual Studio Code dapat ditemukan di [link ini](https://code.visualstudio.com/download).
 
 [**Back to Home**](./../README.md)
