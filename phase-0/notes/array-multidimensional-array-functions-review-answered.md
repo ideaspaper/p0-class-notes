@@ -7,9 +7,11 @@
 ```javascript
 /**
  * Sebuah bioskop hendak membuat highlight untuk film-film dengan penilaian terbaik.
- * Film-film yang akan masuk ke dalam highlight merupakan film dengan total score 300 ke atas.
+ * Secara default, film-film yang akan masuk ke dalam highlight merupakan film dengan total score 300 ke atas.
  * Adapun perhitungan score tersebut adalah dari rating * jumlah review.
  * Buatlah sebuah program untuk menentukan film-film yang akan masuk ke dalam highlight tersebut.
+ *
+ * Note: apabila parameter score tidak diisi, maka diasumsikan nilai yang digunakan adalah 300.
  */
 
 // [ judul film, rating, jumlah review ]
