@@ -7,7 +7,7 @@
 - [Advanced Conditional](./notes/advanced-conditional.md)
 - [Pseudocode and Iteration](#)
 - [Nested Loop](#)
-- [Looping Review](#)
+- [Looping Review](./notes/looping-review.md)
 - [ES6](#)
 - [Simulasi Live Code 1](#)
 - [Functions](#)
