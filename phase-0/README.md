@@ -11,7 +11,7 @@
 - [ES6](#)
 - [Simulasi Live Code 1](#)
 - [Functions](#)
-- [Array](#)
+- [Array](./notes/array.md)
 - [Multidimensional Array](#)
 - [Array Review](#)
 - [Array, Multidimensional Array and Function Review](./notes/array-multidimensional-array-functions-review.md)
