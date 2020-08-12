@@ -17,6 +17,7 @@
 - [Array, Multidimensional Array and Function Review](./notes/array-multidimensional-array-functions-review.md)
 - [Modular Functions](#)
 - [Review up to Modular Functions](#)
+- [Mini Class Week 2](./notes/mini-class-week-2.md)
 - [Object Literal](#)
 - [Object Literal Review](#)
 - [Review up to Object Literal](#)
