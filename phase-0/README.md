@@ -13,7 +13,7 @@
 - [Functions](#)
 - [Array](./notes/array.md)
 - [Multidimensional Array](#)
-- [Array Review](#)
+- [Array Review](./notes/array-review.md)
 - [Array, Multidimensional Array and Function Review](./notes/array-multidimensional-array-functions-review.md)
 - [Modular Functions](#)
 - [Review up to Modular Functions](#)
