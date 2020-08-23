@@ -4,7 +4,27 @@
 
 DOM adalah kependekan dari (Document Object Model). DOM merupakan antarmuka pemrograman untuk HTML. Dengan antarmuka tersebut, kita dapat mengganti data yang ada pada HTML melalui kode program. DOM dapat diilustrasikan sebagai sebuah tree seperti di bawah.
 
-![DOM Tree](./../assets/DOM-model.png)
+```
+             ╭────────────────╮
+             │ HTML           │
+             │ [Root Element] │
+             ╰────────┬───────╯
+      ╭───────────────┴──────────────╮
+╭─────┴─────╮                  ╭─────┴─────╮
+│ Head      │                  │ Body      │
+│ [Element] │                  │ [Element] │
+╰─────┬─────╯                  ╰─────┬─────╯
+      │                              ├─────────────────────────────────╮
+╭─────┴─────╮                  ╭─────┴─────╮   ╭─────────────╮   ╭─────┴─────╮   ╭─────────────╮
+│ Title     │                  │ h1        ├───┤ style       │   │ a         ├───┤ href        │
+│ [Element] │                  │ [Element] │   │ [Attribute] │   │ [Element] │   │ [attribute] │
+╰─────┬─────╯                  ╰─────┬─────╯   ╰─────────────╯   ╰─────┬─────╯   ╰─────────────╯
+╭─────┴─────╮                 ╭──────┴──────╮                    ╭─────┴─────╮
+│ My Title  │                 │ Hello World │                    │ Link text │
+│ [Text]    │                 │ [Text]      │                    │ [Text]    │
+╰───────────╯                 ╰─────────────╯                    ╰───────────╯
+```
+
 
 Setiap object yang ada pada DOM merupakan `node`. Pada HTML, object bisa merupakan `element node`, `text node`, atau `attribute node`.
 
