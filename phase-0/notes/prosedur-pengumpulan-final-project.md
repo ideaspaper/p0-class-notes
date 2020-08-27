@@ -36,7 +36,7 @@ Prosedur ini hanya berlaku apabila kalian sudah memiliki repository `<username-g
 
    ![GitHub Page 2](./../assets/github-page-2.png)
 
-10. Final project yang kalian buat akan live di `<username-github>.github.io/<nama-repository>/`.
+10. Final project yang kalian buat akan live di `<username-github>.github.io/<nama-repository>`.
 
 > Note: Apabila mengunjungi `<username-github>.github.io/<nama-repository>` menghasilkan error 404, kemungkinan GitHub masih memproses page kalian. Sebagai alternatifnya, kalian bisa menambahkan `/index.html` di belakang URL tadi.
 
