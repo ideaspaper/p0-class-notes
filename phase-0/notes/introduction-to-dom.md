@@ -32,7 +32,7 @@ Contoh sebuah HTML dan representasi DOM-nya.
 
 ```html
 <html>
-  <head> </head>
+  <head></head>
   <body>
     <h1 style="font=weight: bold;">
       Hello World
@@ -156,6 +156,40 @@ _**Return**_
 </html>
 ```
 
+**Menambahkan attribute pada Element object**
+
+```html
+<html>
+  <head></head>
+  <body>
+    <div>
+      <p id="paragraph1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p id="paragraph2">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <script>
+      let paragraph1 = document.getElementById("paragraph1");
+      let paragraph2 = document.getElementById("paragraph2");
+      paragraph1.setAttribute("class", "color-red");
+      paragraph2.setAttribute("class", "color-blue");
+    </script>
+  </body>
+
+  <style>
+    .color-red {
+      color: #ff0000;
+    }
+    .color-blue {
+      color: #0000ff;
+    }
+  </style>
+</html>
+```
+
 ## Event attributes
 
 ```html
@@ -265,7 +299,7 @@ _**Return**_
       function toBold(children) {
         let parent = children.parentElement;
         for (let i = 0; i < parent.children.length; i++) {
-          parent.children[i].style.fontWeight = "bold";
+          parent.children[i].setAttribute("class", bold);
         }
       }
       let button1 = document.getElementById("button1");
@@ -273,6 +307,12 @@ _**Return**_
         toBold(button1);
       });
     </script>
+
+    <style>
+      .bold {
+        font-weight: bold;
+      }
+    </style>
   </body>
 </html>
 ```
@@ -287,7 +327,7 @@ Seperti CSS, kode program JavaScript dapat diletakkan pada file eksternal. Kita 
 function toBold(children) {
   let parent = children.parentElement;
   for (let i = 0; i < parent.children.length; i++) {
-    parent.children[i].style.fontWeight = "bold";
+    parent.children[i].setAttribute("class", bold);
   }
 }
 let button1 = document.getElementById("button1");
