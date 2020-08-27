@@ -24,7 +24,7 @@ Prosedur ini hanya berlaku apabila kalian sudah memiliki repository `<username-g
    - `git add .`
    - `git commit -m '<pesan-commit>'`
    - `git push -u origin master`
-7. Kunjungi repository yang sudah kalian buat sebelumnya kemudian kalian di GitHub kemudian klik **Settings**.
+7. Kunjungi repository yang sudah kalian buat sebelumnya, kemudian klik **Settings**.
 
    ![Repo Setting](./../assets/repo-setting.png)
 
