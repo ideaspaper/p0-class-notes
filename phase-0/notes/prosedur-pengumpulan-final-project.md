@@ -2,7 +2,7 @@
 
 # Requirements dan Prosedur Pengumpulan Final Project
 
-## Phase 0 Final Project Requirements
+## Requirements
 - Tema bebas.
 - Tidak diperbolehkan menggunakan framework apapun.
 - Menggunakan DOM (**bukan JQUERY**, **dsb**).
