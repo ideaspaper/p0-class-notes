@@ -327,7 +327,7 @@ Seperti CSS, kode program JavaScript dapat diletakkan pada file eksternal. Kita 
 function toBold(children) {
   let parent = children.parentElement;
   for (let i = 0; i < parent.children.length; i++) {
-    parent.children[i].setAttribute("class", bold);
+    parent.children[i].setAttribute("class", "bold");
   }
 }
 let button1 = document.getElementById("button1");
