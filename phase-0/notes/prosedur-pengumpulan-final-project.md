@@ -21,9 +21,9 @@ Prosedur ini hanya berlaku apabila kalian sudah memiliki repository `<username-g
 4. Buat sebuah file HTML dengan nama `index.html`. File tersebut adalah yang akan terbuka pertama kali saat kita mengunjungi `<username-github>.github.io/<nama-repository>` pada browser.
 5. Kerjakan tugas kalian. Tambahkan file CSS dan JS sesuai dengan requirement final project. Kalian juga bisa menambahkan file gambar atau file suara seperlunya sesuai dengan kreasi kalian.
 6. Apabila pengerjaan sudah selesai, eksekusi perintah-perintah berikut:
-   1. `git add .`
-   2. `git commit -m '<pesan-commit>'`
-   3. `git push -u origin master`
+   - `git add .`
+   - `git commit -m '<pesan-commit>'`
+   - `git push -u origin master`
 7. Kunjungi repository yang sudah kalian buat sebelumnya kemudian kalian di GitHub kemudian klik Setting.
 
    ![Repo Setting](./../assets/repo-setting.png)

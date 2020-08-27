@@ -8,9 +8,9 @@
 4. Buat sebuah file HTML dengan nama `index.html`. File tersebut adalah yang akan terbuka pertama kali saat kita mengunjungi `<username-github>.github.io` pada browser.
 5. Kerjakan tugas kalian. Kalian bisa menambahkan file CSS atau gambar-gambar seperlunya sesuai dengan kreasi kalian.
 6. Apabila pengerjaan sudah selesai, eksekusi perintah-perintah berikut:
-   1. `git add .`
-   2. `git commit -m '<pesan-commit>'`
-   3. `git push -u origin master`
+   - `git add .`
+   - `git commit -m '<pesan-commit>'`
+   - `git push -u origin master`
 7. Page yang kalian buat akan live di `<username-github>.github.io`.
 
 Note: Apabila mengunjungi `<username-github>.github.io` menghasilkan error 404, kemungkinan GitHub masih memproses page kalian. Sebagai alternatifnya, kalian bisa menambahkan `/index.html` di belakang URL tadi.
