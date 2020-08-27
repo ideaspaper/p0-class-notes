@@ -2,7 +2,7 @@
 
 # Requirements dan Prosedur Pengumpulan Final Project
 
-## Phase 0 Final Project Requiremnets
+## Phase 0 Final Project Requirements
 - Tema bebas.
 - Tidak diperbolehkan menggunakan framework apapun.
 - Menggunakan DOM (**bukan JQUERY**, **dsb**).
@@ -19,7 +19,7 @@ Prosedur ini hanya berlaku apabila kalian sudah memiliki repository `<username-g
 2. Clone repository tersebut dengan perintah `git clone <nama-repository>`.
 3. Buka folder hasil `git clone` di code editor kalian.
 4. Buat sebuah file HTML dengan nama `index.html`. File tersebut adalah yang akan terbuka pertama kali saat kita mengunjungi `<username-github>.github.io/<nama-repository>` pada browser.
-5. Kerjakan tugas kalian. Tambahkan file CSS dan JS sesuai dengan requirement final project. Kalian juga bisa menambahkan file gambar atau file suara seperlunya sesuai dengan kreasi kalian.
+5. Kerjakan tugas kalian. Tambahkan file CSS dan JS sesuai dengan final project requirements. Kalian juga bisa menambahkan file gambar atau file suara seperlunya sesuai dengan kreasi kalian.
 6. Apabila pengerjaan sudah selesai, eksekusi perintah-perintah berikut:
    - `git add .`
    - `git commit -m '<pesan-commit>'`
