@@ -13,7 +13,7 @@
    - `git push -u origin master`
 7. Page yang kalian buat akan live di `<username-github>.github.io`.
 
-Note: Apabila mengunjungi `<username-github>.github.io` menghasilkan error 404, kemungkinan GitHub masih memproses page kalian. Sebagai alternatifnya, kalian bisa menambahkan `/index.html` di belakang URL tadi.
+> Note: Apabila mengunjungi `<username-github>.github.io` menghasilkan error 404, kemungkinan GitHub masih memproses page kalian. Sebagai alternatifnya, kalian bisa menambahkan `/index.html` di belakang URL tadi.
 
 [Referensi video by Josep Immanuel (github.com/josepimmanuel)](https://www.loom.com/share/98a25b0950684297bc8d65463bb6d5cb)
 
