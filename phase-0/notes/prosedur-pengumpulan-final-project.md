@@ -38,7 +38,7 @@ Prosedur ini hanya berlaku apabila kalian sudah memiliki repository `<username-g
 
 10. Final project yang kalian buat akan live di `<username-github>.github.io/<nama-repository>/`.
 
-Note: Apabila mengunjungi `<username-github>.github.io/<nama-repository>/` menghasilkan error 404, kemungkinan GitHub masih memproses page kalian. Sebagai alternatifnya, kalian bisa menambahkan `index.html` di belakang URL tadi.
+Note: Apabila mengunjungi `<username-github>.github.io/<nama-repository>` menghasilkan error 404, kemungkinan GitHub masih memproses page kalian. Sebagai alternatifnya, kalian bisa menambahkan `/index.html` di belakang URL tadi.
 
 [Referensi video by Fiqi Fitransyah (github.com/i01107)](https://drive.google.com/file/d/1e5BS8BeEzkdXFpzOfghBQMdHBg3ZRXG4/view?usp=sharing)
 
