@@ -12,7 +12,7 @@
  *
  * FOR i FROM 0 TO 10 INCREMENT BY 1
  *   ...
- * ENDFOR
+ * END FOR
  */
 
 for (var i = 0; i < 10; i++) {
@@ -29,8 +29,8 @@ for (var i = 0; i < 10; i++) {
  * STORE i AS NUMBER WITH VALUE 0
  * WHILE i < 5
  *   ...
- *   SET i AS i + 1
- * ENDWHILE
+ *   SET i TO i + 1
+ * END WHILE
  */
 
 var i = 0;
@@ -49,7 +49,7 @@ while (i < 5) {
  * STORE i AS NUMBER WITH VALUE 0
  * DO
  *   ...
- *   SET i AS i + 1
+ *   SET i TO i + 1
  * WHILE i < 5
  */
 

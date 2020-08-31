@@ -5,7 +5,7 @@
 - [Algorithm and Pseudocode](#)
 - [Conditional and Primitive Data Types](#)
 - [Advanced Conditional](./notes/advanced-conditional.md)
-- [Pseudocode and Iteration](#)
+- [Pseudocode and Looping](#)
 - [Nested Loop](#)
 - [Looping Review](./notes/looping-review.md)
 - [ES6](#)
