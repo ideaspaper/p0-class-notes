@@ -33,7 +33,7 @@ Syntax `for` memiliki empat bagian:
 
 > **Syntax**
 > 
-> ```javascript
+> ```
 > for (1. Inisialisasi; 2. Kondisional; 3. Increment/decrement) {
 >   4. Kode program yang dieksekusi
 > }
@@ -65,7 +65,7 @@ Syntax `while` memiliki dua bagian:
 
 > **Syntax**
 > 
-> ```javascript
+> ```
 > while(1. Kondisional) {
 >   2. Kode program yang dieksekusi
 > }
@@ -101,7 +101,7 @@ Syntax `do...while` memiliki dua bagian:
 
 > **Syntax**
 > 
-> ```javascript
+> ```
 > do {
 >   1. Kode program yang dieksekusi
 > } while (2. Kondisional)
