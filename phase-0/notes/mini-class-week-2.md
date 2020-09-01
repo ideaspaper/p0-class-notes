@@ -472,7 +472,7 @@ if (arr.length === 0) {
 }
 ```
 
-# Loopings
+# Pseudocode and Loopings
 
 Looping merupakan pengulangan. Alasan dari penggunaan looping dapat diilustrasikan dengan kode program di bawah.
 
@@ -493,7 +493,7 @@ Kode program di atas rawan untuk error dengan alasan sebagai berikut:
 
 Maka dari itu, bahasa pemrograman pada umumnya menyediakan fitur looping. Pada JavaScript terdapat tiga jenis looping, yaitu `for`, `while` dan `do...while`.
 
-> DRY (Don't Repeat Yourself). Pekerjaan manual yang sama dan dilakukan berkali-kali akan memperbesar kemungkinan terjadinya human error.
+> **DRY (Don't Repeat Yourself)**. Pekerjaan manual yang sama dan dilakukan berkali-kali akan memperbesar kemungkinan terjadinya human error.
 
 ## for
 
@@ -503,15 +503,29 @@ Syntax `for` memiliki empat bagian:
 3. Increment/decrement
 4. Kode program yang dieksekusi
 
-```javascript
-// for (inisialisasi; kondisional; increment/decrement) {
-//   kode program yang dieksekusi
-// }
-
-for (let i = 0; i < 10; i++) {
-  console.log("Hello");
-}
-```
+> **Syntax**
+> 
+> ```
+> for (1. Inisialisasi; 2. Kondisional; 3. Increment/decrement) {
+>   4. Kode program yang dieksekusi
+> }
+> ```
+> 
+> **Pseudocode**
+> 
+> ```
+> FOR i FROM 0 TO 9 INCREMENT BY 1
+>   DISPLAY 'Hello'
+> END FOR
+> ```
+> 
+> **Example**
+> 
+> ```javascript
+> for (var i = 0; i < 10; i++) {
+>   console.log("Hello");
+> }
+> ```
 
 Apabila diterjemahkan ke Bahasa Indonesia, `for` adalah **LAKUKAN X SEBANYAK Y KALI**. Dengan pengertian tersebut, maka `for` tepat untuk digunakan pada pengulangan yang kita tahu persis berapa kali akan dilakukan.
 
@@ -521,17 +535,33 @@ Syntax `while` memiliki dua bagian:
 1. Kondisional
 2. Kode program yang dieksekusi
 
-```javascript
-// while(kondisional) {
-//   kode program yang dieksekusi
-// }
-
-let i = 0;
-while(i < 10) {
-  console.log("Hello");
-  i++;
-}
-```
+> **Syntax**
+> 
+> ```
+> while(1. Kondisional) {
+>   2. Kode program yang dieksekusi
+> }
+> ```
+> 
+> **Pseudocode**
+> 
+> ```
+> STORE i as NUMBER WITH VALUE 0
+> WHILE i LESS THAN 10
+>   DISPLAY 'Hello'
+>   SET i TO i + 1
+> END WHILE
+> ```
+> 
+> **Example**
+> 
+> ```javascript
+> var i = 0;
+> while(i < 10) {
+>   console.log("Hello");
+>   i++;
+> }
+> ```
 
 Apabila diterjemahkan ke Bahasa Indonesia, `while` adalah **SELAMA TRUE LAKUKAN X**. Dengan pengertian tersebut, maka `while` tepat untuk digunakan pada pengulangan di mana kita hanya tahu kondisi berhentinya saja, tanpa mengetahui berapa banyak pengulangan akan dilakukan.
 
@@ -541,17 +571,33 @@ Syntax `do...while` memiliki dua bagian:
 1. Kondisional
 2. Kode program yang dieksekusi
 
-```javascript
-// do {
-//   kode program yang dieksekusi
-// } while (kondisional)
-
-let i = 0;
-do {
-  console.log("Hello");
-  i++;
-} while(i < 10);
-```
+> **Syntax**
+> 
+> ```
+> do {
+>   1. Kode program yang dieksekusi
+> } while (2. Kondisional)
+> ```
+> 
+> **Pseudocode**
+> 
+> ```
+> STORE i AS NUMBER WITH VALUE 0
+> DO
+>   DISPLAY 'Hello'
+>   SET i TO i + 1
+> WHILE i LESS THAN 10
+> ```
+> 
+> **Example**
+> 
+> ```javascript
+> var i = 0;
+> do {
+>   console.log("Hello");
+>   i++;
+> } while(i < 10);
+> ```
 
 Apabila diterjemahkan ke Bahasa Indonesia, `do...while` adalah **LAKUKAN X SELAMA TRUE**. Dengan pengertian tersebut, maka `do...while` tepat untuk digunakan pada pengulangan di mana kita hanya tahu kondisi berhentinya saja, tanpa mengetahui berapa banyak pengulangan akan dilakukan.
 
@@ -560,6 +606,19 @@ Apabila diterjemahkan ke Bahasa Indonesia, `do...while` adalah **LAKUKAN X SELAM
 Perbedaan antara `while` dengan `do...while` adalah:
 - Pada `while` pengecekan kondisi akan dilakukan terlebih dahulu.
 - Pada `do...while` pengecekan kondisi akan dilakukan belakangan.
+
+## break
+
+`break` merupakan statement yang dapat digunakan untuk mengakhiri looping. Sebagai contoh, perhatikan kode program di bawah:
+
+```javascript
+for (var i = 0; i < 10; i++) {
+  console.log('Hello');
+  break;
+}
+```
+
+Hasil yang didapatkan dari mengeksekusi kode program tersebut hanyalah sebuah text `'Hello'`. Setelah `'Hello'` ditampilkan, komputer akan mengeksekusi statement `break`, sehingga proses looping terhenti.
 
 # Practices
 
