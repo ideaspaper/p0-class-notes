@@ -10,7 +10,7 @@
 - [Looping Review](./notes/looping-review.md)
 - [ES6](#)
 - [Simulasi Live Code 1](#)
-- [Functions](#)
+- [Functions](./notes.functions.md)
 - [Array](./notes/array.md)
 - [Multidimensional Array](#)
 - [Array Review](./notes/array-review.md)
