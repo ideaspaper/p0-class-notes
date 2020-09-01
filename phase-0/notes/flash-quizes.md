@@ -30,7 +30,7 @@ Command terminal apakah yang digunakan untuk menghapus sebuah file?
 :four: `destroy <nama_file>`
 ````
 
-## Variable Declarations
+## Variables
 
 ```
 **Flash Quiz!**
@@ -43,6 +43,42 @@ Pilihan manakah yang merupakan syntax valid JavaScript?
 :four: `var 1thing = 100`;
 :five: `console.log['Interesting']`;
 ```
+
+````
+**Flash Quiz!**
+
+```javascript
+var a = 5;
+var b = 3;
+
+// Solusi
+```
+Diberikan dua buah variable yaitu `a` dan `b`. Solusi manakah yang paling tepat untuk menukar nilai `a` menjadi nilai `b`, begitu pula sebaliknya?
+Note: nilai `a` dan `b` bisa berapa saja.
+
+:one: ```javascript
+a = 3;
+b = 5;
+```
+:two: ```javascript
+var a = 3;
+var b = 5;
+```
+:three: ```javascript
+a = b;
+b = a;
+```
+:four: ```javascript
+var c = a;
+a = b;
+b = c;
+```
+:five: ```javascript
+var c = b;
+a = b;
+b = a;
+```
+````
 
 ## Conditionals
 
