@@ -52,7 +52,7 @@ Penamaan function pada JavaScript memiliki convention yang sama dengan penamaan 
 - Tidak dapat diawali dengan angka.
 - Tidak dapat menggunakan space.
 
-## Parameters dan Argumen
+## Parameters dan Argument
 
 Apabila sebuah function kita deklarasikan dengan sebuah parameter, kita dapat memanggil function tersebut dengan argument.
 
