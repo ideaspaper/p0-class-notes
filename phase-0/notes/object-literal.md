@@ -140,7 +140,7 @@ let patients = [
   ["Nyarlothep", "Mual"],
 ];
 
-function groupByIllness() {
+function groupByIllness(arrIn) {
   // Do something here
 }
 

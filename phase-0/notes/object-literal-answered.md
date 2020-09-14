@@ -159,14 +159,14 @@ let patients = [
   ["Nyarlothep", "Mual"],
 ];
 
-function groupByIllness() {
+function groupByIllness(arrIn) {
   // Do something here
   let ret = {};
-  for (let i = 0; i < patients.length; i++) {
-    if (!(patients[i][1] in ret)) {
-      ret[patients[i][1]] = [];
+  for (let i = 0; i < arrIn.length; i++) {
+    if (!(arrIn[i][1] in ret)) {
+      ret[arrIn[i][1]] = [];
     }
-    ret[patients[i][1]].push(patients[i][0]);
+    ret[arrIn[i][1]].push(arrIn[i][0]);
   }
   return ret;
 }
