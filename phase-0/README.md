@@ -19,7 +19,7 @@
 - [Review up to Modular Functions](#)
 - [Mini Class Week 2](./notes/mini-class-week-2.md)
 - [Object Literal](./notes/object-literal.md)
-- [Object Literal Review](#)
+- [Object Literal Review](./notes/object-literal-review.md)
 - [Review up to Object Literal](#)
 - [HTML](#)
 - [CSS](#)
