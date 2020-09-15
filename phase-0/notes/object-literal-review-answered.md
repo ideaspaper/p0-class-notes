@@ -13,15 +13,13 @@
 function arrSet(input) {
   let obj = {};
   for (let i = 0; i < input.length; i++) {
-    if (!(input[i] in obj)) {
-      obj[input[i]] = input[i];
-    }
+    obj[input[i]] = input[i]; // Memanfaatkan sifat object, key selalu unique
   }
   return Object.values(obj);
 }
 
-console.log(arrSet([1, 1, 1, 3, 3, 3, 5, 5, 5, 5]));        // [ 1, 3, 5 ]
-console.log(arrSet([1, 5, 1, 2, 2, 3, 3, 5, 5]));           // [ 1, 2, 3, 5 ]
+console.log(arrSet([1, 1, 1, 3, 3, 3, 5, 5, 5, 5])); // [ 1, 3, 5 ]
+console.log(arrSet([1, 5, 1, 2, 2, 3, 3, 5, 5])); // [ 1, 2, 3, 5 ]
 console.log(arrSet([1, 5, 1, 2, 2, 3, 3, 5, 5, 'A', 'A'])); // [ 1, 2, 3, 5, 'A' ]
 ```
 
@@ -33,14 +31,22 @@ console.log(arrSet([1, 5, 1, 2, 2, 3, 3, 5, 5, 'A', 'A'])); // [ 1, 2, 3, 5, 'A'
  */
 
 function groupByAge(arr) {
-  let ret = {};
+  let output = {};
+
   for (let i = 0; i < arr.length; i++) {
-    if (!((2020 - arr[i]) in ret)) {
-      ret[2020 - arr[i]] = 0;
+    if (!((2020 - arr[i]) in output)) {
+      output[2020 - arr[i]] = 0;
     }
-    ret[2020 - arr[i]]++;
+    output[2020 - arr[i]]++;
   }
-  return ret;
+
+  // Solusi lain
+  // for (let i = 0; i < arr.length; i++) {
+  //   let age = 2020 - arr[i];
+  //   output[age] = output[age] + 1 || 1;
+  // }
+
+  return output;
 }
 
 console.log(groupByAge([2003, 1991, 1821, 2003, 1821, 1995, 1995]))
