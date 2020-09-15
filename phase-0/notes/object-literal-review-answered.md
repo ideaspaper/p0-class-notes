@@ -54,6 +54,17 @@ console.log(groupByAge([2003, 1991, 1821, 2003, 1821, 1995, 1995]))
 
 ## Soal 3
 ```js
+/**
+ * Buat sebuah function yang akan menghasilkan array of string yang berisi,
+ * hobi-hobi yang sama antara dua orang. Seseorang direpresentasikan dalam bentuk object
+ * seperti di bawah:
+ * 
+ * {
+ *   name: 'semmi',
+ *   hobbies: ['Sleeping', 'Dancing', 'Coding']
+ * }
+ */
+
 function sameHobbies(obj1, obj2) {
   let temp1
   let temp2;
