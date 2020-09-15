@@ -66,26 +66,15 @@ console.log(groupByAge([2003, 1991, 1821, 2003, 1821, 1995, 1995]))
  */
 
 function sameHobbies(obj1, obj2) {
-  let temp1
-  let temp2;
-  if (obj2.hobbies.length > obj1.hobbies.length) {
-    temp1 = obj2;
-    temp2 = obj1;
-  } else {
-    temp1 = obj1;
-    temp2 = obj2;
-  }
-
   let ret = [];
-  for (let i = 0; i < temp1.hobbies.length; i++) {
-    for (let j = 0; j < temp2.hobbies.length; j++) {
-      if (temp1.hobbies[i] === temp2.hobbies[j]) {
-        ret.push(temp1.hobbies[i]);
+  for (let i = 0; i < obj1.hobbies.length; i++) {
+    for (let j = 0; j < obj2.hobbies.length; j++) {
+      if (obj1.hobbies[i] === obj2.hobbies[j]) {
+        ret.push(obj1.hobbies[i]);
         break;
       }
     }
   }
-
   return ret;
 }
 
