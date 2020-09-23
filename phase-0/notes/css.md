@@ -390,7 +390,7 @@ Unit merupakan size suatu element pada CSS. Unit dapat berupa nilai absolute sep
 
 [CSS units reference](https://www.w3schools.com/cssref/css_units.asp)
 
-## :hover
+## Pseudo-class :hover
 
 `:hover` digunakan untuk menerapkan rule styling ketika terjadi event mouse-over pada elemen yang bersangkutan.
 
@@ -423,7 +423,7 @@ Unit merupakan size suatu element pada CSS. Unit dapat berupa nilai absolute sep
 
 ## Further Reading
 
-- [Box Shadow](www.cssmatic.com/box-shadow)
+- [Box Shadow](https://www.cssmatic.com/box-shadow)
 - [Display Flex](https://www.w3schools.com/css/css3_flexbox.asp)
 - [Selain :hover](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 
