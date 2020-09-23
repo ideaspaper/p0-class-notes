@@ -425,6 +425,6 @@ Unit merupakan size suatu element pada CSS. Unit dapat berupa nilai absolute sep
 
 - [Box Shadow](https://www.cssmatic.com/box-shadow)
 - [Display Flex](https://www.w3schools.com/css/css3_flexbox.asp)
-- [Selain :hover](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+- [List Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 
 [**Back to Home**](./../README.md)
