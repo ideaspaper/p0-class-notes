@@ -22,7 +22,7 @@
 - [Object Literal Review 1](./notes/object-literal-review-1.md)
 - [Object Literal Review 2](./notes/object-literal-review-2.md)
 - [HTML](#)
-- [CSS](#)
+- [CSS](./notes/css.md)
 - [HTML and CSS Review](#)
 - [Introduction to DOM](./notes/introduction-to-dom.md)
 - [Prosedur Pengumpulan Tugas](./notes/prosedur-pengumpulan-tugas.md)
