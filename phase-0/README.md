@@ -2,7 +2,7 @@
 
 - [Preparation](./notes/preparation.md)
 - [Terminal, Git and GitHub](#)
-- [Algorithm and Pseudocode](#)
+- [Algorithm and Pseudocode](./assets/algorithm-and-pseudocode.pdf)
 - [Conditional and Primitive Data Types](#)
 - [Advanced Conditional](./notes/advanced-conditional.md)
 - [Pseudocode and Loopings](./notes/pseudocode-and-loopings.md)
@@ -30,3 +30,4 @@
 - [Prosedur Pengumpulan Final Project](./notes/prosedur-pengumpulan-final-project.md)
 - [Live Code Rules](./notes/live-code-rules.md)
 - [Flash Quizes](./notes/flash-quizes.md)
+- [Pseudocode Note 1](./notes/pseudocode-note-1.md)
