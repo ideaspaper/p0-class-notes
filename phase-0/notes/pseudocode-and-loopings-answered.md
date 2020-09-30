@@ -103,8 +103,8 @@ Syntax `do...while` memiliki dua bagian:
 > 
 > ```
 > do {
->   1. Kode program yang dieksekusi
-> } while (2. Kondisional)
+>   2. Kode program yang dieksekusi
+> } while (1. Kondisional)
 > ```
 > 
 > **Pseudocode**
