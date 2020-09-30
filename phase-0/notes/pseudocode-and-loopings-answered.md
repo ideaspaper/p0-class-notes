@@ -74,10 +74,10 @@ Syntax `while` memiliki dua bagian:
 > **Pseudocode**
 > 
 > ```
-> STORE i as NUMBER WITH VALUE 0
+> STORE i WITH 0
 > WHILE i LESS THAN 10
 >   DISPLAY 'Hello'
->   SET i TO i + 1
+>   SET i WITH i PLUS 1
 > END WHILE
 > ```
 > 
@@ -110,10 +110,10 @@ Syntax `do...while` memiliki dua bagian:
 > **Pseudocode**
 > 
 > ```
-> STORE i AS NUMBER WITH VALUE 0
+> STORE i WITH 0
 > DO
 >   DISPLAY 'Hello'
->   SET i TO i + 1
+>   SET i WITH i PLUS 1
 > WHILE i LESS THAN 10
 > ```
 > 
@@ -174,7 +174,7 @@ for (var i = 10; i > 0; i++) {
 /**
  * PSEUDOCODE
  * 
- * STORE input AS STRING WITH ANY VALUE
+ * STORE input WITH ANY STRING
  * 
  * FOR i FROM 0 TO (LENGTH OF input - 1) INCREMENT BY 1
  *   DISPLAY input INDEX i
@@ -207,12 +207,12 @@ for (var i = 0; i < input.length; i++) {
 /**
  * PSEUDOCODE
  * 
- * STORE input AS STRING WITH ANY VALUE
+ * STORE input WITH ANY STRING
  * 
  * FOR i FROM 0 TO (LENGTH OF input - 1) INCREMENT BY 2
- *   STORE output AS STRING WITH VALUE (input INDEX i)
+ *   STORE output WITH (input INDEX i)
  *   IF i + 1 LESS THAN LENGTH OF input
- *     SET output TO output + input INDEX (i + 1)
+ *     SET output WITH output CONCAT WITH input INDEX (i + 1)
  *   END IF
  *   DISPLAY output
  * END FOR
@@ -238,12 +238,12 @@ for (var i = 0; i < input.length; i += 2) {
 /**
  * PSEUDOCODE
  * 
- * STORE input AS NUMBER WITH VALUE 10
- * STORE hasil AS NUMBER WITH VALUE 0
+ * STORE input WITH 10
+ * STORE hasil WITH 0
  * 
  * FOR i FROM 1 TO input INCREMENT BY 1
  *   IF i MODULUS 2 EQUAL 0
- *     SET hasil TO hasil + i
+ *     SET hasil WITH hasil PLUS i
  *   END IF
  * END FOR
  * 
@@ -273,12 +273,12 @@ console.log(store);
 /**
  * PSEUDOCODE
  * 
- * STORE hasilLempar AS NUMBER WITH VALUE 0
- * STORE totalLempar AS NUMBER WITH VALUE 0
+ * STORE hasilLempar WITH 0
+ * STORE totalLempar WITH 0
  * 
  * DO
- *   SET hasilLempar TO FLOOR(RANDOM() * 6) + 1
- *   SET totalLempar TO totalLempar + 1
+ *   SET hasilLempar WITH FLOOR(RANDOM() * 6) PLUS 1
+ *   SET totalLempar WITH totalLempar PLUS 1
  * WHILE hasilLempar NOT EQUAL 6
  * 
  * DISPLAY totalLempar

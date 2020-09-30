@@ -74,10 +74,10 @@ Syntax `while` memiliki dua bagian:
 > **Pseudocode**
 > 
 > ```
-> STORE i as NUMBER WITH VALUE 0
+> STORE i WITH 0
 > WHILE i LESS THAN 10
 >   DISPLAY 'Hello'
->   SET i TO i + 1
+>   SET i WITH i PLUS 1
 > END WHILE
 > ```
 > 
@@ -110,10 +110,10 @@ Syntax `do...while` memiliki dua bagian:
 > **Pseudocode**
 > 
 > ```
-> STORE i AS NUMBER WITH VALUE 0
+> STORE i WITH 0
 > DO
 >   DISPLAY 'Hello'
->   SET i TO i + 1
+>   SET i WITH i PLUS 1
 > WHILE i LESS THAN 10
 > ```
 > 
