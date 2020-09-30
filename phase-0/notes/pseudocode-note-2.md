@@ -2,6 +2,19 @@
 
 # Pseudocode Note 2
 
+## Switch-Case
+
+```
+SWITCH namaVariable
+  CASE nilai1
+    ...
+  CASE nilai2
+    ...
+  CASE nilai3
+    ...
+END SWITCH
+```
+
 ## For Loop
 
 ```
