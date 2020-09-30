@@ -31,3 +31,4 @@
 - [Live Code Rules](./notes/live-code-rules.md)
 - [Flash Quizes](./notes/flash-quizes.md)
 - [Pseudocode Note 1](./notes/pseudocode-note-1.md)
+- [Pseudocode Note 2](./notes/pseudocode-note-2.md)
