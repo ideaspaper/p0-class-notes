@@ -53,13 +53,18 @@ DISPLAY input INDEX 3 // Huruf ke 3
 
 ```
 // Contoh Math.random
-RANDOM()
+SET variableName WITH RANDOM NUMBER BETWEEN 0 AND 10
+
+// Contoh Math.round
+SET variableName WITH ROUND OF variableName
 
 // Contoh Math.floor
-FLOOR()
+SET variableName WITH ROUND DOWN OF variableName
 
-// Contoh menggabungkan keduanya
-FLOOR(RANDOM() TIMES 6) // Menghasilkan angka random dari 0 sampai 5
+// Contoh Math.ceil
+SET variableName WITH ROUND UP OF variableName
 ```
+
+Penulisan built-in function lainnya yang tidak disebutkan, bisa meniru gaya penulisan di atas.
 
 [**Back to Home**](./../README.md)
