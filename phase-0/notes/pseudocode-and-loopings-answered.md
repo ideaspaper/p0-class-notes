@@ -277,8 +277,7 @@ console.log(store);
  * STORE totalLempar WITH 0
  * 
  * DO
- *   SET hasilLempar WITH FLOOR(RANDOM() * 6) PLUS 1
- *   SET totalLempar WITH totalLempar PLUS 1
+ *   SET hasilLempar WITH RANDOM NUMBER BETWEEN 1 AND 6
  * WHILE hasilLempar NOT EQUAL 6
  * 
  * DISPLAY totalLempar
