@@ -154,7 +154,7 @@ let books = [
   ['Harry Potter', 'J. K. Rowling', 'Gramedia'],
   ['Pemrograman Web dengan Node.js dan Javascript', 'Budi Raharjo', 'Informatika'],
   ['Ruby untuk Aplikasi Desktop dan Web', 'Budi Raharjo', 'Informatika']
-]
+];
 
 function searchAll(input, search) {
   // Code here
