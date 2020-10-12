@@ -92,7 +92,11 @@ let sensebounce = {
 
 // Do something here
 for (const key in sensebounce) {
-  if (typeof sensebounce[key] === 'object') {
+  if (Array.isArray(sensebounce[key])) {
+    for (let i = 0; i < sensebounce[key].length; i++) {
+      console.log(sensebounce[key][i]);
+    }
+  } else if (typeof sensebounce[key] === 'object') {
     for (const key2 in sensebounce[key]) {
       console.log(sensebounce[key][key2]);
     }
@@ -161,14 +165,25 @@ let patients = [
 
 function groupByIllness(arrIn) {
   // Do something here
-  let ret = {};
+  let output = {};
+
+  // Cara 1
   for (let i = 0; i < arrIn.length; i++) {
-    if (!(arrIn[i][1] in ret)) {
-      ret[arrIn[i][1]] = [];
+    if (!(arrIn[i][1] in output)) { // Jika arrIn[i][1] tidak terdapat pada object output
+      output[arrIn[i][1]] = [];
     }
-    ret[arrIn[i][1]].push(arrIn[i][0]);
+    output[arrIn[i][1]].push(arrIn[i][0]);
   }
-  return ret;
+
+  // Cara 2
+  // for (let i = 0; i < arrIn.length; i++) {
+  //   if (!output[arrIn[i][1]]) { // Jika value dari key arrIn[i][1] pada object output adalah falsy
+  //     output[arrIn[i][1]] = [];
+  //   }
+  //   output[arrIn[i][1]].push(arrIn[i][0]);
+  // }
+
+  return output;
 }
 
 console.log(groupByIllness(patients));
