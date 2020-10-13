@@ -1,8 +1,98 @@
 [**Back to Home**](./../README.md)
 
-# Object Literal Review 2
+# Review Before Live Code 2
 
 ## Soal 1
+```javascript
+/**
+ * Terdapat sebuah function yang akan menghasilkan sebuah multidimensional array dengan jumlah baris dan kolom yang diminta oleh user.
+ * Setiap elemennya akan diisi dengan huruf alphabet berurutan dari 'a' hingga 'z'.
+ * Pengisian huruf dimulai dari baris pertama dari kiri ke kanan. Ketika baris pertama sudah terisi dengan huruf huruf alfabet,
+ * maka pengisian dilanjutkan pada baris berikutnya dari kiri ke kanan, dan seterusnya.
+ * Ketika pengisian huruf sudah sampai 'z', maka elemen selanjutnya akan diisi oleh huruf 'a' lagi dan seterusnya.
+ *
+ * RULES:
+ *   - Dilarang menggunakan built-in function kecuali .push()
+ */
+
+function boxOfAlphabet(row, col) {
+  // Your code here
+}
+
+console.log(boxOfAlphabet(2, 2));
+// [
+//   ['a', 'b'],
+//   ['c', 'd']
+// ]
+
+
+console.log(boxOfAlphabet(3, 4));
+// [
+//   ['a', 'b', 'c', 'd'],
+//   ['e', 'f', 'g', 'h'],
+//   ['i', 'j', 'k', 'l']
+// ]
+
+
+console.log(boxOfAlphabet(6, 5));
+// [
+//   ['a', 'b', 'c', 'd', 'e'],
+//   ['f', 'g', 'h', 'i', 'j'],
+//   ['k', 'l', 'm', 'n', 'o'],
+//   ['p', 'q', 'r', 's', 't'],
+//   ['u', 'v', 'w', 'x', 'y'],
+//   ['z', 'a', 'b', 'c', 'd']
+// ]
+```
+
+## Soal 2
+```javascript
+/**
+ * Terdapat function groupCharacterCoordinate yang memiliki 2 parameter.
+ *   - Parameter 1 merupakan array multidimensi yang berisi karakter-karakter.
+ *   - Parameter 2 merupakan karakter yang akan dicari dari parameter pertama.
+ * 
+ * Function ini akan menghasilkan sebuah multidimensional array seperti contoh di bawah.
+ * 
+ * Contoh:
+ *   - Parameter 1: 
+ *       [
+ *         ["F","$","#","*"],
+ *         ["$","A","@","O"],
+ *         ["%","&","#","@"],
+ *         ["A","*","&","%"]
+ *       ]
+ *   - Parameter 2: '$'
+ *   - Output: [ '$', [ 0, 1 ], [ 1, 0 ] ]
+ * 
+ * RULES:
+ *   - Dilarang menggunakan built-in function kecuali .push()
+ */
+function groupCharacterCoordinate(arr, character) {
+  // Your code here
+}
+console.log(groupCharacterCoordinate([
+  ["F", "$", "#", "*"],
+  ["$", "A", "@", "O"],
+  ["%", "&", "#", "@"],
+  ["A", "*", "&", "%"]
+], '$'));
+// [ '$', [ 0, 1 ], [ 1, 0 ] ]
+
+console.log(groupCharacterCoordinate([
+  ["F", "$", "#", "*", "B", "^", "P", "%"],
+  ["$", "A", "@", "O", "O", "G", "$", "?"],
+  ["%", "&", "#", "@", "A", "*", "#", "F"],
+  ["A", "*", "&", "%", "B", "O", "?", "N"],
+  ["F", "$", "#", "*", "$", "%", "&", "B"],
+  ["$", "A", "@", "O", "N", "F", "O", "P"],
+  ["%", "&", "#", "@", "!", "%", "*", "#"],
+  ["A", "*", "&", "%", "^", "M", "@", "P"]
+], '@'));
+// [ '@', [ 1, 2 ], [ 2, 3 ], [ 5, 2 ], [ 6, 3 ], [ 7, 6 ] ]
+```
+
+## Soal 3
 ```javascript
 /**
  * Kalian ditugaskan untuk membuat sebuah program yang akan dipakai Bandara Internasional Soekarno-Hatta
@@ -29,8 +119,8 @@
  * Status bisa berupa:
  * [status] : Suspect, Healthy, Potential Carrier, Sick
  *
- * RULES
- * - Dilarang menggunakan built-in function kecuali .push()
+ * RULES:
+ *   - Dilarang menggunakan built-in function kecuali .push()
  */
 
 function evaluatePassenger(passenger) {
@@ -42,7 +132,7 @@ console.log(evaluatePassenger({ name: 'Tono', id: 10, temperature: 40, travelHis
 console.log(evaluatePassenger({ name: 'Tsubasa', id: 15, temperature: 30, travelHistory: ['Brazil'] })); //Passenger 15 Tsubasa Healthy
 ```
 
-## Soal 2
+## Soal 4
 
 ```javascript
 /**
@@ -99,6 +189,6 @@ console.log(companyMatch(company1, kosasih)); // Mohon maaf Kosasih, Anda belum 
 console.log(companyMatch(company1, marry)); // Selamat Marry Anda cocok dengan perusahaan Pesbok dengan persentase kecocokan 66%.
 ```
 
-[Answers](./object-literal-review-2-answered.md)
+[Answers](./review-before-live-code-2-answered.md)
 
 [**Back to Home**](./../README.md)

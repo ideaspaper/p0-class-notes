@@ -163,6 +163,6 @@ console.log(getProductionCost({
 // { demand1: 214500, demand2: 173000, demand3: 208500 }
 ```
 
-[Answers](./object-literal-review-1-answered.md)
+[Answers](./object-literal-review-answered.md)
 
 [**Back to Home**](./../README.md)
