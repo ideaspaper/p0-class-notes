@@ -36,7 +36,7 @@ STORE arr2 AS ARRAY WITH [10, 20, 'A', 'B']
 STORE arr WITH [10, 20, 'A', 'B']
 
 FOR i FROM 0 TO (LENGTH OF arr MINUS 1) INCREMENT BY 1
-  DISPLAY arr INDEX i
+  DISPLAY arr[i]
 END FOR
 ```
 

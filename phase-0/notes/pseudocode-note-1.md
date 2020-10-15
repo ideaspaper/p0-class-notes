@@ -84,7 +84,7 @@ END IF
 
 ## Display
 
-Jika hendak menampilkan output, kita dapat menggunakan keyword `DISPLAY`.
+Proses menampilkan output dapat diwakili oleh keyword `DISPLAY`.
 
 ```
 STORE variableName WITH ANY STRING

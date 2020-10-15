@@ -52,14 +52,14 @@ STORE input WITH 'Nama saya Acong'
 DISPLAY LENGTH OF input
 
 // Mengakses huruf pertama pada input
-DISPLAY FIRST INDEX OF input
+DISPLAY input[0]
 
 // Mengakses huruf terakhir pada input
-DISPLAY LAST INDEX OF input
+DISPLAY input[LENGTH OF input]
 
 // Mengakses huruf ke-n pada input
-DISPLAY input INDEX 0 // Huruf ke 0
-DISPLAY input INDEX 3 // Huruf ke 3
+DISPLAY input[1] // Huruf ke 2
+DISPLAY input[2] // Huruf ke 3
 ```
 
 ## Built-in Function
