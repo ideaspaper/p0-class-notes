@@ -43,6 +43,21 @@ DO
 WHILE i LESS THAN 10
 ```
 
+## Break
+
+```
+STORE i WITH 1
+
+WHILE i LESS THAN 100
+  DISPLAY i
+  IF i MODULUS BY 25 EQUAL 0
+    DISPLAY 'Kelipatan 25 sudah ketemu'
+    BREAK
+  END IF
+  SET i TO i PLUS 1
+END WHILE
+```
+
 ## Length and Indexing
 
 ```
