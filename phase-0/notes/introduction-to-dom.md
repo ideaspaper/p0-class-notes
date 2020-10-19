@@ -317,6 +317,23 @@ _**Return**_
 </html>
 ```
 
+## Alert
+
+Kita dapat menampilkan alert box menggunakan method `alert()`. Kita dapat menggunakan method ini jika ingin memastikan bahwa sebuah informasi sampai ke user. Contoh dari penggunaan method ini adalah seperti di bawah:
+
+```html
+<html>
+  <head></head>
+  <body>
+    <h1>Hello World!</h1>
+
+    <script>
+      alert('Hello World!');
+    </script>
+  </body>
+</html>
+```
+
 ## External JavaScript
 
 Seperti CSS, kode program JavaScript dapat diletakkan pada file eksternal. Kita dapat menyertakan file tersebut pada tag `script`.
