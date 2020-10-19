@@ -209,7 +209,7 @@ for (var i = 0; i < input.length; i++) {
  * 
  * STORE input WITH ANY STRING
  * 
- * FOR i FROM 0 TO (LENGTH OF input - 1) INCREMENT BY 2
+ * FOR i FROM 0 TO (LENGTH OF input MINUS 1) INCREMENT BY 2
  *   STORE output WITH (input INDEX i)
  *   IF i + 1 LESS THAN LENGTH OF input
  *     SET output WITH output CONCAT WITH input INDEX (i + 1)
