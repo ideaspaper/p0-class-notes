@@ -82,6 +82,20 @@ ELSE IF variableName NOT EQUAL 10        // tidak sama dengan
 END IF
 ```
 
+## Truthy dan Falsy
+
+```
+STORE variableName WITH ANY STRING
+
+IF variableName IS TRUTHY
+  ...
+END IF
+
+IF variableName IS FALSY
+  ...
+END IF
+```
+
 ## Display
 
 Proses menampilkan output dapat diwakili oleh keyword `DISPLAY`.
