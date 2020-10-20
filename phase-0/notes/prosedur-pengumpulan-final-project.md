@@ -17,7 +17,7 @@
 1. Clone repository tersebut dengan perintah `git clone <username-github>.github.io`.
 1. Buka folder hasil `git clone` di code editor kalian.
 1. Buat sebuah file HTML dengan nama `index.html`. File tersebut adalah yang akan terbuka pertama kali saat kalian mengunjungi `<username-github>.github.io` pada browser.
-1. Kerjakan tugas kalian. Tambahkan file ___*.css___ dan ___*js___ sesuai dengan final project requirements. Kalian juga bisa menambahkan file gambar atau file suara seperlunya sesuai dengan kreasi kalian.
+1. Kerjakan tugas kalian. Tambahkan file ___*.css___ dan ___*.js___ sesuai dengan final project requirements. Kalian juga bisa menambahkan file gambar atau file suara seperlunya sesuai dengan kreasi kalian.
 1. Apabila pengerjaan sudah selesai, eksekusi perintah-perintah berikut:
    - `git add .`
    - `git commit -m '<pesan-commit>'`
