@@ -13,33 +13,19 @@
 
 ## Prosedur Pengumpulan
 
-Prosedur ini hanya berlaku apabila kalian sudah memiliki repository `<username-github>.github.io` pada GitHub kalian. Panduan pembuatannya ada di [link ini](prosedur-pengumpulan-tugas-membuat-web-sederhana-dengan-html-dan-css.md)
-
-1. Buat sebuah repository di GitHub kalian. Usahakan nama repository tersebut sesuai dengan tema final project kalian.
-2. Clone repository tersebut dengan perintah `git clone <nama-repository>`.
-3. Buka folder hasil `git clone` di code editor kalian.
-4. Buat sebuah file HTML dengan nama `index.html`. File tersebut adalah yang akan terbuka pertama kali saat kita mengunjungi `<username-github>.github.io/<nama-repository>` pada browser.
-5. Kerjakan tugas kalian. Tambahkan file CSS dan JS sesuai dengan final project requirements. Kalian juga bisa menambahkan file gambar atau file suara seperlunya sesuai dengan kreasi kalian.
-6. Apabila pengerjaan sudah selesai, eksekusi perintah-perintah berikut:
+1. Buat sebuah repository di GitHub dengan nama `<username-github>.github.io`.
+1. Clone repository tersebut dengan perintah `git clone <username-github>.github.io`.
+1. Buka folder hasil `git clone` di code editor kalian.
+1. Buat sebuah file HTML dengan nama `index.html`. File tersebut adalah yang akan terbuka pertama kali saat kalian mengunjungi `<username-github>.github.io` pada browser.
+1. Kerjakan tugas kalian. Tambahkan file ___*.CSS___ dan ___*JS___ sesuai dengan final project requirements. Kalian juga bisa menambahkan file gambar atau file suara seperlunya sesuai dengan kreasi kalian.
+1. Apabila pengerjaan sudah selesai, eksekusi perintah-perintah berikut:
    - `git add .`
    - `git commit -m '<pesan-commit>'`
    - `git push -u origin master`
-7. Kunjungi repository yang sudah kalian buat sebelumnya, kemudian klik **Settings**.
+1. Final project yang kalian buat akan live di `<username-github>.github.io`.
 
-   ![Repo Setting](./../assets/repo-setting.png)
+> Note: Apabila mengunjungi `<username-github>.github.io` menghasilkan error 404, kemungkinan GitHub masih memproses page kalian. Sebagai alternatifnya, kalian bisa menambahkan `/index.html` di belakang URL tadi.
 
-8. Scroll ke bawah hingga terdapat pengaturan seperti gambar di bawah.
-
-   ![GitHub Page 1](./../assets/github-page-1.png)
-
-9. Ubah pengaturan tersebut menjadi seperti di bawah, kemudian klik tombol **Save**.
-
-   ![GitHub Page 2](./../assets/github-page-2.png)
-
-10. Final project yang kalian buat akan live di `<username-github>.github.io/<nama-repository>`.
-
-> Note: Apabila mengunjungi `<username-github>.github.io/<nama-repository>` menghasilkan error 404, kemungkinan GitHub masih memproses page kalian. Sebagai alternatifnya, kalian bisa menambahkan `/index.html` di belakang URL tadi.
-
-[Referensi video by Fiqi Fitransyah (github.com/i01107)](https://drive.google.com/file/d/1e5BS8BeEzkdXFpzOfghBQMdHBg3ZRXG4/view?usp=sharing)
+[Referensi video by Josep Immanuel (github.com/josepimmanuel)](https://www.loom.com/share/98a25b0950684297bc8d65463bb6d5cb)
 
 [**Back to Home**](./../README.md)

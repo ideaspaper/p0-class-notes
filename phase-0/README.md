@@ -26,7 +26,6 @@
 - [HTML and CSS Review](#)
 - [Introduction to DOM](./notes/introduction-to-dom.md)
 - [Prosedur Pengumpulan Tugas](./notes/prosedur-pengumpulan-tugas.md)
-- [Prosedur Pengumpulan Tugas Membuat Web Sederhana dengan HTML dan CSS](./notes/prosedur-pengumpulan-tugas-membuat-web-sederhana-dengan-html-dan-css.md)
 - [Prosedur Pengumpulan Final Project](./notes/prosedur-pengumpulan-final-project.md)
 - [Live Code Rules](./notes/live-code-rules.md)
 - [Flash Quizes](./notes/flash-quizes.md)
