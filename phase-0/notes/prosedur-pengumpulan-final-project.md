@@ -22,10 +22,19 @@
    - `git add .`
    - `git commit -m '<pesan-commit>'`
    - `git push -u origin main`
+1. Kunjungi repository yang sudah kalian buat sebelumnya, kemudian klik **Settings**.
+
+   ![Repo Setting](./../assets/repo-setting.png)
+
+1. Scroll ke bawah hingga terdapat pengaturan seperti gambar di bawah.
+
+   ![GitHub Page 1](./../assets/github-page-1.png)
+
+1. Ubah pengaturan tersebut menjadi seperti di bawah, kemudian klik tombol **Save**.
+
+   ![GitHub Page 2](./../assets/github-page-2.png)
 1. Final project yang kalian buat akan live di `<username-github>.github.io`.
 
 > Note: Apabila mengunjungi `<username-github>.github.io` menghasilkan error 404, kemungkinan GitHub masih memproses page kalian. Sebagai alternatifnya, kalian bisa menambahkan `/index.html` di belakang URL tadi.
-
-[Referensi video by Josep Immanuel (github.com/josepimmanuel)](https://www.loom.com/share/98a25b0950684297bc8d65463bb6d5cb)
 
 [**Back to Home**](./../README.md)
