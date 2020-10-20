@@ -21,7 +21,7 @@
 1. Apabila pengerjaan sudah selesai, eksekusi perintah-perintah berikut:
    - `git add .`
    - `git commit -m '<pesan-commit>'`
-   - `git push -u origin master`
+   - `git push -u origin main`
 1. Final project yang kalian buat akan live di `<username-github>.github.io`.
 
 > Note: Apabila mengunjungi `<username-github>.github.io` menghasilkan error 404, kemungkinan GitHub masih memproses page kalian. Sebagai alternatifnya, kalian bisa menambahkan `/index.html` di belakang URL tadi.
