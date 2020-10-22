@@ -25,7 +25,6 @@ DOM adalah kependekan dari (Document Object Model). DOM merupakan antarmuka pemr
 ╰───────────╯                 ╰─────────────╯                    ╰───────────╯
 ```
 
-
 Setiap object yang ada pada DOM merupakan `node`. Pada HTML, object bisa merupakan `element node`, `text node`, atau `attribute node`.
 
 Contoh sebuah HTML dan representasi DOM-nya.
@@ -296,10 +295,10 @@ _**Return**_
     </div>
 
     <script>
-      function toBold(children) {
-        let parent = children.parentElement;
+      function toBold(input) {
+        let parent = input.parentElement;
         for (let i = 0; i < parent.children.length; i++) {
-          parent.children[i].setAttribute("class", bold);
+          parent.children[i].setAttribute("class", "bold");
         }
       }
       let button1 = document.getElementById("button1");
@@ -366,6 +365,12 @@ button1.addEventListener("click", () => {
       <p>Paragraf keempat</p>
       <button id="button1">Click to bold!</button>
     </div>
+
+    <style>
+      .bold {
+        font-weight: bold;
+      }
+    </style>
 
     <script src="script.js"></script>
   </body>
