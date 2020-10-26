@@ -4,48 +4,50 @@
 
 ## Terminal
 
+## Terminal
+
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```bash
 ls ../..
 ```
-Apa yang akan dihasilkan dari command di atas?
+Apa yang akan dihasilkan dari command di atas?"
 
-:one: Memindahkan working directory ke dua tingkat di atas
-:two: Membuat folder baru
-:three: Menampilkan isi dari folder yang berada pada dua tingkat di atas working directory
-:four: Menghapus semua isi dari folder **System32** :scream: 
-:five: Memulai installer Ubuntu
+"Memindahkan working directory ke dua tingkat di atas"
+"Membuat folder baru"
+"Menampilkan isi dari folder yang berada pada dua tingkat di atas working directory"
+"Menghapus semua isi dari folder **System32** :scream:"
+"Memulai installer Ubuntu"
 ````
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
-Command terminal apakah yang digunakan untuk menghapus sebuah file?
+Command terminal apakah yang digunakan untuk menghapus sebuah file?"
 
-:one: `delete <nama_file>`
-:two: `remove <nama_file>`
-:three: `rm <nama_file>`
-:four: `destroy <nama_file>`
+"`delete <nama_file>`"
+"`remove <nama_file>`"
+"`rm <nama_file>`"
+"`destroy <nama_file>`"
 ````
 
 ## Variables
 
 ```
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
-Pilihan manakah yang merupakan syntax valid JavaScript?
+Pilihan manakah yang merupakan syntax valid JavaScript?"
 
-:one: `var naruto == 10`;
-:two: `console.log(I am a beautiful butterfly)`;
-:three: `var a = 3`;
-:four: `var 1thing = 100`;
-:five: `console.log['Interesting']`;
+"`var naruto == 10`;"
+"`console.log(I am a beautiful butterfly)`;"
+"`var a = 3`;"
+"`var 1thing = 100`;"
+"`console.log['Interesting']`;"
 ```
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```javascript
 var a = 5;
@@ -54,36 +56,46 @@ var b = 3;
 // Solusi
 ```
 Diberikan dua buah variable yaitu `a` dan `b`. Solusi manakah yang paling tepat untuk menukar nilai `a` menjadi nilai `b`, begitu pula sebaliknya?
-Note: nilai `a` dan `b` bisa berapa saja.
+Note: nilai `a` dan `b` bisa berapa saja."
 
-:one: ```javascript
+"
+```javascript
 a = 3;
 b = 5;
 ```
-:two: ```javascript
+"
+"
+```javascript
 var a = 3;
 var b = 5;
 ```
-:three: ```javascript
+"
+"
+```javascript
 a = b;
 b = a;
 ```
-:four: ```javascript
+"
+"
+```javascript
 var c = a;
 a = b;
 b = c;
 ```
-:five: ```javascript
+"
+"
+```javascript
 var c = b;
 a = b;
 b = a;
 ```
+"
 ````
 
 ## Conditionals
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```javascript
 var a = 7;
@@ -95,31 +107,31 @@ if (a < 10) {
 
 console.log(a);
 ```
-Apa yang akan ditampilkan pada terminal saat kode JavaScript di atas dieksekusi?
+Apa yang akan ditampilkan pada terminal saat kode JavaScript di atas dieksekusi?"
 
-:one: 7
-:two: 8
-:three: 9
-:four: 10
-:five: 11
+"7"
+"8"
+"9"
+"10"
+"11"
 ````
 
 ## Loopings
 
 ```
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
-Kalian diperintahkan untuk mencari sebuah jarum di tumpukan jerami. Apa yang akan kalian lakukan?
+Kalian diperintahkan untuk mencari sebuah jarum di tumpukan jerami. Apa yang akan kalian lakukan?"
 
-:one: `for`
-:two: `loop`
-:three: `while`
-:four: Yes
-:five: No
+"`for`"
+"`loop`"
+"`while`"
+"Yes"
+"No"
 ```
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```javascript
 let a = 10;
@@ -129,29 +141,29 @@ for (let i = 1; i <= a; i++) {
 }
 console.log(sum);
 ```
-Apa yang dilakukan oleh kode di atas?
+Apa yang dilakukan oleh kode di atas?"
 
-:one: Menjumlahkan angka 0 sampai 10
-:two: Menjumlahkan angka 1 sampai 10
-:three: Menjumlahkan angka 0 sampai 9
-:four: Menjumlahkan angka 1 sampai 9
+"Menjumlahkan angka 0 sampai 10"
+"Menjumlahkan angka 1 sampai 10"
+"Menjumlahkan angka 0 sampai 9"
+"Menjumlahkan angka 1 sampai 9"
 ````
 
 ## Arrays and Strings
 
 ```
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
-Dari pernyataan-pernyataan di bawah, pilih satu pernyataan yang benar mengenai **array** dan **string**!
+Dari pernyataan-pernyataan di bawah, pilih satu pernyataan yang benar mengenai **array** dan **string**!"
 
-:one: Indexing tidak dapat dilakukan pada string, namun dapat dilakukan pada array.
-:two: Nilai elemen pada suatu string tidak dapat diganti, sedangkan nilai elemen pada suatu array bisa diganti.
-:three: String memiliki properti `length`, sedangkan array tidak memiliki properti `length`.
-:four: String memiliki built-in function `indexOf()`, sedangkan array tidak.
+"Indexing tidak dapat dilakukan pada string, namun dapat dilakukan pada array."
+"Nilai elemen pada suatu string tidak dapat diganti, sedangkan nilai elemen pada suatu array bisa diganti."
+"String memiliki properti `length`, sedangkan array tidak memiliki properti `length`."
+"String memiliki built-in function `indexOf()`, sedangkan array tidak."
 ```
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```javascript
 let a = ['Acong', 'Djoko', "Sitorus"];
@@ -163,28 +175,36 @@ for (let i = 0; i < a.length; i ++) {
   console.log(out);
 }
 ```
-Apa yang ditampilkan pada terminal apabila kode di atas di jalankan?
+Apa yang ditampilkan pada terminal apabila kode di atas di jalankan?"
 
-:one: ```
+"
+```
 Acong Djoko Sitorus
 ```
-:two: ```
+"
+"
+```
 Acong
 Djoko
 Sitor
 ```
-:three: ```
+"
+"
+```
 Acong
 Djoko
 Sitorus
 ```
-:four: ```
+"
+"
+```
 AcongDjokoSitor
 ```
+"
 ````
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```javascript
 var arr1 = [1, 2, 3];
@@ -192,17 +212,17 @@ var arr2 = arr1;
 arr2[0] = 99;
 console.log(arr1);
 ```
-Apa yang akan ditampilkan pada terminal apabila kode program di atas dieksekusi?
-:one: `[ 1, 2, 3 ]`
-:two: `[ '1', '2', '3' ]`
-:three: `[ 99, 2, 3 ]`
-:four: `[ '99', '2', '3' ]`
+Apa yang akan ditampilkan pada terminal apabila kode program di atas dieksekusi?"
+"`[ 1, 2, 3 ]`"
+"`[ '1', '2', '3' ]`"
+"`[ 99, 2, 3 ]`"
+"`[ '99', '2', '3' ]`"
 ````
 
 ## Functions
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```javascript
 function matematik(num1, num2) {
@@ -212,16 +232,16 @@ function matematik(num1, num2) {
 
 matematik(1, 5);
 ```
-Apa yang ditampilkan pada terminal apabila kode di atas di jalankan?
+Apa yang ditampilkan pada terminal apabila kode di atas di jalankan?"
 
-:one: 
-:two: 6
-:three: 0
-:four: 70
+""
+"6"
+"0"
+"70"
 ````
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```javascript
 function matematik(num1, num2) {
@@ -231,27 +251,35 @@ function matematik(num1, num2) {
 
 console.log(matematik(1, 5));
 ```
-Apa yang ditampilkan pada terminal apabila kode di atas di jalankan?
+Apa yang ditampilkan pada terminal apabila kode di atas di jalankan?"
 
-:one: ```
+"
+```
 0
 ```
-:two: ```
+"
+"
+```
 undefined
 ```
-:three: ```
+"
+"
+```
 undefined
 0
 ```
-:four: ```
+"
+"
+```
 0
 undefined
 ```
-:five: Yes
+"
+"Yes"
 ````
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```javascript
 function matematik(num1, num2) {
@@ -261,27 +289,35 @@ function matematik(num1, num2) {
 
 matematik([1, 2]);
 ```
-Apa yang ditampilkan pada terminal apabila kode di atas di jalankan?
+Apa yang ditampilkan pada terminal apabila kode di atas di jalankan?"
 
-:one: ```
+"
+```
 99
 ```
-:two: ```
+"
+"
+```
 1, 2
 ```
-:three: ```
+"
+"
+```
 [ 1, 2 ]
 undefined
 ```
-:four: ```
+"
+"
+```
 [ 1, 2 ]
 ```
+"
 ````
 
 ## Modular Functions
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```javascript
 function multiplication(a, b) {
@@ -294,42 +330,42 @@ function addition(a, b) {
 
 console.log(multiplication(addition(5, 2), multiplication(3, 5)));
 ```
-Apa yang ditampilkan pada terminal apabila kode di atas dieksekusi?
+Apa yang ditampilkan pada terminal apabila kode di atas dieksekusi?"
 
-:one: 99
-:two: 150
-:three: 25
-:four: 105
+"99"
+"150"
+"25"
+"105"
 ````
 
 ## HTML
 
 ```
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
-Manakah dari tag berikut ini yang digunakan untuk membuat text memiliki format underline?
+Manakah dari tag berikut ini yang digunakan untuk membuat text memiliki format underline?"
 
-:one: `<li></li>`
-:two: `<u></u>`
-:three: `<b></b>`
-:four: `<ul></ul>`
+"`<li></li>`"
+"`<u></u>`"
+"`<b></b>`"
+"`<ul></ul>`"
 ```
 
 ```
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
-Attribute HTML apa yang digunakan untuk mendefinisikan inline styles?
+Attribute HTML apa yang digunakan untuk mendefinisikan inline styles?"
 
-:one: `font`
-:two: `style`
-:three: `class`
-:four: `styles`
+"`font`"
+"`style`"
+"`class`"
+"`styles`"
 ```
 
 ## CSS
 
 ````
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
 ```html
   ...
@@ -353,25 +389,25 @@ Attribute HTML apa yang digunakan untuk mendefinisikan inline styles?
   ...
 
 
-Apa hasil dari kode HTML di atas?
-:one: I am a beautiful Pidgeon [warna biru]
-:two: I am a beautiful Pidgeon [warna hijau]
-:three: I am a beautiful Pidgeon [warna merah]
-:four: I am not a Pidgeon bro [warna rainbow :rainbow: ]
+Apa hasil dari kode HTML di atas?"
+"I am a beautiful Pidgeon [warna biru]"
+"I am a beautiful Pidgeon [warna hijau]"
+"I am a beautiful Pidgeon [warna merah]"
+"I am not a Pidgeon bro [warna rainbow :rainbow: ]"
 
-Note: Jangan dicoba pake browser ya :sweat_smile:
+"Note: Jangan dicoba pake browser ya :sweat_smile:"
 ````
 
 ```
-**Flash Quiz!**
+/poll "**Flash Quiz!**
 
-Siapakah penggagas CSS pertama kali?
+Siapakah penggagas CSS pertama kali?"
 
-:one: Peter Freuchen
-:two: Linus Torvalds
-:three: Virat Kohli
-:four: Håkon Wium Lie
-:five: Conor McGregor
+"Peter Freuchen"
+"Linus Torvalds"
+"Virat Kohli"
+"Håkon Wium Lie"
+"Conor McGregor"
 ```
 
 [**Back to Home**](./../README.md)
