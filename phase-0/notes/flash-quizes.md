@@ -394,8 +394,6 @@ Apa hasil dari kode HTML di atas?"
 "I am a beautiful Pidgeon [warna hijau]"
 "I am a beautiful Pidgeon [warna merah]"
 "I am not a Pidgeon bro [warna rainbow :rainbow: ]"
-
-"Note: Jangan dicoba pake browser ya :sweat_smile:"
 ````
 
 ```
