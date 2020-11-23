@@ -14,7 +14,7 @@ Selama masa bootcamp kita akan menggunakan JavaScript sebagai bahasa pemrograman
 - [MAC](https://nodejs.org/en/download/).
 - [Windows](https://nodejs.org/en/download/).
 
-Pastikan versi yang kalian install adalah **LTS (Long-term Support)**. Saat ini versi LTS-nya adalah **_node-v12.18.2_**.
+Pastikan versi yang kalian install adalah **LTS (Long-term Support)**. Saat ini versi LTS-nya adalah **_node-v14.15.1_**.
 
 ## Git
 
