@@ -4,7 +4,7 @@
 
 ## Instalasi Node.js
 
-[Ikuti instruksi yang ada pada link ini](./preparation.md#nodejs)
+[Ikuti instruksi yang ada pada link ini](./preparation.md#nodejs).
 
 ## Apa itu JavaScript?
 
