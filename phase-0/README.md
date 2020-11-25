@@ -3,7 +3,7 @@
 - [Preparation](./notes/preparation.md)
 - [Terminal, Git and GitHub](#)
 - [Algorithm and Pseudocode](./assets/algorithm-and-pseudocode.pdf)
-- [Conditional and Primitive Data Types](#)
+- [Conditional and Primitive Data Types](./notes/conditional-and-primitive-data-types.md)
 - [Advanced Conditional](./notes/advanced-conditional.md)
 - [Pseudocode and Loopings](./notes/pseudocode-and-loopings.md)
 - [Nested Loop](#)
