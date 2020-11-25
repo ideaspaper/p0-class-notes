@@ -247,6 +247,8 @@ if (kondisi1) {
 }
 ```
 
+Exercise:
+
 ```javascript
 /**
  * Buatlah sebuah program yang akan menampilkan:
@@ -277,6 +279,8 @@ Dari hasil percobaan singkat di atas, dapat diambil kesimpulan bahwa nilai di ba
 - `null`
 - `undefined`
 - `NaN`
+
+Exercise:
 
 ```javascript
 /**
