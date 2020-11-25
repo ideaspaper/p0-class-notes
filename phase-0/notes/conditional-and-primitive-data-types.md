@@ -228,7 +228,8 @@ console.log(false || true); // true
 console.log(false || false); // false
 
 // Contoh: Mengecek apakah sebuah nilai ada di luar range
-// Jika input kurang dari 3 atau lebih dari 5, tampilkan false pada terminal
+// Jika input kurang dari 3 atau lebih dari 5, tampilkan true pada terminal
+var input = 7;
 console.log(input < 3 || input > 5);
 ```
 
