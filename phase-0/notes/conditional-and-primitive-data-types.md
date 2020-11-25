@@ -286,7 +286,7 @@ Exercise:
 /**
  * Buatlah sebuah program yang akan menampilkan:
  *   - 'Nama tidak boleh kosong' jika input kosong.
- *   - 'Namamu adalah <input>, silahkan masuk' jika nama tidak kosong.
+ *   - 'Namamu adalah <input>, silahkan masuk' jika input tidak kosong.
  */
 
 var input = 'Acong'; // Nilai dari input boleh diganti-ganti
