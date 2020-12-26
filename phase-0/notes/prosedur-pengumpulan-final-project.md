@@ -30,7 +30,7 @@
 
    ![GitHub Page 1](./../assets/github-page-1.png)
 
-1. Ubah pengaturan tersebut menjadi seperti di bawah, kemudian klik tombol **Save**.
+1. Ubah pengaturan tersebut menjadi seperti di bawah, kemudian klik tombol **Save**. Jika tidak ada `master`, pilihlah `main`.
 
    ![GitHub Page 2](./../assets/github-page-2.png)
 1. Final project yang kalian buat akan live di `<username-github>.github.io`.
