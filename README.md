@@ -9,7 +9,6 @@
 - [Nested Loop](#)
 - [Looping Review](./notes/looping-review.md)
 - [ES6](#)
-- [Simulasi Live Code 1](#)
 - [Functions](./notes/functions.md)
 - [Array](./notes/array.md)
 - [Multidimensional Array](#)
