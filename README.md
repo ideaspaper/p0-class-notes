@@ -7,4 +7,4 @@
 - [OOP Basic, Method Chaining, fs.readFileSync](#)
 - [Karakteristik OOP, Interaksi Antar Class](#)
 - [Composition, Aggregation, Factory Method](#)
-- [Review OOP + Interaksi Antar File (module.exports)](#)
+- [Review OOP, Interaksi Antar File (module.exports)](#)
