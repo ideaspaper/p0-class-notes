@@ -14,6 +14,5 @@
 10. `git commit -m "<pesan-commit>"` untuk menyimpan perubahan-perubahan yang kalian lakukan ke repository local kalian.
 11. `git push origin <nama-branch>` untuk melakukan update ke remote repository, dalam hal ini GitHub.
 12. Buat pull request di GitHub untuk branch kalian. Title pull request-nya diisi dengan nama kalian.
-13. Klik tombol **Mark as Done** di assignment Google Classroom kalian.
 
 [**Back to Home**](./../README.md)
