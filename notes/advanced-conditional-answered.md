@@ -347,7 +347,14 @@ console.log(hasilRandom1);
 
 var hasilRandom2 = Math.random() * 10;
 hasilRandom2 = Math.floor(hasilRandom2) + 1;
-// hasilRandom2 = Math.ceil(hasilRandom2) // Atau bisa menggunakan ini
+
+// Jangan menggunakan ini!
+// hasilRandom2 = Math.ceil(hasilRandom2)
+// Hasil dari Math.random() adalah 0 (inclusive) hingga 1 (exclusive).
+// Artinya adalah 0 hingga hampir 1.
+// Jika hasil dari Math.random() adalah 0, maka hasilRandom2 akan bernilai 0 * 10, yaitu 0.
+// Maka dari itu range angka yang didapatkan adalah 0 - 10, bukan 1 - 10.
+
 console.log(hasilRandom2);
 ```
 
